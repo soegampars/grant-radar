@@ -1,0 +1,82 @@
+[
+  {
+    "source_name": "arXiv Economics",
+    "source_type": "rss",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "EconJobMarket",
+    "source_type": "api",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "Jobs.ac.uk - Geography",
+    "source_type": "scraper",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "Jobs.ac.uk - Economics",
+    "source_type": "scraper",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "Academic Transfer (Netherlands)",
+    "source_type": "scraper",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "EURAXESS",
+    "source_type": "scraper",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "RSA - Regional Studies Association",
+    "source_type": "scraper",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "ERSA",
+    "source_type": "scraper",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "daily_pipeline",
+    "source_type": "pipeline",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  },
+  {
+    "source_name": "weekly_pipeline",
+    "source_type": "pipeline",
+    "status": "never_checked",
+    "last_checked": null,
+    "error": null,
+    "grants_found": 0
+  }
+]

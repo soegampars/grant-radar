@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Radar</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-top">
+      <div class="header-brand">
+        <h1 class="header-title">Grant Radar</h1>
+        <span class="header-updated" id="lastUpdated">Loading...</span>
+      </div>
+      <div class="header-nav">
+        <button class="nav-btn" data-tab="dashboard" aria-current="true">Dashboard</button>
+        <button class="nav-btn" data-tab="strategic">Strategic Notes</button>
+        <button class="nav-btn" data-tab="sources">Sources</button>
+        <button class="nav-btn" data-tab="settings">Settings</button>
+        <a href="help.html" class="nav-btn">Help</a>
+      </div>
+    </div>
+
+    <!-- Filter bar (dashboard tab only) -->
+    <div class="filter-bar" id="filterBar">
+      <div class="filter-row">
+        <!-- Tier buttons -->
+        <div class="tier-btns" id="tierBtns">
+          <button class="tier-btn active" data-tier="all">All</button>
+          <button class="tier-btn tier-1" data-tier="1">Tier 1</button>
+          <button class="tier-btn tier-2" data-tier="2">Tier 2</button>
+          <button class="tier-btn tier-3" data-tier="3">Tier 3</button>
+          <button class="tier-btn tier-4" data-tier="4">Tier 4</button>
+        </div>
+
+        <!-- Toggle filters -->
+        <div class="toggle-filters">
+          <label class="toggle-label">
+            <input type="checkbox" id="filterEligible"> Eligible only
+          </label>
+          <label class="toggle-label">
+            <input type="checkbox" id="filterNew"> New this week
+          </label>
+          <label class="toggle-label">
+            <input type="checkbox" id="filterStarred"> Starred
+          </label>
+        </div>
+
+        <!-- Sort dropdown -->
+        <div class="sort-group">
+          <label for="sortSelect" class="sr-only">Sort by</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="tier">Sort: Tier priority</option>
+            <option value="deadline">Sort: Deadline</option>
+            <option value="date_found">Sort: Date found</option>
+            <option value="score">Sort: Score</option>
+          </select>
+        </div>
+
+        <!-- Search box -->
+        <div class="search-group">
+          <input type="search" id="searchBox" class="search-input" placeholder="Search grants...">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main">
+
+    <!-- TAB: Dashboard -->
+    <section class="tab-panel active" id="panelDashboard">
+
+      <!-- Summary stats -->
+      <div class="stats-bar" id="statsBar">
+        <div class="stat-card">
+          <span class="stat-value" id="statTotal">--</span>
+          <span class="stat-label">Total</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statNew">--</span>
+          <span class="stat-label">New this week</span>
+        </div>
+        <div class="stat-card stat-tier1">
+          <span class="stat-value" id="statT1">--</span>
+          <span class="stat-label">Tier 1</span>
+        </div>
+        <div class="stat-card stat-tier2">
+          <span class="stat-value" id="statT2">--</span>
+          <span class="stat-label">Tier 2</span>
+        </div>
+        <div class="stat-card stat-tier3">
+          <span class="stat-value" id="statT3">--</span>
+          <span class="stat-label">Tier 3</span>
+        </div>
+        <div class="stat-card stat-tier4">
+          <span class="stat-value" id="statT4">--</span>
+          <span class="stat-label">Tier 4</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statEligible">--</span>
+          <span class="stat-label">Eligible</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statCheck">--</span>
+          <span class="stat-label">Check</span>
+        </div>
+        <div class="stat-card stat-deadline">
+          <span class="stat-value" id="statDeadline">--</span>
+          <span class="stat-label">Next deadline</span>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline-container" id="timelineContainer">
+        <h3 class="section-heading">Career Timeline</h3>
+        <div class="timeline-track" id="timelineTrack">
+          <!-- Populated by JS -->
+        </div>
+        <div class="timeline-legend">
+          <span class="legend-item"><span class="legend-dot tier-1-bg"></span> Tier 1</span>
+          <span class="legend-item"><span class="legend-dot tier-2-bg"></span> Tier 2</span>
+          <span class="legend-item"><span class="legend-dot tier-3-bg"></span> Tier 3</span>
+          <span class="legend-item"><span class="legend-dot tier-4-bg"></span> Tier 4</span>
+          <span class="legend-item"><span class="legend-dot milestone-bg"></span> Milestone</span>
+        </div>
+      </div>
+
+      <!-- Grant cards container -->
+      <div class="cards-container" id="cardsContainer">
+        <div class="loading-msg" id="loadingMsg">Loading grants...</div>
+        <div class="empty-msg hidden" id="emptyMsg">No grants match your filters.</div>
+      </div>
+
+      <!-- Archive toggle -->
+      <div class="archive-toggle-row">
+        <label class="toggle-label archive-toggle">
+          <input type="checkbox" id="showArchive"> Show expired / archived opportunities
+        </label>
+      </div>
+    </section>
+
+    <!-- TAB: Strategic Notes -->
+    <section class="tab-panel" id="panelStrategic">
+      <h2 class="section-heading">Strategic Intelligence</h2>
+      <p class="section-sub">Updated weekly by Claude Opus with web search.</p>
+      <div id="strategicContent" class="strategic-grid">
+        <div class="loading-msg">Loading strategic notes...</div>
+      </div>
+    </section>
+
+    <!-- TAB: Sources -->
+    <section class="tab-panel" id="panelSources">
+      <h2 class="section-heading">Source Status</h2>
+      <p class="section-sub">Health of each grant source. Updated after every pipeline run.</p>
+      <div class="source-table-wrap">
+        <table class="source-table" id="sourceTable">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Source</th>
+              <th>Last Checked</th>
+              <th>Grants Found</th>
+              <th>Error</th>
+            </tr>
+          </thead>
+          <tbody id="sourceTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TAB: Settings -->
+    <section class="tab-panel" id="panelSettings">
+      <h2 class="section-heading">Settings</h2>
+      <p class="section-sub">Current configuration (read-only). To modify, edit <code>backend/config.json</code> via Claude Code.</p>
+
+      <div class="settings-grid">
+        <div class="settings-card">
+          <h3>Researcher Profile</h3>
+          <dl id="settingsProfile">
+            <dt>Name</dt><dd>Immanuel Satya Pekerti</dd>
+            <dt>Nationality</dt><dd>Indonesian</dd>
+            <dt>Position</dt><dd>PhD Candidate, Politecnico di Milano</dd>
+            <dt>Field</dt><dd>Regional Economics / Economic Geography</dd>
+            <dt>PhD Submission</dt><dd>October 2026</dd>
+            <dt>Defence</dt><dd>Q1 2027</dd>
+            <dt>Current Funding</dt><dd>PNRR (expires Oct 2026)</dd>
+          </dl>
+        </div>
+        <div class="settings-card">
+          <h3>Tier System</h3>
+          <dl>
+            <dt class="tier-1-text">Tier 1</dt><dd>Cardiff + Welsh Economic Geography</dd>
+            <dt class="tier-2-text">Tier 2</dt><dd>Strong Alternatives (Cardiff other depts, NL, PoliMi)</dd>
+            <dt class="tier-3-text">Tier 3</dt><dd>Good European Opportunities</dd>
+            <dt class="tier-4-text">Tier 4</dt><dd>Indonesia: BRIN &amp; UGM</dd>
+          </dl>
+        </div>
+        <div class="settings-card">
+          <h3>Active Sources</h3>
+          <ul id="settingsSources">
+            <li>arXiv Economics (RSS)</li>
+            <li>EconJobMarket (API)</li>
+            <li>Jobs.ac.uk Geography &amp; Economics (Scraper)</li>
+            <li>Academic Transfer Netherlands (Scraper)</li>
+            <li>EURAXESS (Scraper)</li>
+            <li>RSA (Scraper)</li>
+            <li>ERSA (Scraper)</li>
+          </ul>
+        </div>
+        <div class="settings-card">
+          <h3>AI Models</h3>
+          <dl>
+            <dt>Daily Analysis</dt><dd>Claude Sonnet 4.6</dd>
+            <dt>Weekly Discovery</dt><dd>Claude Opus 4.6 (with web search)</dd>
+          </dl>
+          <p class="settings-note">To modify settings, use Claude Code. <a href="help.html">See Help page</a>.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>Grant Radar &mdash; AI-powered grant monitoring</span>
+    <span><a href="help.html">Help</a> &middot; <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></span>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

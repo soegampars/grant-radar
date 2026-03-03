@@ -1,0 +1,237 @@
+{
+  "researcher": {
+    "name": "Immanuel Satya Pekerti",
+    "nationality": "Indonesian",
+    "email": "immanuelsatya.pekerti@polimi.it",
+    "website": "soegampars.github.io/academicblog",
+    "academic_status": {
+      "current_position": "PhD candidate, 3rd and final year",
+      "institution": "Politecnico di Milano",
+      "field": "Regional Economics",
+      "phd_started": "2023-11",
+      "phd_submission_deadline": "2026-10",
+      "expected_defence": "2027-Q1",
+      "current_funding": "PNRR (expires October 2026)",
+      "urgency": "Must secure next position/funding by October 2026"
+    },
+    "education": [
+      {
+        "degree": "PhD in Regional Economics",
+        "institution": "Politecnico di Milano",
+        "country": "Italy",
+        "period": "Nov 2023 – current",
+        "thesis": "Ex-ante policy impact assessment tools for Italian childcare expansion (PNRR Piano Asili Nido)"
+      },
+      {
+        "degree": "MSc in Economic Geography",
+        "institution": "University of Groningen",
+        "country": "Netherlands",
+        "period": "Sep 2022 – Aug 2023",
+        "thesis": "SimJogja: A Spatial Microsimulation Application to Local Labour Market Impact Assessment of COVID-19",
+        "note": "European (Dutch) postgraduate degree — satisfies 'European degree' requirements but NOT 'British degree' requirements"
+      },
+      {
+        "degree": "S.E. (Sarjana Ekonomi) in Economics",
+        "institution": "Universitas Gadjah Mada (UGM)",
+        "country": "Indonesia",
+        "period": "Aug 2015 – Jan 2020",
+        "gpa": "3.46/4.00",
+        "thesis": "Regional Income Convergence Analysis Across Java, 2014-2018: Spatial Econometrics Approach"
+      }
+    ],
+    "publications": [
+      {
+        "authors": "Asyahid, E.A., Pekerti, I.S.",
+        "year": 2022,
+        "title": "Economic impact of natural disasters, spillovers, and role of human development: case of Indonesia",
+        "journal": "Letters in Spatial and Resource Sciences",
+        "doi": "10.1007/s12076-022-00307-7",
+        "methods": ["Spatial Durbin Model", "district-level panel data"]
+      },
+      {
+        "authors": "Pekerti, I.S.",
+        "year": 2022,
+        "title": "Impact of Socio-economic Vulnerability on the Force of Infection of Covid-19 in Jakarta",
+        "journal": "Bulletin of Indonesian Economic Studies",
+        "doi": "10.1080/00074918.2021.1914321",
+        "methods": ["networked metapopulation model", "village-level spatial analysis"]
+      },
+      {
+        "authors": "Pekerti, I.S.",
+        "year": 2021,
+        "title": "Preliminary Evaluation of PSBB in DKI Jakarta and Its Transitional",
+        "journal": "IRSA Book Series on Regional Development No. 19",
+        "methods": ["policy evaluation", "spatial analysis"]
+      }
+    ],
+    "work_experience": [
+      {
+        "role": "Research Assistant",
+        "institution": "Bank Indonesia Institute",
+        "period": "Jan 2020 – Jun 2022",
+        "description": "Data preparation, literature compilation, project event management for central bank research"
+      },
+      {
+        "role": "Research Visit",
+        "institution": "Cardiff University School of Geography and Planning",
+        "period": "Aug 2025 – Jan 2026",
+        "host": "Prof Robert Huggins",
+        "description": "Cultural aspect of family policy in Italian labour policy landscape",
+        "note": "This is the Cardiff connection for Tier 1"
+      },
+      {
+        "role": "Research Project",
+        "institution": "QuaRCS Lab, GSID Nagoya University",
+        "period": "Jul 2021 – Mar 2023",
+        "collaborators": "Prof Carlos Mendez, Harry Aginta",
+        "description": "Regional luminosity via spatial Solow model, Java, Indonesia"
+      }
+    ],
+    "skills": [
+      "Spatial microsimulation modelling (SimJogja)",
+      "Spatial econometrics (Spatial Durbin Model, spatial panel models, sparse matrix W-matrix)",
+      "Digital twin integration",
+      "Policy evaluation / ex-ante impact assessment",
+      "Microdata handling: Indonesian SAKERNAS, SUSENAS, IFLS, EU-SILC",
+      "Regional development theory and New Economic Geography",
+      "Indonesian development economics with spatial dimension",
+      "Italian childcare and welfare policy (PNRR Piano Asili Nido)",
+      "Metapopulation modelling and epidemiological spatial analysis",
+      "Night-time light data analysis",
+      "Growth convergence and spatial spillover analysis",
+      "Data cleaning at scale (central bank research level)"
+    ],
+    "languages": {
+      "English": "proficient (working language)",
+      "Indonesian": "native",
+      "Italian": "NOT proficient (basic daily use only, NOT professional)",
+      "Welsh": "beginner",
+      "Japanese": "limited (personal interest only)"
+    },
+    "eligibility": {
+      "nationality": "Indonesian",
+      "european_degree": true,
+      "european_degree_country": "Netherlands (Groningen)",
+      "british_degree": false,
+      "british_nationality_or_settled": false,
+      "eu_residency": "Italian student visa/permit (time-limited, tied to PhD)",
+      "ugm_alumnus": true,
+      "irsa_network": true,
+      "disqualifying_conditions": [
+        "Must hold UK nationality or settled status",
+        "Must have graduated from a UK university",
+        "EU citizens only (Indonesian with Italian residency — flag as CHECK)",
+        "PhD must be completed at time of application (check against timeline)",
+        "Language requirements beyond English and Indonesian"
+      ]
+    },
+    "research_identity_note": "Primary interest is substantive economic geography for policy. Current skills are leverage/fallback, not a rigid filter. Priority is finding opportunities matching broad 'economic geography for policy' interest."
+  },
+  "tiers": {
+    "1": {
+      "name": "Cardiff + Welsh Economic Geography",
+      "notification": "immediate_email",
+      "description": "Cardiff School of Geography and Planning postdocs, or portable fellowships hostable at Cardiff for economic geography. Established connection via Prof Robert Huggins research visit.",
+      "keywords": ["Cardiff", "Wales", "Welsh", "Cardiff University"],
+      "portable_fellowships": true
+    },
+    "2": {
+      "name": "Strong Alternatives",
+      "notification": "weekly_digest_prominent",
+      "subcategories": {
+        "a_cardiff_broad": "Cardiff Business School or other Cardiff departments",
+        "b_netherlands": "Any Dutch university economic geography. Note: MSc from Groningen = Dutch academic connection, possible NWO eligibility",
+        "c_polimi": "Politecnico di Milano postdoc, assegno di ricerca, portable fellowships"
+      }
+    },
+    "3": {
+      "name": "Good European Opportunities",
+      "notification": "weekly_digest",
+      "description": "Any economic geography, regional economics, regional science, spatial economics, urban economics postdoc or fellowship in Europe"
+    },
+    "4": {
+      "name": "Indonesia: BRIN and UGM",
+      "notification": "weekly_digest",
+      "description": "BRIN or UGM positions and funding. Researcher is UGM alumnus with IRSA network. Search in English and Indonesian."
+    }
+  },
+  "timeline": {
+    "phd_submission": "2026-10",
+    "expected_defence": "2027-Q1",
+    "pnrr_expiry": "2026-10",
+    "ideal_start_window": "2026-Q4 to 2027-Q2",
+    "note": "NEVER exclude based on timeline. Flag mismatches in scoring only."
+  },
+  "sources": {
+    "rss_feeds": [
+      {
+        "name": "arXiv Economics",
+        "url": "https://rss.arxiv.org/rss/econ",
+        "enabled": true
+      }
+    ],
+    "api_endpoints": [
+      {
+        "name": "EconJobMarket",
+        "url": "https://backend.econjobmarket.org/data/zz_public/json/Ads",
+        "enabled": true
+      }
+    ],
+    "web_scrapers": [
+      {
+        "name": "Jobs.ac.uk - Geography",
+        "url": "https://www.jobs.ac.uk/search/?subject=7070&sortOrder=1&pageSize=25",
+        "scraper": "jobs_ac_uk",
+        "enabled": true
+      },
+      {
+        "name": "Jobs.ac.uk - Economics",
+        "url": "https://www.jobs.ac.uk/search/?subject=7050&sortOrder=1&pageSize=25",
+        "scraper": "jobs_ac_uk",
+        "enabled": true
+      },
+      {
+        "name": "Academic Transfer (Netherlands)",
+        "url": "https://www.academictransfer.com/en/jobs/",
+        "scraper": "academic_transfer",
+        "enabled": true
+      },
+      {
+        "name": "EURAXESS",
+        "url": "https://euraxess.ec.europa.eu/jobs/search",
+        "params": "research_field=economics&career_stage=experienced",
+        "scraper": "euraxess",
+        "enabled": true
+      },
+      {
+        "name": "RSA - Regional Studies Association",
+        "url": "https://www.regionalstudies.org/news/",
+        "scraper": "rsa",
+        "enabled": true
+      },
+      {
+        "name": "ERSA",
+        "url": "https://ersa.org",
+        "scraper": "ersa",
+        "enabled": true
+      }
+    ]
+  },
+  "models": {
+    "daily_analysis": "claude-sonnet-4-6",
+    "weekly_discovery": "claude-opus-4-6",
+    "weekly_reeval": "claude-opus-4-6"
+  },
+  "email": {
+    "smtp_server": "",
+    "smtp_port": 587,
+    "sender_email": "",
+    "sender_password_env": "EMAIL_PASSWORD",
+    "recipient_email": "immanuelsatya.pekerti@polimi.it"
+  },
+  "design_principles": {
+    "never_exclude": "NEVER exclude or hide opportunities based on timeline, theme mismatch, or eligibility. Everything broadly in economic geography/regional economics is collected. Scoring and visual flags handle differentiation.",
+    "only_hard_exclusion": "Only exclude postings clearly outside academia or clearly outside economics/geography entirely.",
+    "eligibility_uncertain": "When eligibility is unclear, mark as 'check eligibility' rather than excluding."
+  }
+}

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Radar - User Guide</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <style>
+    /* Help page specific styles */
+    .help-article { max-width: 800px; margin: 0 auto; }
+    .help-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: .85rem;
+    }
+    .help-section h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: .75rem;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .help-section h3 {
+      font-size: .88rem;
+      font-weight: 600;
+      margin-top: .85rem;
+      margin-bottom: .3rem;
+      color: var(--text);
+    }
+    .help-section p {
+      font-size: .85rem;
+      line-height: 1.6;
+      color: var(--text-dim);
+      margin-top: .4rem;
+    }
+    .help-section ul, .help-section ol {
+      font-size: .85rem;
+      line-height: 1.6;
+      color: var(--text-dim);
+      padding-left: 1.4rem;
+      margin-top: .3rem;
+    }
+    .help-section li { margin-bottom: .25rem; }
+    .help-section code {
+      background: var(--bg);
+      padding: .1rem .35rem;
+      border-radius: 3px;
+      font-size: .8rem;
+      color: var(--blue);
+    }
+    .help-section pre {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: .75rem 1rem;
+      margin-top: .5rem;
+      overflow-x: auto;
+      font-size: .78rem;
+      line-height: 1.5;
+      color: var(--text-dim);
+    }
+    .help-cmd {
+      background: var(--bg);
+      border-left: 3px solid var(--blue);
+      padding: .5rem .85rem;
+      margin: .5rem 0;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: .82rem;
+      color: var(--text);
+      font-style: italic;
+    }
+    .help-warn {
+      background: #713f12;
+      border-left: 3px solid var(--yellow);
+      padding: .5rem .85rem;
+      margin: .5rem 0;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: .82rem;
+      color: var(--yellow);
+    }
+    .cost-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .8rem;
+      margin-top: .5rem;
+    }
+    .cost-table th {
+      text-align: left;
+      font-size: .72rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: var(--text-muted);
+      padding: .4rem .6rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cost-table td {
+      padding: .4rem .6rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-dim);
+    }
+    .troubleshoot-item {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      padding: .6rem .85rem;
+      margin-bottom: .5rem;
+    }
+    .troubleshoot-item strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: .2rem;
+      font-size: .84rem;
+    }
+    .troubleshoot-item p {
+      margin-top: 0;
+      font-size: .82rem;
+    }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+      margin-bottom: 1rem;
+    }
+    .toc a {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: .3rem .6rem;
+      border-radius: var(--radius-sm);
+      font-size: .75rem;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: all .15s;
+    }
+    .toc a:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="header-brand">
+        <h1 class="header-title">Grant Radar</h1>
+        <span class="header-updated">User Guide</span>
+      </div>
+      <div class="header-nav">
+        <a href="index.html" class="nav-btn">&larr; Back to Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <article class="help-article">
+
+      <!-- Table of contents -->
+      <div class="toc">
+        <a href="#profile">1. Researcher Profile</a>
+        <a href="#rss">2. RSS Feeds</a>
+        <a href="#scraper">3. Web Scrapers</a>
+        <a href="#tiers">4. Priority Tiers</a>
+        <a href="#models">5. Model Settings</a>
+        <a href="#email">6. Email Setup</a>
+        <a href="#manual">7. Manual Runs</a>
+        <a href="#trouble">8. Troubleshooting</a>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 1. RESEARCHER PROFILE                        -->
+      <!-- ============================================ -->
+      <div class="help-section" id="profile">
+        <h2>1. How to Update Your Researcher Profile</h2>
+
+        <p>Your researcher profile lives in <code>backend/config.json</code> and controls
+        how Claude evaluates every grant. When your situation changes, the profile needs
+        to reflect that.</p>
+
+        <h3>Using Claude Code (recommended)</h3>
+        <p>Open your terminal, navigate to the <code>grant-radar</code> folder, and run
+        <code>claude</code>. Then describe what you want to change in plain English:</p>
+
+        <div class="help-cmd">"I've submitted my PhD thesis. Update my profile to show I'm
+        awaiting defence, with submission date October 2026."</div>
+
+        <div class="help-cmd">"I've successfully defended my PhD as of February 2027.
+        Update my profile to show completed PhD."</div>
+
+        <div class="help-cmd">"I've accepted a postdoc at Cardiff starting January 2027.
+        Update my priorities &mdash; Cardiff is no longer a target, shift focus to
+        fellowship opportunities and Dutch positions."</div>
+
+        <div class="help-cmd">"Add Japanese as a working language at JLPT N2 level."</div>
+
+        <div class="help-cmd">"Add a new publication: [title], published in [journal],
+        DOI: [doi]. Methods used: [methods]."</div>
+
+        <p>Claude Code will edit <code>config.json</code> for you, adjusting the profile,
+        eligibility rules, timeline, and tier definitions as needed.</p>
+
+        <h3>Editing directly</h3>
+        <p>For simple changes (dates, keywords, language levels), you can edit
+        <code>backend/config.json</code> directly. Key sections:</p>
+        <ul>
+          <li><code>researcher.academic_status</code> &mdash; position, dates, funding</li>
+          <li><code>researcher.languages</code> &mdash; language proficiency levels</li>
+          <li><code>researcher.skills</code> &mdash; array of research skills</li>
+          <li><code>researcher.eligibility</code> &mdash; nationality, degree flags</li>
+          <li><code>timeline</code> &mdash; PhD submission, defence, ideal start window</li>
+        </ul>
+
+        <div class="help-warn">After editing config.json, commit and push the changes.
+        The next pipeline run will use the updated profile.</div>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 2. RSS FEEDS                                 -->
+      <!-- ============================================ -->
+      <div class="help-section" id="rss">
+        <h2>2. How to Add or Remove RSS Feeds</h2>
+
+        <p>RSS feeds are checked daily by the pipeline. They live in
+        <code>backend/config.json</code> under <code>sources.rss_feeds</code>.</p>
+
+        <h3>Using Claude Code</h3>
+        <div class="help-cmd">"Add this RSS feed as a new source: Nature Careers Economics,
+        https://www.nature.com/natcareers.rss"</div>
+
+        <h3>Editing directly</h3>
+        <p>Add an entry to the <code>rss_feeds</code> array in <code>config.json</code>:</p>
+<pre>{
+  "name": "Nature Careers Economics",
+  "url": "https://www.nature.com/natcareers.rss",
+  "enabled": true
+}</pre>
+
+        <p>To disable a feed without removing it, set <code>"enabled": false</code>.</p>
+
+        <h3>Finding RSS feed URLs</h3>
+        <ul>
+          <li>Many job boards have an RSS icon or link in their footer</li>
+          <li>Try appending <code>/rss</code> or <code>/feed</code> to a job board URL</li>
+          <li>Ask Claude Code: "Find the RSS feed URL for [website name]"</li>
+        </ul>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 3. WEB SCRAPERS                              -->
+      <!-- ============================================ -->
+      <div class="help-section" id="scraper">
+        <h2>3. How to Add a Web Scraper</h2>
+
+        <p>Web scrapers are used for sites that don't offer RSS feeds. Adding a new one
+        requires writing Python code, so Claude Code is the way to go.</p>
+
+        <h3>Using Claude Code</h3>
+        <div class="help-cmd">"Add this website as a scraped source:
+        https://www.oecd.org/careers/. Figure out the page structure and write a scraper
+        for it."</div>
+
+        <p>Claude Code will:</p>
+        <ol>
+          <li>Examine the website structure</li>
+          <li>Write a scraper function in <code>backend/fetchers/web_scraper.py</code></li>
+          <li>Add the source to <code>config.json</code></li>
+          <li>Test the scraper to make sure it works</li>
+        </ol>
+
+        <h3>When a scraper breaks</h3>
+        <p>Websites occasionally redesign, which breaks scrapers. If a source shows
+        a red dot on the <strong>Sources</strong> tab, tell Claude Code:</p>
+
+        <div class="help-cmd">"The EURAXESS scraper is broken. It's showing an error on
+        the dashboard. Fix it."</div>
+
+        <p>Claude Code will inspect the error, check what changed on the website, and
+        update the scraper code accordingly.</p>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 4. PRIORITY TIERS                            -->
+      <!-- ============================================ -->
+      <div class="help-section" id="tiers">
+        <h2>4. How to Modify Priority Tiers</h2>
+
+        <p>Tiers control how grants are categorised, which ones trigger immediate email
+        alerts, and how they appear on the dashboard. The current tiers are:</p>
+
+        <ul>
+          <li><strong style="color:var(--t1)">Tier 1</strong> &mdash; Cardiff + Welsh Economic Geography (immediate alert)</li>
+          <li><strong style="color:var(--t2)">Tier 2</strong> &mdash; Strong Alternatives: Cardiff other depts, Netherlands, PoliMi</li>
+          <li><strong style="color:var(--t3)">Tier 3</strong> &mdash; Good European Opportunities</li>
+          <li><strong style="color:var(--t4)">Tier 4</strong> &mdash; Indonesia: BRIN &amp; UGM</li>
+        </ul>
+
+        <h3>Using Claude Code (for structural changes)</h3>
+        <div class="help-cmd">"Add a new Tier 2b for Japanese universities, specifically
+        Nagoya and Kyoto economics departments."</div>
+
+        <div class="help-cmd">"Merge Tier 3 and Tier 4 into a single 'International
+        Opportunities' tier."</div>
+
+        <div class="help-cmd">"I've accepted a position at Cardiff. Remove Tier 1 and
+        make Dutch universities my new Tier 1."</div>
+
+        <h3>Editing directly</h3>
+        <p>Edit the <code>tiers</code> section in <code>config.json</code>. Each tier has:</p>
+<pre>{
+  "1": {
+    "name": "Cardiff + Welsh Economic Geography",
+    "notification": "immediate_email",
+    "description": "Cardiff School of Geography...",
+    "keywords": ["Cardiff", "Wales", "Welsh"],
+    "portable_fellowships": true
+  }
+}</pre>
+        <p>The <code>notification</code> field controls alerting:
+        <code>immediate_email</code> for Tier 1, <code>weekly_digest_prominent</code>
+        for Tier 2, <code>weekly_digest</code> for the rest.</p>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 5. MODEL SETTINGS                            -->
+      <!-- ============================================ -->
+      <div class="help-section" id="models">
+        <h2>5. How to Adjust Cost / Model Settings</h2>
+
+        <p>Grant Radar uses two AI models. Edit the <code>models</code> section in
+        <code>backend/config.json</code>:</p>
+
+<pre>{
+  "models": {
+    "daily_analysis": "claude-sonnet-4-6",
+    "weekly_discovery": "claude-opus-4-6",
+    "weekly_reeval": "claude-opus-4-6"
+  }
+}</pre>
+
+        <h3>Model options</h3>
+        <table class="cost-table">
+          <thead>
+            <tr><th>Role</th><th>Recommended</th><th>Budget Option</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Daily analysis</td>
+              <td><code>claude-sonnet-4-6</code></td>
+              <td><code>claude-haiku-4-5-20251001</code></td>
+            </tr>
+            <tr>
+              <td>Weekly discovery</td>
+              <td><code>claude-opus-4-6</code></td>
+              <td><code>claude-sonnet-4-6</code></td>
+            </tr>
+            <tr>
+              <td>Weekly re-eval</td>
+              <td><code>claude-opus-4-6</code></td>
+              <td><code>claude-sonnet-4-6</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Estimated monthly costs</h3>
+        <p>Costs depend on the number of grants analysed and web searches performed.
+        Estimates below assume ~50 new grants/day and standard weekly discovery.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr><th>Configuration</th><th>Daily</th><th>Weekly</th><th>~Monthly Total</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Recommended (Sonnet + Opus)</td>
+              <td>~$1.50</td>
+              <td>~$8</td>
+              <td><strong>~$53</strong></td>
+            </tr>
+            <tr>
+              <td>Mid-range (Sonnet + Sonnet)</td>
+              <td>~$1.50</td>
+              <td>~$3</td>
+              <td><strong>~$33</strong></td>
+            </tr>
+            <tr>
+              <td>Budget (Haiku + Sonnet)</td>
+              <td>~$0.20</td>
+              <td>~$3</td>
+              <td><strong>~$15</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="margin-top:.5rem;color:var(--text-muted);font-size:.78rem">
+        Estimates are approximate. Actual costs depend on grant volume and API pricing.
+        Check your <a href="https://console.anthropic.com/settings/billing" target="_blank"
+        rel="noopener">Anthropic dashboard</a> for real usage.</p>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 6. EMAIL SETUP                               -->
+      <!-- ============================================ -->
+      <div class="help-section" id="email">
+        <h2>6. How to Set Up Email Notifications</h2>
+
+        <p>Grant Radar sends two types of emails:</p>
+        <ul>
+          <li><strong>Tier 1 alerts</strong> &mdash; sent immediately when a top-tier match is found</li>
+          <li><strong>Weekly digest</strong> &mdash; sent every Sunday with all tiers + strategic notes</li>
+        </ul>
+
+        <h3>Step 1: Create a Gmail App Password</h3>
+        <p>You need a Gmail account with 2-Step Verification enabled.</p>
+        <ol>
+          <li>Go to <a href="https://myaccount.google.com/security" target="_blank" rel="noopener">Google Account &gt; Security</a></li>
+          <li>Under "Signing in to Google", click <strong>2-Step Verification</strong> (enable it if not already)</li>
+          <li>At the bottom of the 2-Step Verification page, click <strong>App passwords</strong></li>
+          <li>Enter a name (e.g., "Grant Radar") and click <strong>Generate</strong></li>
+          <li>Copy the 16-character password that appears</li>
+        </ol>
+
+        <div class="help-warn">Use the generated App Password, not your regular Google
+        password. Regular passwords will not work with SMTP.</div>
+
+        <h3>Step 2: Add secrets to your GitHub repository</h3>
+        <p>In your GitHub repository:</p>
+        <ol>
+          <li>Go to <strong>Settings</strong> &gt; <strong>Secrets and variables</strong> &gt; <strong>Actions</strong></li>
+          <li>Click <strong>New repository secret</strong> for each:</li>
+        </ol>
+
+        <table class="cost-table">
+          <thead>
+            <tr><th>Secret Name</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>ANTHROPIC_API_KEY</code></td>
+              <td>Your Claude API key from <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a></td>
+            </tr>
+            <tr>
+              <td><code>EMAIL_ADDRESS</code></td>
+              <td>Your Gmail address (e.g., <code>you@gmail.com</code>)</td>
+            </tr>
+            <tr>
+              <td><code>EMAIL_PASSWORD</code></td>
+              <td>The 16-character App Password from Step 1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Step 3: Set workflow permissions</h3>
+        <p>In your GitHub repository:</p>
+        <ol>
+          <li>Go to <strong>Settings</strong> &gt; <strong>Actions</strong> &gt; <strong>General</strong></li>
+          <li>Under "Workflow permissions", select <strong>Read and write permissions</strong></li>
+          <li>Click <strong>Save</strong></li>
+        </ol>
+        <p>This allows the pipeline to commit updated data files back to the repo.</p>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 7. MANUAL RUNS                               -->
+      <!-- ============================================ -->
+      <div class="help-section" id="manual">
+        <h2>7. How to Run Manually</h2>
+
+        <h3>From GitHub (easiest)</h3>
+        <ol>
+          <li>Go to your repository on GitHub</li>
+          <li>Click the <strong>Actions</strong> tab</li>
+          <li>Select <strong>Daily Grant Collection</strong> or <strong>Weekly Deep Search</strong></li>
+          <li>Click <strong>Run workflow</strong> &gt; <strong>Run workflow</strong></li>
+          <li>Wait for the run to complete (daily: ~10 min, weekly: ~30 min)</li>
+        </ol>
+
+        <h3>From your terminal</h3>
+        <p>Make sure you have the dependencies installed:</p>
+<pre>cd grant-radar
+pip install -r requirements.txt</pre>
+
+        <p>Run the daily pipeline:</p>
+<pre>ANTHROPIC_API_KEY=sk-ant-... python backend/main.py --mode daily</pre>
+
+        <p>Run the weekly pipeline:</p>
+<pre>ANTHROPIC_API_KEY=sk-ant-... python backend/main.py --mode weekly</pre>
+
+        <p>Dry run (tests fetchers without calling Claude or sending emails):</p>
+<pre>python backend/main.py --mode daily --dry-run</pre>
+
+        <p style="color:var(--text-muted);font-size:.78rem">On Windows, set the
+        environment variable with <code>set ANTHROPIC_API_KEY=sk-ant-...</code> before
+        the Python command, or use PowerShell:
+        <code>$env:ANTHROPIC_API_KEY="sk-ant-..."</code></p>
+      </div>
+
+
+      <!-- ============================================ -->
+      <!-- 8. TROUBLESHOOTING                           -->
+      <!-- ============================================ -->
+      <div class="help-section" id="trouble">
+        <h2>8. Troubleshooting</h2>
+
+        <div class="troubleshoot-item">
+          <strong>A source shows red on the Sources tab</strong>
+          <p>The scraper for that source is likely broken due to a website redesign.
+          Open your terminal in the <code>grant-radar</code> folder, run <code>claude</code>,
+          and say: <em>"The [source name] scraper is broken, fix it."</em>
+          Claude Code will inspect the error, check the website, and update the scraper.</p>
+        </div>
+
+        <div class="troubleshoot-item">
+          <strong>No new grants found for several days</strong>
+          <p>Check if RSS feed URLs are still valid by visiting them in your browser.
+          Check the <strong>Sources</strong> tab for error messages. If sources look
+          healthy but no grants appear, it may simply be a quiet period &mdash; some
+          feeds only update weekly.</p>
+        </div>
+
+        <div class="troubleshoot-item">
+          <strong>Emails not sending</strong>
+          <p>Check these in order:</p>
+          <ol>
+            <li>Verify <code>EMAIL_ADDRESS</code> and <code>EMAIL_PASSWORD</code> are
+            set correctly in GitHub repository secrets</li>
+            <li>Make sure you're using a Gmail <strong>App Password</strong>, not your
+            regular Google password</li>
+            <li>Check your spam folder &mdash; the first email may be flagged</li>
+            <li>Check GitHub Actions logs for SMTP error messages</li>
+          </ol>
+        </div>
+
+        <div class="troubleshoot-item">
+          <strong>API errors in the pipeline</strong>
+          <p>Usually caused by an invalid or expired API key, or insufficient credit balance.</p>
+          <ol>
+            <li>Check your API key at <a href="https://console.anthropic.com/settings/keys"
+            target="_blank" rel="noopener">console.anthropic.com/settings/keys</a></li>
+            <li>Check your credit balance at <a href="https://console.anthropic.com/settings/billing"
+            target="_blank" rel="noopener">console.anthropic.com/settings/billing</a></li>
+            <li>Make sure the <code>ANTHROPIC_API_KEY</code> secret in your GitHub repo
+            matches your current key</li>
+          </ol>
+        </div>
+
+        <div class="troubleshoot-item">
+          <strong>Dashboard shows old data</strong>
+          <p>The dashboard reads from <code>data/grants.json</code>, which is updated
+          when the pipeline runs and commits. Check:</p>
+          <ol>
+            <li>Go to GitHub &gt; <strong>Actions</strong> tab &gt; check if recent runs
+            succeeded or failed</li>
+            <li>If runs failed, click on the failed run to see the error logs</li>
+            <li>Check that workflow permissions are set to "Read and write" (Settings &gt;
+            Actions &gt; General)</li>
+          </ol>
+        </div>
+
+        <div class="troubleshoot-item">
+          <strong>Pipeline crashes or hangs</strong>
+          <p>Check <code>data/last_run_summary.json</code> for the most recent pipeline
+          summary, including error counts and messages. If the pipeline keeps crashing,
+          run <code>claude</code> and say: <em>"The daily pipeline is crashing. Check the
+          Actions logs and fix it."</em></p>
+        </div>
+
+        <div class="troubleshoot-item">
+          <strong>Grants are being scored incorrectly</strong>
+          <p>The scoring is driven by your researcher profile in <code>config.json</code>.
+          If grants are consistently mis-scored, your profile may need updating.
+          Run <code>claude</code> and describe the problem:
+          <em>"Grants about urban planning are scoring too high &mdash; I want to focus
+          more on regional economics."</em></p>
+        </div>
+
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <span>Grant Radar &mdash; AI-powered grant monitoring</span>
+    <span><a href="index.html">Dashboard</a></span>
+  </footer>
+
+</body>
+</html>

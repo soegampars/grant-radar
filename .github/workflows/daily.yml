@@ -1,0 +1,63 @@
+# daily.yml -- GitHub Actions workflow for daily Sonnet grant collection.
+#
+# Runs every day at 06:00 UTC. Executes the daily pipeline:
+#   1. Checks out the repo (with push-capable token).
+#   2. Sets up Python and installs dependencies.
+#   3. Runs backend/main.py --mode daily to fetch, analyse, and store grants.
+#   4. Commits updated data/ JSON files back to the repo so GitHub Pages
+#      can serve the latest data.
+#
+# Required repository secrets:
+#   - ANTHROPIC_API_KEY   (Claude API key)
+#   - EMAIL_ADDRESS        (sender Gmail address)
+#   - EMAIL_PASSWORD       (Gmail app password -- NOT your Google password)
+#
+# NOTE: You may need to enable push permissions for workflows:
+#   Settings > Actions > General > Workflow permissions > "Read and write permissions"
+#   Without this, the git push step will fail with a 403 error.
+
+name: Daily Grant Collection
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # Every day at 06:00 UTC
+  workflow_dispatch:        # Allow manual trigger from Actions tab
+
+permissions:
+  contents: write           # Required for git push back to repo
+
+jobs:
+  daily-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30     # Daily pipeline typically finishes in ~10 min
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # The default GITHUB_TOKEN is used. With `permissions: contents: write`
+          # above, this token can push commits back to the repo.
+          token: ${{ github.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily grant collection
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python backend/main.py --mode daily
+
+      - name: Commit updated data
+        run: |
+          git config user.name "Grant Radar Bot"
+          git config user.email "grant-radar[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: daily grant update $(date -u +%Y-%m-%d)"
+          git push

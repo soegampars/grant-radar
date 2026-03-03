@@ -1,0 +1,11 @@
+{
+  "mode": "daily",
+  "started_at": "2026-03-03T06:56:48.517031+00:00",
+  "fetched": 345,
+  "new_after_dedup": 345,
+  "analysed": 0,
+  "analysis_errors": 345,
+  "tier1_alerts_sent": 0,
+  "errors": [],
+  "completed_at": "2026-03-03T07:05:21.846869+00:00"
+}

@@ -26,50 +26,50 @@
   {
     "source_name": "Jobs.ac.uk - Geography",
     "status": "success",
-    "last_checked": "2026-03-03T06:56:51.546445+00:00",
+    "last_checked": "2026-03-04T06:53:11.650050+00:00",
     "error": null,
     "grants_found": 25
   },
   {
     "source_name": "Jobs.ac.uk - Economics",
     "status": "success",
-    "last_checked": "2026-03-03T06:56:55.127585+00:00",
+    "last_checked": "2026-03-04T06:53:15.273364+00:00",
     "error": null,
     "grants_found": 25
   },
   {
     "source_name": "Academic Transfer (Netherlands)",
     "status": "success",
-    "last_checked": "2026-03-03T06:58:03.486638+00:00",
+    "last_checked": "2026-03-04T06:54:23.785915+00:00",
     "error": null,
     "grants_found": 30
   },
   {
     "source_name": "EURAXESS",
     "status": "success",
-    "last_checked": "2026-03-03T06:58:38.899397+00:00",
+    "last_checked": "2026-03-04T06:55:05.626898+00:00",
     "error": null,
     "grants_found": 20
   },
   {
     "source_name": "RSA - Regional Studies Association",
     "status": "success",
-    "last_checked": "2026-03-03T06:58:44.299407+00:00",
+    "last_checked": "2026-03-04T06:55:11.584104+00:00",
     "error": null,
     "grants_found": 40
   },
   {
     "source_name": "ERSA",
     "status": "success",
-    "last_checked": "2026-03-03T06:58:53.045740+00:00",
+    "last_checked": "2026-03-04T06:55:20.688087+00:00",
     "error": null,
     "grants_found": 18
   },
   {
     "source_name": "daily_pipeline",
     "status": "success",
-    "last_checked": "2026-03-03T07:05:21.843982+00:00",
+    "last_checked": "2026-03-04T06:57:07.035968+00:00",
     "error": null,
-    "grants_found": 345
+    "grants_found": 92
   }
 ]

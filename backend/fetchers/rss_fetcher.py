@@ -25,7 +25,7 @@ import feedparser
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
-from backend.utils import generate_grant_id
+from backend.utils import generate_grant_id, update_run_status
 
 logger = logging.getLogger(__name__)
 
@@ -113,10 +113,12 @@ def fetch_single_feed(feed_config: dict) -> list[dict]:
         )
     except requests.RequestException as exc:
         logger.error(f"  Network error for '{name}': {exc}")
+        update_run_status(name, status="error", error_msg=str(exc))
         return []
 
     if resp.status_code != 200:
         logger.error(f"  '{name}' returned HTTP {resp.status_code}")
+        update_run_status(name, status="error", error_msg=f"HTTP {resp.status_code}")
         return []
 
     if _is_html_response(resp.text):
@@ -124,6 +126,7 @@ def fetch_single_feed(feed_config: dict) -> list[dict]:
             f"  '{name}' returned HTML instead of RSS/XML. "
             f"The feed URL may have changed — check {url}"
         )
+        update_run_status(name, status="error", error_msg="Response was HTML, not RSS/XML")
         return []
 
     # Step 2: Sanitise and parse
@@ -132,6 +135,7 @@ def fetch_single_feed(feed_config: dict) -> list[dict]:
 
     if feed.bozo and not feed.entries:
         logger.error(f"  '{name}' XML parse failed: {feed.bozo_exception}")
+        update_run_status(name, status="error", error_msg=f"XML parse: {feed.bozo_exception}")
         return []
     elif feed.bozo:
         logger.warning(f"  '{name}' parsed with warnings: {feed.bozo_exception}")
@@ -156,6 +160,7 @@ def fetch_single_feed(feed_config: dict) -> list[dict]:
         grants.append(grant)
 
     logger.info(f"  '{name}': {len(grants)} entries parsed")
+    update_run_status(name, status="success", grants_found=len(grants))
     return grants
 
 

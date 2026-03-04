@@ -20,11 +20,11 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
-from backend.utils import generate_grant_id
+from backend.utils import generate_grant_id, update_run_status
 
 logger = logging.getLogger(__name__)
 
-REQUEST_TIMEOUT = 30
+REQUEST_TIMEOUT = 90
 USER_AGENT = "GrantRadar/1.0 (academic grant monitoring)"
 DEFAULT_URL = "https://backend.econjobmarket.org/data/zz_public/json/Ads"
 
@@ -48,6 +48,7 @@ def fetch_ejm_ads(config: dict) -> list[dict]:
     else:
         # No enabled EJM entry in config
         logger.info("EconJobMarket not enabled in config, skipping")
+        update_run_status("EconJobMarket", status="error", error_msg="Not enabled in config")
         return []
 
     logger.info(f"Fetching EconJobMarket ads from {url}")
@@ -59,18 +60,22 @@ def fetch_ejm_ads(config: dict) -> list[dict]:
         resp.raise_for_status()
     except requests.RequestException as exc:
         logger.error(f"EconJobMarket fetch failed: {exc}")
+        update_run_status("EconJobMarket", status="error", error_msg=str(exc))
         return []
 
     try:
         ads = resp.json()
     except ValueError as exc:
         logger.error(f"EconJobMarket JSON parse failed: {exc}")
+        update_run_status("EconJobMarket", status="error", error_msg=f"JSON parse: {exc}")
         return []
 
     if not isinstance(ads, list):
         logger.error(
             f"EconJobMarket: expected JSON array, got {type(ads).__name__}"
         )
+        update_run_status("EconJobMarket", status="error",
+                          error=f"Expected array, got {type(ads).__name__}")
         return []
 
     grants = []
@@ -110,6 +115,7 @@ def fetch_ejm_ads(config: dict) -> list[dict]:
         grants.append(grant)
 
     logger.info(f"EconJobMarket: {len(grants)} ads fetched")
+    update_run_status("EconJobMarket", status="success", grants_found=len(grants))
     return grants
 
 

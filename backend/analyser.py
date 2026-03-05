@@ -84,6 +84,7 @@ HARD FACTS — always apply these:
 * He does NOT have a British degree or UK nationality/settled status.
 * Italian is NOT a proficient working language — only basic daily use.  Positions requiring professional Italian should be flagged as a barrier.
 * PhD is not yet complete.  Positions requiring a completed PhD at time of application should be checked against the timeline (submission October 2026, defence Q1 2027).
+* The researcher is NOT looking for another PhD / doctoral position.  If a listing is clearly a PhD studentship or doctoral position (not a postdoc), set relevance_score to 0 and tier to 0.
 
 Eligibility verdicts:
 - "eligible": Researcher clearly meets all stated requirements.

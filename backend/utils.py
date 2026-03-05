@@ -240,6 +240,49 @@ def deduplicate(
 deduplicate_grants = deduplicate
 
 
+def filter_excluded_positions(
+    grants: list[dict],
+    config: dict,
+) -> list[dict]:
+    """Remove grants whose title matches an excluded position type.
+
+    Reads ``config["exclude_position_types"]`` (list of lowercase phrase
+    patterns).  A grant is excluded if any pattern appears as a substring
+    of its lowercased title.
+
+    The word "postdoctoral" / "postdoc" / "post-doc" is explicitly
+    protected so that patterns like "doctoral position" never accidentally
+    remove postdoc listings.
+
+    Returns:
+        Filtered list of grants (those not matching any exclusion pattern).
+    """
+    import re
+
+    patterns = config.get("exclude_position_types", [])
+    if not patterns:
+        return grants
+
+    # Pre-compile a "safe title" transform: mask postdoc variants so
+    # "doctoral" inside "postdoctoral" can never trigger a match.
+    _postdoc_re = re.compile(r"post[\-\s]?doctor\w*", re.IGNORECASE)
+
+    kept = []
+    removed = 0
+    for g in grants:
+        title_lower = g.get("title", "").lower()
+        # Mask postdoc words before checking exclusion patterns
+        safe = _postdoc_re.sub("__POSTDOC__", title_lower)
+        if any(p in safe for p in patterns):
+            removed += 1
+        else:
+            kept.append(g)
+
+    if removed:
+        logger.info("Excluded %d grants matching position-type filter (e.g. PhD).", removed)
+    return kept
+
+
 # ───────────────────────────────────────────────────────────────────
 # 2. load_grants
 # ───────────────────────────────────────────────────────────────────

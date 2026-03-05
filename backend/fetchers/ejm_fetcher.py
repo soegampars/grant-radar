@@ -75,7 +75,7 @@ def fetch_ejm_ads(config: dict) -> list[dict]:
             f"EconJobMarket: expected JSON array, got {type(ads).__name__}"
         )
         update_run_status("EconJobMarket", status="error",
-                          error=f"Expected array, got {type(ads).__name__}")
+                          error_msg=f"Expected array, got {type(ads).__name__}")
         return []
 
     grants = []

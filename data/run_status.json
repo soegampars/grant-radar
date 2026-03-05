@@ -16,67 +16,60 @@
     "grants_found": 0
   },
   {
-    "source_name": "Jobs.ac.uk - Geography",
-    "source_type": "scraper",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
-    "source_name": "Jobs.ac.uk - Economics",
-    "source_type": "scraper",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
-    "source_name": "Academic Transfer (Netherlands)",
-    "source_type": "scraper",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
-    "source_name": "EURAXESS",
-    "source_type": "scraper",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
-    "source_name": "RSA - Regional Studies Association",
-    "source_type": "scraper",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
-    "source_name": "ERSA",
-    "source_type": "scraper",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
-    "source_name": "daily_pipeline",
-    "source_type": "pipeline",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
     "source_name": "weekly_pipeline",
     "source_type": "pipeline",
     "status": "never_checked",
     "last_checked": null,
     "error": null,
     "grants_found": 0
+  },
+  {
+    "source_name": "Jobs.ac.uk - Geography",
+    "status": "success",
+    "last_checked": "2026-03-04T15:05:37.931153+00:00",
+    "error": null,
+    "grants_found": 25
+  },
+  {
+    "source_name": "Jobs.ac.uk - Economics",
+    "status": "success",
+    "last_checked": "2026-03-04T15:05:41.432049+00:00",
+    "error": null,
+    "grants_found": 25
+  },
+  {
+    "source_name": "Academic Transfer (Netherlands)",
+    "status": "success",
+    "last_checked": "2026-03-04T15:06:44.241882+00:00",
+    "error": null,
+    "grants_found": 30
+  },
+  {
+    "source_name": "EURAXESS",
+    "status": "success",
+    "last_checked": "2026-03-04T15:07:38.304027+00:00",
+    "error": null,
+    "grants_found": 20
+  },
+  {
+    "source_name": "RSA - Regional Studies Association",
+    "status": "success",
+    "last_checked": "2026-03-04T15:07:43.696060+00:00",
+    "error": null,
+    "grants_found": 40
+  },
+  {
+    "source_name": "ERSA",
+    "status": "success",
+    "last_checked": "2026-03-04T15:07:51.994988+00:00",
+    "error": null,
+    "grants_found": 18
+  },
+  {
+    "source_name": "daily_pipeline",
+    "status": "success",
+    "last_checked": "2026-03-04T15:31:42.364421+00:00",
+    "error": null,
+    "grants_found": 72
   }
 ]

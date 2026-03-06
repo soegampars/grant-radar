@@ -37,7 +37,6 @@ from backend.fetchers.ejm_fetcher import fetch_ejm_ads
 from backend.fetchers.web_scraper import get_all_scraped_grants
 from backend.utils import (
     deduplicate,
-    filter_excluded_positions,
     load_grants,
     save_grants,
     update_run_status,
@@ -175,9 +174,6 @@ def run_daily(config: dict, dry_run: bool = False) -> dict:
     summary["fetched"] = len(all_fetched)
     logger.info("Total fetched: %d grants from all sources.", len(all_fetched))
 
-    # --- 2b. Filter excluded position types (e.g. PhD) ---
-    all_fetched = filter_excluded_positions(all_fetched, config)
-
     # --- 3. Deduplicate ---
     new_grants = deduplicate(all_fetched, existing_grants)
     summary["new_after_dedup"] = len(new_grants)
@@ -302,10 +298,9 @@ def run_weekly(config: dict, dry_run: bool = False) -> dict:
             summary["errors"].append(f"Discovery: {exc}")
             discovered = []
 
-    # --- 2. Filter and deduplicate discovered grants ---
+    # --- 2. Deduplicate discovered grants ---
     existing_grants = load_grants()
     if discovered:
-        discovered = filter_excluded_positions(discovered, config)
         new_discovered = deduplicate(discovered, existing_grants)
         logger.info("Discovery after dedup: %d new.", len(new_discovered))
 

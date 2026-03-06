@@ -84,7 +84,7 @@ HARD FACTS — always apply these:
 * He does NOT have a British degree or UK nationality/settled status.
 * Italian is NOT a proficient working language — only basic daily use.  Positions requiring professional Italian should be flagged as a barrier.
 * PhD is not yet complete.  Positions requiring a completed PhD at time of application should be checked against the timeline (submission October 2026, defence Q1 2027).
-* The researcher is NOT looking for another PhD / doctoral position.  If a listing is clearly a PhD studentship or doctoral position (not a postdoc), set relevance_score to 0 and tier to 0.
+* The researcher is NOT looking for another PhD / doctoral position.  If a listing is clearly a PhD studentship, doctoral position, or pre-doctoral fellowship (not a postdoc), set relevance_score to 0, tier to 0, and set career_stage to "phd" so the dashboard can filter it.
 
 Eligibility verdicts:
 - "eligible": Researcher clearly meets all stated requirements.
@@ -161,6 +161,13 @@ Scoring guidance for relevance_score (0-100):
 - 30-49:  Weak — tangentially related, significant barriers.
 - 10-29:  Poor match — outside core field but still within economics/geography broadly.
 - 0-9:    Not relevant but collected anyway (e.g. pure mathematics paper from arXiv).
+
+METHODS SCORING PENALTY:
+The researcher's methods are QUANTITATIVE: spatial econometrics, microsimulation, GIS, agent-based modelling.
+- Positions with a strong QUALITATIVE methods focus (ethnography, interviews, discourse analysis, participatory research, case studies as primary method) should receive a scoring penalty of -15 to -25 points.
+- Set methods_relevance to describe the mismatch clearly (e.g. "Primarily qualitative — ethnographic fieldwork, not aligned with researcher's quantitative toolkit").
+- Mixed-methods positions that also value quantitative skills should NOT be penalised.
+- Positions that are methods-agnostic or policy-focused should NOT be penalised.
 """
 
 

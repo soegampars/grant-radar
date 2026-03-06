@@ -2,9 +2,9 @@
   {
     "source_name": "arXiv Economics",
     "source_type": "rss",
-    "status": "never_checked",
+    "status": "disabled",
     "last_checked": null,
-    "error": null,
+    "error": "Feed publishes working papers, not job listings",
     "grants_found": 0
   },
   {

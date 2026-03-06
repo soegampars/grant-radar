@@ -167,7 +167,8 @@
       {
         "name": "arXiv Economics",
         "url": "https://rss.arxiv.org/rss/econ",
-        "enabled": true
+        "enabled": false,
+        "_note": "Disabled: this feed publishes working papers, not job/grant listings"
       }
     ],
     "api_endpoints": [
@@ -229,30 +230,10 @@
     "sender_password_env": "EMAIL_PASSWORD",
     "recipient_email": "immanuelsatya.pekerti@polimi.it"
   },
-  "exclude_position_types": [
-    "phd position",
-    "phd student",
-    "phd studentship",
-    "phd candidate",
-    "phd scholarship",
-    "phd fellowship",
-    "phd researcher",
-    "phd opportunity",
-    "doctoral position",
-    "doctoral student",
-    "doctoral candidate",
-    "doctoral researcher",
-    "doctoral scholarship",
-    "doctoral fellowship",
-    "doctorate position",
-    "ph.d. student",
-    "ph.d. position",
-    "fully funded phd",
-    "funded phd"
-  ],
   "design_principles": {
     "never_exclude": "NEVER exclude or hide opportunities based on timeline, theme mismatch, or eligibility. Everything broadly in economic geography/regional economics is collected. Scoring and visual flags handle differentiation.",
-    "only_hard_exclusion": "Only exclude postings clearly outside academia or clearly outside economics/geography entirely. Also exclude PhD/doctoral positions (configured in exclude_position_types).",
+    "only_hard_exclusion": "Only exclude postings clearly outside academia or clearly outside economics/geography entirely.",
+    "phd_handling": "PhD/doctoral/pre-doctoral positions are collected and analysed (scored at 0, tier 0) but hidden by default on the dashboard. User can toggle visibility with the Hide PhD/pre-doc checkbox.",
     "eligibility_uncertain": "When eligibility is unclear, mark as 'check eligibility' rather than excluding."
   }
 }

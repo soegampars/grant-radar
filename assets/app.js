@@ -23,6 +23,7 @@
     search:   "",
     sort:     "tier",
     archive:  false,
+    hidePhd:  true,
   };
 
   // Country flag map (subset of common countries)
@@ -135,6 +136,12 @@
     // Archive toggle
     document.getElementById("showArchive").addEventListener("change", e => {
       filters.archive = e.target.checked;
+      renderCards();
+    });
+
+    // Hide PhD/pre-doc toggle
+    document.getElementById("hidePhd").addEventListener("change", e => {
+      filters.hidePhd = e.target.checked;
       renderCards();
     });
   }
@@ -340,11 +347,28 @@
     container.appendChild(frag);
   }
 
+  const _PHD_PATTERNS = [
+    "phd position", "phd student", "phd candidate", "phd scholarship",
+    "phd fellowship", "phd researcher", "phd opportunity", "phd studentship",
+    "doctoral position", "doctoral student", "doctoral candidate",
+    "doctoral researcher", "doctoral scholarship", "doctoral fellowship",
+    "doctorate position", "ph.d. student", "ph.d. position",
+    "fully funded phd", "funded phd", "pre-doctoral", "predoctoral",
+  ];
+  function _isPhd(g) {
+    if ((g.career_stage || "").toLowerCase() === "phd") return true;
+    const t = (g.title || "").toLowerCase();
+    return _PHD_PATTERNS.some(p => t.includes(p));
+  }
+
   function filterGrants(grants) {
     const cutoff = daysAgoISO(7);
     const today = todayISO();
 
     return grants.filter(g => {
+      // Hide PhD / pre-doctoral (on by default)
+      if (filters.hidePhd && _isPhd(g)) return false;
+
       // Archive filter
       if (!filters.archive && g.expired) return false;
       if (filters.archive && !g.expired) return false; // archive mode shows only expired

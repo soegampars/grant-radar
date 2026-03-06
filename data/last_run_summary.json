@@ -1,11 +1,11 @@
 {
   "mode": "daily",
-  "started_at": "2026-03-04T15:05:29.001020+00:00",
-  "fetched": 323,
-  "new_after_dedup": 72,
-  "analysed": 72,
+  "started_at": "2026-03-06T06:54:55.363815+00:00",
+  "fetched": 177,
+  "new_after_dedup": 81,
+  "analysed": 81,
   "analysis_errors": 0,
   "tier1_alerts_sent": 0,
   "errors": [],
-  "completed_at": "2026-03-04T15:31:42.364796+00:00"
+  "completed_at": "2026-03-06T07:21:54.604672+00:00"
 }

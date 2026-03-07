@@ -200,6 +200,8 @@ a:hover { text-decoration: underline; }
 }
 .stat-value { font-size: 1.35rem; font-weight: 700; }
 .stat-label { font-size: .7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: .03em; }
+.stat-clickable { cursor: pointer; transition: background .15s, transform .1s; }
+.stat-clickable:hover { background: var(--hover); transform: translateY(-1px); }
 
 .stat-tier1 { border-left: 3px solid var(--t1); }
 .stat-tier1 .stat-value { color: var(--t1); }

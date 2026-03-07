@@ -144,6 +144,53 @@
       filters.hidePhd = e.target.checked;
       renderCards();
     });
+
+    // Stat card tier clicks — act as filter buttons
+    document.getElementById("statsBar").addEventListener("click", e => {
+      const card = e.target.closest("[data-filter-tier]");
+      if (card) {
+        const tier = card.dataset.filterTier;
+        // Toggle: if already filtering this tier, reset to all
+        const newTier = filters.tier === tier ? "all" : tier;
+        filters.tier = newTier;
+        // Sync the tier button bar
+        document.querySelectorAll(".tier-btn").forEach(b =>
+          b.classList.toggle("active", b.dataset.tier === newTier)
+        );
+        switchTab("dashboard");
+        renderCards();
+        // Scroll to cards
+        document.getElementById("cardsContainer").scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+    });
+
+    // Next deadline card click — scroll to the soonest-deadline card
+    document.getElementById("statDeadlineCard").addEventListener("click", () => {
+      const today = todayISO();
+      const upcoming = allGrants
+        .filter(g => !g.expired && g.deadline && g.deadline >= today)
+        .sort((a, b) => a.deadline.localeCompare(b.deadline));
+      if (!upcoming.length) return;
+      const targetId = upcoming[0].id;
+      // Ensure we're on the dashboard with no conflicting filters
+      filters.tier = "all";
+      filters.eligible = false;
+      filters.newOnly = false;
+      filters.starred = false;
+      filters.search = "";
+      document.querySelectorAll(".tier-btn").forEach(b =>
+        b.classList.toggle("active", b.dataset.tier === "all")
+      );
+      switchTab("dashboard");
+      renderCards();
+      // Find and scroll to + expand the card
+      const cardEl = document.querySelector(`[data-grant-id="${targetId}"]`);
+      if (cardEl) {
+        cardEl.classList.add("expanded");
+        cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
   }
 
   // ------------------------------------------------------------------
@@ -432,7 +479,7 @@
     const card = document.createElement("div");
     const tier = g.tier || 0;
     card.className = "grant-card tier-" + tier + (g.expired ? " expired" : "");
-    card.dataset.id = g.id || "";
+    card.dataset.grantId = g.id || "";
 
     const isStarred = !!starred[g.id];
 

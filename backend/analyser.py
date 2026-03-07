@@ -314,7 +314,7 @@ _BASE_DELAY = 2.0          # seconds
 _INTER_CALL_DELAY = 1.0    # seconds between sequential calls
 
 
-def analyse_grant(grant: dict, config: dict) -> dict:
+def analyse_grant(grant: dict, config: dict, *, client: Anthropic | None = None) -> dict:
     """Analyse a single grant against the researcher profile.
 
     Sends the grant to the Anthropic API with the full researcher
@@ -324,6 +324,7 @@ def analyse_grant(grant: dict, config: dict) -> dict:
     Args:
         grant:  A grant dict from any fetcher.
         config: The full config dict from config.json.
+        client: Optional pre-built Anthropic client (reuses connection).
 
     Returns:
         A new dict merging the original grant data with Claude's
@@ -335,7 +336,8 @@ def analyse_grant(grant: dict, config: dict) -> dict:
     system_prompt = _build_system_prompt(config)
     user_message = _build_user_message(grant)
 
-    client = Anthropic()  # reads ANTHROPIC_API_KEY from environment
+    if client is None:
+        client = Anthropic()
 
     # Exponential back-off for rate limits
     for attempt in range(1, _MAX_RETRIES + 1):
@@ -343,7 +345,11 @@ def analyse_grant(grant: dict, config: dict) -> dict:
             response = client.messages.create(
                 model=model,
                 max_tokens=4096,
-                system=system_prompt,
+                system=[{
+                    "type": "text",
+                    "text": system_prompt,
+                    "cache_control": {"type": "ephemeral"},
+                }],
                 messages=[{"role": "user", "content": user_message}],
             )
 
@@ -468,10 +474,11 @@ def analyse_grants(grants: list[dict], config: dict) -> list[dict]:
     total = len(grants)
     logger.info("Starting batch analysis of %d grants.", total)
     results: list[dict] = []
+    client = Anthropic()  # shared client for connection reuse + prompt caching
 
     for i, grant in enumerate(grants, 1):
         logger.info("Analysing grant %d/%d: '%s'", i, total, grant.get("title", "?"))
-        analysed = analyse_grant(grant, config)
+        analysed = analyse_grant(grant, config, client=client)
         results.append(analysed)
 
         # Small delay between calls to stay within rate limits

@@ -93,33 +93,73 @@ General academic:
 - "postdoc economic geography 2026"
 - "research fellow regional economics Europe"
 - "postdoctoral position spatial economics"
+- "research associate urban economics"
 
-Funding-specific:
+UK funding-specific:
 - "MSCA postdoctoral fellowship 2026 call"
 - "Leverhulme early career fellowship 2026"
 - "ERC starting grant 2026 social science"
 - "ESRC postdoctoral fellowship"
-- "NWO Veni social science 2026"
 - "British Academy postdoctoral fellowship"
+- "UKRI Future Leaders Fellowship 2026"
+- "British Academy International Fellowship 2026"
+- "Nuffield Foundation grant geographical inequality"
+- "BA Leverhulme small research grant"
+
+European funding:
+- "NWO Veni social science 2026"
+- "NWO Vidi economic geography"
+- "Humboldt postdoctoral fellowship economics"
+- "DFG Walter Benjamin economic geography"
+- "FWF Lise Meitner programme social science"
+- "ANR JCJC economics geography"
+- "ANR Access-ERC postdoc"
+- "ESPON call territorial analysis"
+- "NORFACE call social science"
+- "Open Research Area ORA social science call"
 
 Cardiff-specific:
 - "Cardiff University geography postdoc"
 - "Wales economic geography research position"
+- "Cardiff School of Geography and Planning"
 
 Netherlands-specific:
 - "economic geography postdoc Netherlands"
 - "NWO Veni economic geography"
+- "postdoc VU Amsterdam spatial economics"
+- "postdoc Utrecht University economic geography"
+- "postdoc University of Groningen regional economics"
 
 Italy-specific:
 - "assegno di ricerca geografia economica"
 - "bando ricercatore economia regionale"
 - "postdoc Politecnico di Milano economics"
 
+Germany-specific:
+- "postdoc economic geography Germany"
+- "Emmy Noether economic geography"
+
+Japan-specific:
+- "JSPS international postdoctoral fellowship"
+- "JSPS fellowship social science"
+- "Canon Foundation Europe fellowship"
+- "Japan Foundation research fellowship economics"
+
 Indonesia-specific:
 - "postdoc BRIN 2026"
 - "lowongan peneliti BRIN"
 - "postdoc UGM ekonomi"
 - "beasiswa postdoc Indonesia"
+
+Field-specific:
+- "RSA early career research grant"
+- "Regional Studies Association grant"
+- "ERSA fellowship regional science"
+
+Job boards (cross-check):
+- "economic geography postdoc site:inomics.com"
+- "postdoc economic geography site:findapostdoc.com"
+- "regional economics site:jrecin.jst.go.jp"
 
 Academic social media:
 - "postdoc economic geography site:x.com"
@@ -128,14 +168,40 @@ Academic social media:
 ===================================================================
 PORTABLE FELLOWSHIP KNOWLEDGE BASE
 ===================================================================
-* MSCA Postdoctoral Fellowships (Marie Curie): PORTABLE.  Open to all nationalities.  If hostable at Cardiff -> Tier 1.
-* Leverhulme Early Career Fellowships: UK host required.  UK degree NOT required.  If Cardiff hosts -> Tier 1.
-* ESRC (UKRI) Postdoctoral Fellowships: UK institution as host.  Check nationality.  If Cardiff hosts -> Tier 1.
-* ERC Starting Grants: PORTABLE within EU.  Open to all.  2-7 years post-PhD.  If Cardiff hosts -> Tier 1.
-* NWO Veni (Netherlands): Dutch host required.  If eligible -> Tier 2.
-* British Academy Postdoctoral Fellowships: UK host.  Check nationality carefully.  If Cardiff hosts -> Tier 1.
-* Newton International Fellowships: For non-UK researchers.  Indonesian eligible.  If Cardiff hosts -> Tier 1.
-* Humboldt Research Fellowships: Germany-based, open to all.  -> Tier 3.
+UK-BASED:
+* MSCA Postdoctoral Fellowships (Marie Curie): PORTABLE. Open to all nationalities. If hostable at Cardiff -> Tier 1.
+* Leverhulme Early Career Fellowships: UK host required. UK degree NOT required. ~£130K/3yr. If Cardiff hosts -> Tier 1.
+* ESRC Postdoctoral Fellowships: UK institution as host. 12 months + £10K research. If Cardiff hosts -> Tier 1.
+* ESRC New Investigator Grants: £100K–£300K, rolling. PI at UK institution. If Cardiff -> Tier 1.
+* UKRI Future Leaders Fellowships: £300K–£2M+, 4–7yr. NO nationality restrictions. If Cardiff -> Tier 1.
+* ERC Starting Grants: PORTABLE within EU/associated. Up to €1.5M/5yr. 2–7yr post-PhD. If Cardiff -> Tier 1.
+* British Academy Postdoctoral Fellowships: 3yr salary + £6K research. Within 3yr of viva. If Cardiff -> Tier 1.
+* British Academy International Fellowships (formerly Newton): For non-UK researchers. Up to £420K/3yr. Indonesian eligible. If Cardiff -> Tier 1.
+* BA/Leverhulme Small Research Grants: Up to £10K, lottery-based. 400+ awards/year.
+* Nuffield Foundation: Under £300K. Priorities: geographical inequality, cost of living, labour mobility.
+
+EUROPE-WIDE:
+* NWO Veni (Netherlands): €320K/3yr. Dutch host required. Any nationality. -> Tier 2.
+* NWO Vidi: €850K/5yr. -> Tier 2.
+* Humboldt Research Fellowships: Germany. €3K/month, 6–24 months. Open to all, no deadlines. -> Tier 3.
+* DFG Walter Benjamin: Postdoc, up to 2yr, can apply from abroad. -> Tier 3.
+* FWF Lise Meitner (Austria): ~€200K/2yr for incoming international postdocs. -> Tier 3.
+* ANR JCJC (France): Up to ~€300K for early-career.
+* ANR Access-ERC (France): Hosts postdocs who commit to ERC application within 2yr.
+* ESPON: Service contracts for applied territorial analysis. Core economic geography domain.
+
+JAPAN:
+* JSPS International Postdoctoral Fellowships: ¥362K/month, 12–24 months. Within 6yr of PhD. ~230 awards/yr. -> Tier 0.
+* Canon Foundation in Europe: Up to €30K/yr, 3–12 months. ~15 awards/yr. -> Tier 0.
+* Japan Foundation Research Fellowships: ¥400K/month, 4–12 months. Japan-related research. -> Tier 0.
+
+FIELD-SPECIFIC:
+* RSA Early Career Research Grants: Up to £10K. Directly targets regional development.
+* RSA Fellowship Research Grants: Up to £8,250.
+
+BILATERAL:
+* NORFACE: ~20 national agencies, collaborative social science funding.
+* Open Research Area (ORA): Joint proposals linking ANR, DFG, ESRC, NWO, JSPS.
 
 ===================================================================
 ELIGIBILITY HARD FACTS

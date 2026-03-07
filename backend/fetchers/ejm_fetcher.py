@@ -15,18 +15,24 @@ Returns standardised grant dicts matching the schema in __init__.py.
 import json
 import logging
 import sys
+import time
 from pathlib import Path
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from backend.utils import generate_grant_id, update_run_status
 
 logger = logging.getLogger(__name__)
 
-REQUEST_TIMEOUT = 90
+# Split connect vs read timeout: (connect, read) in seconds
+REQUEST_TIMEOUT = (15, 120)
 USER_AGENT = "GrantRadar/1.0 (academic grant monitoring)"
 DEFAULT_URL = "https://backend.econjobmarket.org/data/zz_public/json/Ads"
+MAX_RETRIES = 3
+RETRY_DELAY = 5  # seconds between manual retries
 
 
 def fetch_ejm_ads(config: dict) -> list[dict]:
@@ -53,15 +59,31 @@ def fetch_ejm_ads(config: dict) -> list[dict]:
 
     logger.info(f"Fetching EconJobMarket ads from {url}")
 
-    try:
-        resp = requests.get(
-            url, timeout=REQUEST_TIMEOUT, headers={"User-Agent": USER_AGENT}
-        )
-        resp.raise_for_status()
-    except requests.RequestException as exc:
-        logger.error(f"EconJobMarket fetch failed: {exc}")
-        update_run_status("EconJobMarket", status="error", error_msg=str(exc))
-        return []
+    # Retry with backoff for transient connection failures
+    session = requests.Session()
+    adapter = HTTPAdapter(
+        max_retries=Retry(total=2, backoff_factor=1, status_forcelist=[502, 503, 504]),
+    )
+    session.mount("https://", adapter)
+
+    resp = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            resp = session.get(
+                url, timeout=REQUEST_TIMEOUT, headers={"User-Agent": USER_AGENT}
+            )
+            resp.raise_for_status()
+            break
+        except requests.RequestException as exc:
+            logger.warning(
+                "EconJobMarket attempt %d/%d failed: %s", attempt, MAX_RETRIES, exc
+            )
+            if attempt < MAX_RETRIES:
+                time.sleep(RETRY_DELAY * attempt)
+            else:
+                logger.error("EconJobMarket: all %d attempts failed.", MAX_RETRIES)
+                update_run_status("EconJobMarket", status="error", error_msg=str(exc))
+                return []
 
     try:
         ads = resp.json()

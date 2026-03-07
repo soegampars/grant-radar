@@ -96,15 +96,50 @@ PORTABLE FELLOWSHIP KNOWLEDGE BASE
 ===================================================================
 When you encounter a fellowship, check whether it is portable (can be taken to a host institution of the applicant's choice).  This affects tier assignment — a portable fellowship hostable at Cardiff = Tier 1.
 
-Known fellowships:
-* MSCA Postdoctoral Fellowships (Marie Curie):  PORTABLE within EU/associated countries.  Applicant chooses host.  Open to all nationalities.  Highly competitive.  If hostable at Cardiff -> Tier 1.
-* Leverhulme Early Career Fellowships:  Requires a UK host institution (Cardiff qualifies).  UK degree is NOT required, but check latest terms.  3-year fellowship.  If Cardiff hosts -> Tier 1.
-* ESRC (UKRI) Postdoctoral Fellowships:  Usually requires a UK institution as host.  Check nationality requirements — some schemes require UK/EU settled status.  If eligible and Cardiff hosts -> Tier 1.
-* ERC Starting Grants:  PORTABLE within EU/associated countries.  Applicant chooses host.  Open to all nationalities.  2–7 years post-PhD.  If hostable at Cardiff -> Tier 1.
-* NWO Veni (Netherlands):  Requires a Dutch host institution.  Check nationality/residency rules — traditionally open to all but verify.  If eligible -> Tier 2 (Netherlands connection via Groningen).
-* British Academy Postdoctoral Fellowships:  Usually requires UK host.  Check nationality requirements carefully — has historically been restricted.  If eligible and Cardiff hosts -> Tier 1.
-* Newton International Fellowships:  For non-UK researchers to work in the UK.  Indonesian nationality is eligible.  If Cardiff hosts -> Tier 1.
-* Humboldt Research Fellowships:  Germany-based, open to all nationalities.  -> Tier 3.
+Known fellowships and funding schemes:
+
+UK-BASED:
+* MSCA Postdoctoral Fellowships (Marie Curie):  PORTABLE within EU/associated countries.  Applicant chooses host.  Open to all nationalities.  If hostable at Cardiff -> Tier 1.
+* Leverhulme Early Career Fellowships:  UK host required (Cardiff qualifies).  UK degree NOT required.  ~£130,000 over 3 years.  If Cardiff hosts -> Tier 1.
+* ESRC Postdoctoral Fellowships:  UK institution as host.  12 months salary + £10,000 research.  Check nationality.  If Cardiff hosts -> Tier 1.
+* ESRC New Investigator Grants:  £100,000–£300,000, rolling submission.  PI must be at eligible UK institution.  If at Cardiff -> Tier 1.
+* UKRI Future Leaders Fellowships:  £300,000–£2M+, 4–7 years.  NO nationality restrictions.  Global Talent visa eligible.  If at Cardiff -> Tier 1.
+* ERC Starting Grants:  PORTABLE within EU/associated countries.  Up to €1.5M over 5 years.  2–7 years post-PhD.  UK re-associated with Horizon Europe.  If hostable at Cardiff -> Tier 1.
+* British Academy Postdoctoral Fellowships:  3-year salary (~£37,000/yr) + £6,000 research.  Within 3 years of viva.  Check nationality.  If Cardiff hosts -> Tier 1.
+* British Academy International Fellowships (formerly Newton):  For non-UK researchers.  Up to £420,000 over 3 years.  Indonesian nationality eligible.  If Cardiff hosts -> Tier 1.
+* BA/Leverhulme Small Research Grants:  Up to £10,000, lottery-based among quality-threshold apps.  400+ awards/year.  Accessible.
+* Philip Leverhulme Prizes:  £100,000 for early-career researchers.  Economics and Geography in rotating cycle (next eligible ~2028).
+* Nuffield Foundation:  Most grants under £300,000.  Priorities: geographical inequalities, cost of living, labour mobility.  Directly relevant.
+* Royal Geographical Society Small Research Grants:  Up to £3,000 seed funding.
+
+EUROPE-WIDE:
+* ERC Consolidator Grants:  €2M, 7–12 years post-PhD.  Any nationality.  PORTABLE in EU/associated.
+* ERC Synergy Grants:  Up to €10M for collaborative teams.
+* NWO Veni (Netherlands):  €320,000 over 3 years.  Dutch host required.  Any nationality with embedding guarantee.  -> Tier 2 (Groningen connection).
+* NWO Vidi:  €850,000 over 5 years.  -> Tier 2.
+* Humboldt Research Fellowships:  Germany-based.  €3,000/month for 6–24 months.  Open to all nationalities, no deadlines.  -> Tier 3.
+* DFG Walter Benjamin Programme:  German postdoc fellowships, up to 2 years, can apply from abroad.  -> Tier 3.
+* DFG Emmy Noether Programme:  €1–1.5M for junior research groups.  -> Tier 3.
+* FWF Lise Meitner Programme (Austria):  ~€200,000 over 2 years.  Targets incoming international postdocs.  -> Tier 3.
+* ANR JCJC (France):  Up to ~€300,000 for early-career researchers.
+* ANR Access-ERC (France):  Hosts international postdocs in French labs who commit to applying for ERC within 2 years.
+* Riksbankens Jubileumsfond (Sweden):  Specifically funds humanities and social sciences.
+* ESPON:  €60M budget (2021-2027).  Service contracts for applied territorial analysis.  Directly in economic geography domain.
+
+FIELD-SPECIFIC:
+* Regional Studies Association Early Career Research Grants:  Up to £10,000.  Directly targeted at regional development research.
+* RSA Fellowship Research Grants:  Up to £8,250.
+
+JAPAN:
+* JSPS International Postdoctoral Fellowships:  ¥362,000/month (~$2,400) for 12–24 months.  Within 6 years of PhD.  Must identify Japanese host researcher.  ~230 awards/year.  -> Tier 0.
+* JSPS Short-term Programme:  1–12 months, same stipend.  For researchers from EU, UK, US, Canada, Switzerland, Norway.
+* Japan Foundation Long-term Research Fellowships:  ¥400,000/month for 4–12 months.  Must have Japan-related research element.
+* Canon Foundation in Europe:  Up to €30,000/year for 3–12 months.  European researchers to Japan (or vice versa).  ~15 awards/year.
+* KAKENHI (if employed at Japanese institution):  Up to ¥5M for Early-Career Scientists.
+
+BILATERAL / COLLABORATIVE:
+* NORFACE:  Partnership of ~20 national agencies funding collaborative social science.
+* Open Research Area (ORA):  Joint proposals linking ANR, DFG, ESRC, NWO, and JSPS.  Single lead-agency review.
 
 If you recognise a fellowship not in this list, still evaluate portability from the listing text and assign the appropriate tier.
 

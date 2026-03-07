@@ -169,6 +169,12 @@
         "url": "https://rss.arxiv.org/rss/econ",
         "enabled": false,
         "_note": "Disabled: this feed publishes working papers, not job/grant listings"
+      },
+      {
+        "name": "INOMICS",
+        "url": "https://inomics.com/rss",
+        "enabled": true,
+        "_note": "Economics jobs, postdocs, fellowships, conferences from inomics.com"
       }
     ],
     "api_endpoints": [

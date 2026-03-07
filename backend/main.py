@@ -44,6 +44,7 @@ from backend.utils import (
     save_json,
 )
 from backend.analyser import analyse_grant, analyse_grants
+from backend.pre_filter import pre_filter
 from backend.discovery import (
     discover_opportunities,
     reevaluate_grants,
@@ -178,6 +179,31 @@ def run_daily(config: dict, dry_run: bool = False) -> dict:
     new_grants = deduplicate(all_fetched, existing_grants)
     summary["new_after_dedup"] = len(new_grants)
     logger.info("After deduplication: %d new grants.", len(new_grants))
+
+    # --- 3b. Pre-filter (keyword + Haiku triage) ---
+    if new_grants and config.get("pre_filter", {}).get("enabled", False):
+        new_grants, filtered_out = pre_filter(new_grants, config, dry_run=dry_run)
+        summary["pre_filtered"] = len(filtered_out)
+        logger.info(
+            "Pre-filter removed %d grants, %d remain for analysis.",
+            len(filtered_out), len(new_grants),
+        )
+        # Save filtered grants for audit (30-day rotation)
+        if filtered_out and config.get("pre_filter", {}).get("log_filtered", True):
+            existing_filtered = load_json("filtered_grants.json")
+            if not isinstance(existing_filtered, list):
+                existing_filtered = []
+            for g in filtered_out:
+                g.setdefault("date_filtered", today)
+            existing_filtered.extend(filtered_out)
+            cutoff_30d = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
+            existing_filtered = [
+                g for g in existing_filtered
+                if (g.get("date_filtered", "") >= cutoff_30d)
+            ]
+            save_json("filtered_grants.json", existing_filtered)
+    else:
+        summary["pre_filtered"] = 0
 
     if not new_grants:
         logger.info("No new grants to analyse.")

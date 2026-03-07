@@ -75,6 +75,13 @@
   <!-- ===== MAIN CONTENT ===== -->
   <main class="main">
 
+    <!-- Feedback export reminder (hidden by default) -->
+    <div class="feedback-reminder hidden" id="feedbackReminder">
+      <span>📋 You have unexported grant ratings from over 30 days ago.</span>
+      <button class="reminder-export-btn" id="reminderExportBtn">Export Now</button>
+      <button class="reminder-dismiss-btn" id="reminderDismissBtn">Dismiss</button>
+    </div>
+
     <!-- TAB: Dashboard -->
     <section class="tab-panel active" id="panelDashboard">
 
@@ -222,6 +229,19 @@
             <dt>Weekly Discovery</dt><dd>Claude Opus 4.6 (with web search)</dd>
           </dl>
           <p class="settings-note">To modify settings, use Claude Code. <a href="help.html">See Help page</a>.</p>
+        </div>
+
+        <div class="settings-card">
+          <h3>Feedback Log</h3>
+          <p class="section-sub" style="margin-bottom:.5rem">Rate grants with thumbs up/down on each card. Export monthly for pattern analysis.</p>
+          <dl>
+            <dt>Total rated</dt><dd id="settingsFeedbackCount">0</dd>
+            <dt>Thumbs up</dt><dd id="settingsFeedbackUp">0</dd>
+            <dt>Thumbs down</dt><dd id="settingsFeedbackDown">0</dd>
+            <dt>Last export</dt><dd id="settingsFeedbackLastExport">Never</dd>
+          </dl>
+          <button class="export-btn" id="exportFeedbackBtn">Export Feedback Log</button>
+          <button class="clear-feedback-btn" id="clearFeedbackBtn" style="margin-left:.5rem">Clear All Ratings</button>
         </div>
       </div>
     </section>

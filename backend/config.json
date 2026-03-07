@@ -235,5 +235,52 @@
     "only_hard_exclusion": "Only exclude postings clearly outside academia or clearly outside economics/geography entirely.",
     "phd_handling": "PhD/doctoral/pre-doctoral positions are collected and analysed (scored at 0, tier 0) but hidden by default on the dashboard. User can toggle visibility with the Hide PhD/pre-doc checkbox.",
     "eligibility_uncertain": "When eligibility is unclear, mark as 'check eligibility' rather than excluding."
+  },
+  "pre_filter": {
+    "enabled": true,
+    "haiku_enabled": true,
+    "haiku_model": "claude-haiku-4-5-20241022",
+    "exclude_title_keywords": [
+      "laboratory technician", "lab technician", "lab manager",
+      "nursing", "midwifery", "midwife",
+      "clinical nurse", "clinical trial", "clinical psychologist",
+      "dentistry", "dental", "veterinary", "pharmacy", "pharmacist",
+      "physiotherapy", "occupational therapy", "radiography",
+      "civil engineering", "mechanical engineering", "electrical engineering",
+      "chemical engineering", "aerospace engineering", "software engineer",
+      "physical geography", "geology", "geological survey",
+      "hydrology", "meteorology", "oceanography", "seismology",
+      "pure mathematics", "organic chemistry", "inorganic chemistry",
+      "astrophysics", "particle physics", "quantum physics",
+      "molecular biology", "genetics", "genomics", "microbiology",
+      "neuroscience", "anatomy", "pathology", "biomedical",
+      "librarian", "library assistant",
+      "IT support", "systems administrator", "network engineer",
+      "catering", "maintenance", "security officer",
+      "sports coach", "athletics director",
+      "monetary economics", "indian economy",
+      "financial engineering", "mathematical finance", "economic theory"
+    ],
+    "require_any_keywords": [
+      "economics", "economy", "economic", "economist",
+      "geography", "geographic", "geographical", "geographer",
+      "regional", "spatial", "urban", "rural", "city", "cities", "metropolitan",
+      "policy", "planning", "development", "inequality", "poverty", "welfare",
+      "postdoc", "postdoctoral", "fellowship", "research fellow",
+      "lecturer", "professor", "associate professor", "assistant professor",
+      "research associate", "researcher", "research officer",
+      "grant", "funding", "scholarship",
+      "social science", "political", "governance", "public administration",
+      "migration", "labour", "labor", "employment", "workforce",
+      "transport", "infrastructure", "housing", "land use",
+      "trade", "innovation", "entrepreneurship", "industrial",
+      "sustainability", "climate", "environment", "energy transition",
+      "data science", "quantitative", "econometrics", "statistics",
+      "GIS", "geospatial", "remote sensing",
+      "EU", "European", "MSCA", "ERC", "Horizon",
+      "BRIN", "UGM", "Indonesia",
+      "resilience", "competitiveness", "agglomeration", "cluster"
+    ],
+    "log_filtered": true
   }
 }

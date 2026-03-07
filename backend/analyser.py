@@ -168,6 +168,14 @@ The researcher's methods are QUANTITATIVE: spatial econometrics, microsimulation
 - Set methods_relevance to describe the mismatch clearly (e.g. "Primarily qualitative — ethnographic fieldwork, not aligned with researcher's quantitative toolkit").
 - Mixed-methods positions that also value quantitative skills should NOT be penalised.
 - Positions that are methods-agnostic or policy-focused should NOT be penalised.
+
+CAREER-LEVEL SCORING ADJUSTMENT:
+The researcher is completing his PhD (submission October 2026) and is looking for his FIRST postdoctoral position. Apply these adjustments:
+- BOOST (+10 to +15 points): Postdoctoral positions, research associate/fellow roles, early-career fellowships. These are the ideal career stage.
+- NO ADJUSTMENT: Lecturer positions (could be appropriate entry-level in some systems).
+- PENALTY (-10 to -20 points): Teaching-only positions (teaching associate, teaching fellow) — the researcher's priority is research, not primarily teaching roles.
+- PENALTY (-15 to -25 points): Senior positions (Associate Professor, Full Professor, Reader, Chair — whether temporary or tenured). The researcher does not have the experience for these roles yet.
+- Note the career-level fit in the one_line_summary when it materially affects scoring.
 """
 
 

@@ -13,6 +13,7 @@
   let runStatus   = [];
   let strategic   = {};
   let starred     = loadStarred();
+  let ratings     = loadRatings();
 
   // Current filter/sort state
   let filters = {
@@ -191,6 +192,32 @@
         cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     });
+
+    // Feedback export / clear / reminder
+    const exportBtn = document.getElementById("exportFeedbackBtn");
+    if (exportBtn) exportBtn.addEventListener("click", exportFeedbackLog);
+
+    const clearBtn = document.getElementById("clearFeedbackBtn");
+    if (clearBtn) clearBtn.addEventListener("click", () => {
+      if (confirm("Clear all ratings? This cannot be undone.")) {
+        ratings = {};
+        saveRatings();
+        updateFeedbackSettings();
+        renderCards();
+      }
+    });
+
+    const reminderExportBtn = document.getElementById("reminderExportBtn");
+    if (reminderExportBtn) reminderExportBtn.addEventListener("click", () => {
+      exportFeedbackLog();
+      document.getElementById("feedbackReminder").classList.add("hidden");
+    });
+
+    const reminderDismissBtn = document.getElementById("reminderDismissBtn");
+    if (reminderDismissBtn) reminderDismissBtn.addEventListener("click", () => {
+      localStorage.setItem("grantRadar_feedbackReminderDismissed", new Date().toISOString());
+      document.getElementById("feedbackReminder").classList.add("hidden");
+    });
   }
 
   // ------------------------------------------------------------------
@@ -225,6 +252,8 @@
     renderCards();
     renderStrategic();
     renderSources();
+    updateFeedbackSettings();
+    checkFeedbackReminder();
   }
 
   // ------------------------------------------------------------------
@@ -482,6 +511,12 @@
     card.dataset.grantId = g.id || "";
 
     const isStarred = !!starred[g.id];
+    const curRating = ratings[g.id];
+    const isUp = !!(curRating && curRating.rating === "up");
+    const isDown = !!(curRating && curRating.rating === "down");
+    const ratedClass = isUp ? " rated-up" : isDown ? " rated-down" : "";
+
+    card.className += ratedClass;
 
     card.innerHTML = `
       <div class="card-header">
@@ -503,6 +538,8 @@
           ${renderScoreRing(g.relevance_score)}
           ${renderEligBadge(g.eligibility_verdict)}
           ${renderTimelineBadge(g.timeline_fit)}
+          <button class="rate-up-btn ${isUp ? "active" : ""}" onclick="event.stopPropagation()" title="Good match">&#x1F44D;</button>
+          <button class="rate-down-btn ${isDown ? "active" : ""}" onclick="event.stopPropagation()" title="Poor match">&#x1F44E;</button>
           <button class="star-btn ${isStarred ? "starred" : ""}" data-star="${g.id || ""}" onclick="event.stopPropagation()" title="Star this grant">${isStarred ? "\u2605" : "\u2606"}</button>
         </div>
       </div>
@@ -528,6 +565,16 @@
     card.querySelector(".star-btn").addEventListener("click", (e) => {
       e.stopPropagation();
       toggleStar(g.id, card);
+    });
+
+    // Rating buttons
+    card.querySelector(".rate-up-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
+      setRating(g.id, g, "up", card);
+    });
+    card.querySelector(".rate-down-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
+      setRating(g.id, g, "down", card);
     });
 
     return card;
@@ -783,6 +830,142 @@
     const btn = cardEl.querySelector(".star-btn");
     btn.classList.toggle("starred");
     btn.textContent = starred[grantId] ? "\u2605" : "\u2606";
+  }
+
+  // ------------------------------------------------------------------
+  // Rating management (thumbs up/down — localStorage)
+  // ------------------------------------------------------------------
+  function loadRatings() {
+    try {
+      return JSON.parse(localStorage.getItem("grantRadar_ratings") || "{}");
+    } catch {
+      return {};
+    }
+  }
+
+  function saveRatings() {
+    localStorage.setItem("grantRadar_ratings", JSON.stringify(ratings));
+  }
+
+  function setRating(grantId, grant, ratingValue, cardEl) {
+    if (!grantId) return;
+    // Toggle: if same rating, remove it
+    if (ratings[grantId] && ratings[grantId].rating === ratingValue) {
+      delete ratings[grantId];
+    } else {
+      ratings[grantId] = {
+        rating: ratingValue,
+        timestamp: new Date().toISOString(),
+        title: grant.title || "",
+        institution: grant.institution || "",
+        tier: grant.tier,
+        score: grant.relevance_score,
+      };
+    }
+    saveRatings();
+    _updateRatingUI(cardEl, grantId);
+    updateFeedbackSettings();
+  }
+
+  function _updateRatingUI(cardEl, grantId) {
+    const upBtn = cardEl.querySelector(".rate-up-btn");
+    const downBtn = cardEl.querySelector(".rate-down-btn");
+    if (!upBtn || !downBtn) return;
+    const cur = ratings[grantId];
+    upBtn.classList.toggle("active", !!(cur && cur.rating === "up"));
+    downBtn.classList.toggle("active", !!(cur && cur.rating === "down"));
+    cardEl.classList.remove("rated-up", "rated-down");
+    if (cur) cardEl.classList.add(cur.rating === "up" ? "rated-up" : "rated-down");
+  }
+
+  // ------------------------------------------------------------------
+  // Feedback export
+  // ------------------------------------------------------------------
+  function exportFeedbackLog() {
+    const entries = Object.entries(ratings);
+    if (entries.length === 0) {
+      alert("No ratings to export.");
+      return;
+    }
+    const timestamps = entries.map(([_, r]) => r.timestamp).sort();
+    const fromDate = timestamps[0].slice(0, 10);
+    const toDate = timestamps[timestamps.length - 1].slice(0, 10);
+    const upCount = entries.filter(([_, r]) => r.rating === "up").length;
+    const downCount = entries.filter(([_, r]) => r.rating === "down").length;
+
+    // By-tier breakdown
+    const byTier = {};
+    entries.forEach(([, r]) => {
+      const t = r.tier || 0;
+      if (!byTier[t]) byTier[t] = { up: 0, down: 0 };
+      byTier[t][r.rating]++;
+    });
+
+    const exportData = {
+      export_date: todayISO(),
+      period: { from: fromDate, to: toDate },
+      ratings: entries.map(([id, r]) => ({
+        grant_id: id,
+        title: r.title,
+        institution: r.institution || "",
+        tier: r.tier,
+        score: r.score,
+        rating: r.rating,
+        rated_at: r.timestamp,
+      })),
+      summary: {
+        total_rated: entries.length,
+        thumbs_up: upCount,
+        thumbs_down: downCount,
+        by_tier: byTier,
+      },
+    };
+
+    // Trigger download
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "grant_radar_feedback_" + todayISO().replace(/-/g, "_") + ".json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    localStorage.setItem("grantRadar_lastFeedbackExport", new Date().toISOString());
+    updateFeedbackSettings();
+  }
+
+  function updateFeedbackSettings() {
+    const entries = Object.entries(ratings);
+    const upCount = entries.filter(([_, r]) => r.rating === "up").length;
+    const downCount = entries.filter(([_, r]) => r.rating === "down").length;
+    const el = (id) => document.getElementById(id);
+    if (el("settingsFeedbackCount")) el("settingsFeedbackCount").textContent = entries.length;
+    if (el("settingsFeedbackUp")) el("settingsFeedbackUp").textContent = upCount;
+    if (el("settingsFeedbackDown")) el("settingsFeedbackDown").textContent = downCount;
+    const lastExport = localStorage.getItem("grantRadar_lastFeedbackExport");
+    if (el("settingsFeedbackLastExport")) {
+      el("settingsFeedbackLastExport").textContent = lastExport ? timeAgo(lastExport) : "Never";
+    }
+  }
+
+  function checkFeedbackReminder() {
+    const reminderEl = document.getElementById("feedbackReminder");
+    if (!reminderEl) return;
+    const entries = Object.entries(ratings);
+    if (entries.length === 0) { reminderEl.classList.add("hidden"); return; }
+    const lastExport = localStorage.getItem("grantRadar_lastFeedbackExport");
+    const dismissed = localStorage.getItem("grantRadar_feedbackReminderDismissed");
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    const needsReminder = !lastExport || new Date(lastExport) < thirtyDaysAgo;
+    const recentlyDismissed = dismissed && new Date(dismissed) > thirtyDaysAgo;
+    if (needsReminder && !recentlyDismissed) {
+      reminderEl.classList.remove("hidden");
+    } else {
+      reminderEl.classList.add("hidden");
+    }
   }
 
   // ------------------------------------------------------------------

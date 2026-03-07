@@ -499,6 +499,88 @@ a:hover { text-decoration: underline; }
 .star-btn:hover { color: var(--t1); transform: scale(1.2); }
 .star-btn.starred { color: var(--t1); }
 
+/* Rating buttons (thumbs up/down) */
+.rate-up-btn, .rate-down-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color .15s, transform .15s;
+  padding: .2rem;
+  line-height: 1;
+  opacity: 0.5;
+}
+.rate-up-btn:hover { color: var(--green); transform: scale(1.2); opacity: 1; }
+.rate-down-btn:hover { color: var(--red); transform: scale(1.2); opacity: 1; }
+.rate-up-btn.active { color: var(--green); opacity: 1; }
+.rate-down-btn.active { color: var(--red); opacity: 1; }
+
+/* Subtle card tint for rated grants */
+.grant-card.rated-up { border-left: 3px solid var(--green); }
+.grant-card.rated-down { border-left: 3px solid var(--red); }
+
+/* Feedback reminder banner */
+.feedback-reminder {
+  background: var(--card);
+  border: 1px solid var(--t1);
+  border-radius: .5rem;
+  padding: .6rem 1rem;
+  margin-bottom: .75rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  font-size: .82rem;
+  color: var(--text-dim);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reminder-export-btn {
+  background: var(--t1);
+  color: #000;
+  border: none;
+  padding: .3rem .75rem;
+  border-radius: .35rem;
+  cursor: pointer;
+  font-size: .78rem;
+  font-weight: 600;
+}
+.reminder-dismiss-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: .3rem .75rem;
+  border-radius: .35rem;
+  cursor: pointer;
+  font-size: .78rem;
+}
+
+/* Export & clear buttons in settings */
+.export-btn {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: .4rem .85rem;
+  border-radius: .35rem;
+  cursor: pointer;
+  font-size: .82rem;
+  font-weight: 600;
+  margin-top: .5rem;
+}
+.export-btn:hover { opacity: 0.85; }
+.clear-feedback-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: .4rem .85rem;
+  border-radius: .35rem;
+  cursor: pointer;
+  font-size: .82rem;
+  margin-top: .5rem;
+}
+.clear-feedback-btn:hover { border-color: var(--red); color: var(--red); }
+
 
 /* ================================================================
    CARD EXPANDED DETAIL

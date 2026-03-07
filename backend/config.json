@@ -221,6 +221,13 @@
         "url": "https://ersa.org",
         "scraper": "ersa",
         "enabled": true
+      },
+      {
+        "name": "BRIN Talent Management",
+        "url": "https://manajementalenta.brin.go.id",
+        "scraper": "brin",
+        "enabled": true,
+        "_note": "BRIN postdoctoral, visiting researcher, and fellowship programmes (Indonesia, Tier 4)"
       }
     ]
   },

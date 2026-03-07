@@ -911,6 +911,140 @@ def _build_ersa_grant(
 
 
 # ─────────────────────────────────────────────────────────────────────
+# BRIN Talent Management Portal (manajementalenta.brin.go.id)
+# ─────────────────────────────────────────────────────────────────────
+
+BRIN_BASE = "https://manajementalenta.brin.go.id"
+
+
+def _scrape_brin(source_config: dict) -> list[dict]:
+    """Scrape postdoc and fellowship programmes from BRIN Talent Management.
+
+    The portal lists programme cards on the homepage, each linking to
+    /program/{id} with details (deadline, eligibility, description).
+    Programmes are batch-based (e.g. "Postdoctoral 2026 Batch 1") and
+    change infrequently — typically a few new batches per year.
+    """
+    name = source_config["name"]
+    logger.info(f"Scraping {name}")
+
+    # 1. Fetch homepage to discover programme links
+    resp = _get_browser(BRIN_BASE + "/")
+    if not resp:
+        return []
+
+    soup = BeautifulSoup(resp.text, "lxml")
+    # Find links matching /program/{id}
+    prog_links = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if re.match(r"^/program/\d+$", href):
+            prog_links.add(href)
+        elif re.match(r"^https?://manajementalenta\.brin\.go\.id/program/\d+$", href):
+            prog_links.add(href.replace(BRIN_BASE, ""))
+
+    logger.info(f"  Found {len(prog_links)} programme links")
+
+    grants = []
+    for path in sorted(prog_links):
+        time.sleep(POLITE_DELAY)
+        prog_url = BRIN_BASE + path
+        logger.info(f"  Fetching {prog_url}")
+
+        detail = _get_browser(prog_url)
+        if not detail:
+            continue
+
+        grant = _parse_brin_programme(detail.text, prog_url, name)
+        if grant:
+            grants.append(grant)
+
+    logger.info(f"  {name}: {len(grants)} programmes scraped")
+    return grants
+
+
+def _parse_brin_programme(html: str, url: str, source_name: str) -> dict | None:
+    """Parse a single BRIN programme detail page."""
+    soup = BeautifulSoup(html, "lxml")
+
+    # Title: typically the main heading or page title
+    title = ""
+    h1 = soup.find("h1")
+    if h1:
+        title = h1.get_text(strip=True)
+    if not title:
+        title_tag = soup.find("title")
+        title = title_tag.get_text(strip=True) if title_tag else ""
+    # Clean up title
+    title = re.sub(r"\s*[-|].*Manajemen Talenta.*$", "", title).strip()
+
+    if not title:
+        return None
+
+    # Extract deadline from text (look for "pendaftaran ... - DD Mon YYYY" pattern)
+    text = soup.get_text(" ", strip=True)
+    deadline = None
+    # Pattern: "31 Mar 2026", "31 Mei 2025", etc.
+    dl_match = re.search(
+        r"(?:pendaftaran|deadline|batas\s+waktu)[^0-9]*"
+        r"\d{1,2}\s+\w+\s+\d{4}\s*[-–]\s*(\d{1,2}\s+\w+\s+\d{4})",
+        text, re.IGNORECASE,
+    )
+    if dl_match:
+        deadline = _parse_indo_date(dl_match.group(1))
+    else:
+        # Try simpler pattern: just find a closing date
+        dl_match2 = re.search(
+            r"(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|Mei|Jun|Jul|Agu|Sep|Okt|Nov|Des|"
+            r"January|February|March|April|May|June|July|August|September|"
+            r"October|November|December)\w*\s+\d{4})",
+            text, re.IGNORECASE,
+        )
+        if dl_match2:
+            deadline = _parse_indo_date(dl_match2.group(1))
+
+    # Description: collect text from the main content area
+    main = soup.find("main") or soup.find("div", class_=re.compile(r"content|detail"))
+    desc_text = main.get_text(" ", strip=True) if main else text
+    # Truncate for display
+    description = desc_text[:500] + "..." if len(desc_text) > 500 else desc_text
+
+    return {
+        "id": generate_grant_id(url),
+        "title": title,
+        "url": url,
+        "date_posted": None,
+        "deadline": deadline,
+        "description": description,
+        "source_name": source_name,
+        "source_type": "web_scrape",
+        "institution": "BRIN (Badan Riset dan Inovasi Nasional)",
+        "country": "Indonesia",
+        "raw_content": desc_text[:12000],
+    }
+
+
+def _parse_indo_date(date_str: str) -> str | None:
+    """Parse Indonesian/English date string to ISO format."""
+    # Indonesian month mapping
+    indo_months = {
+        "jan": "01", "feb": "02", "mar": "03", "apr": "04",
+        "mei": "05", "may": "05", "jun": "06", "jul": "07",
+        "agu": "08", "aug": "08", "sep": "09", "okt": "10", "oct": "10",
+        "nov": "11", "des": "12", "dec": "12",
+    }
+    m = re.match(r"(\d{1,2})\s+(\w+)\s+(\d{4})", date_str.strip())
+    if not m:
+        return None
+    day, month_str, year = m.groups()
+    month_key = month_str[:3].lower()
+    month = indo_months.get(month_key)
+    if not month:
+        return None
+    return f"{year}-{month}-{int(day):02d}"
+
+
+# ─────────────────────────────────────────────────────────────────────
 # Dispatcher
 # ─────────────────────────────────────────────────────────────────────
 
@@ -920,6 +1054,7 @@ _SCRAPER_REGISTRY: dict[str, callable] = {
     "euraxess": _scrape_euraxess,
     "rsa": _scrape_rsa,
     "ersa": _scrape_ersa,
+    "brin": _scrape_brin,
 }
 
 

@@ -100,12 +100,12 @@ Known fellowships and funding schemes:
 
 UK-BASED:
 * MSCA Postdoctoral Fellowships (Marie Curie):  PORTABLE within EU/associated countries.  Applicant chooses host.  Open to all nationalities.  If hostable at Cardiff -> Tier 1.
-* Leverhulme Early Career Fellowships:  UK host required (Cardiff qualifies).  UK degree NOT required.  ~£130,000 over 3 years.  If Cardiff hosts -> Tier 1.
-* ESRC Postdoctoral Fellowships:  UK institution as host.  12 months salary + £10,000 research.  Check nationality.  If Cardiff hosts -> Tier 1.
+* Leverhulme Early Career Fellowships:  Requires applicant to have a connection to the UK academic system (UK PhD or current UK academic post for 2+ years).  Researcher does NOT qualify — no UK degree, no prior UK employment.  -> Tier 0, not_eligible.
+* ESRC Postdoctoral Fellowships:  Requires UK-connected degree or established link to UK research base.  Researcher does NOT qualify — no UK degree.  -> Tier 0, not_eligible.
 * ESRC New Investigator Grants:  £100,000–£300,000, rolling submission.  PI must be at eligible UK institution.  If at Cardiff -> Tier 1.
 * UKRI Future Leaders Fellowships:  £300,000–£2M+, 4–7 years.  NO nationality restrictions.  Global Talent visa eligible.  If at Cardiff -> Tier 1.
 * ERC Starting Grants:  PORTABLE within EU/associated countries.  Up to €1.5M over 5 years.  2–7 years post-PhD.  UK re-associated with Horizon Europe.  If hostable at Cardiff -> Tier 1.
-* British Academy Postdoctoral Fellowships:  3-year salary (~£37,000/yr) + £6,000 research.  Within 3 years of viva.  Check nationality.  If Cardiff hosts -> Tier 1.
+* British Academy Postdoctoral Fellowships:  Requires UK/Commonwealth nationality OR a UK doctoral degree.  Researcher has neither — Indonesian nationality, Italian PhD.  -> Tier 0, not_eligible.
 * British Academy International Fellowships (formerly Newton):  For non-UK researchers.  Up to £420,000 over 3 years.  Indonesian nationality eligible.  If Cardiff hosts -> Tier 1.
 * BA/Leverhulme Small Research Grants:  Up to £10,000, lottery-based among quality-threshold apps.  400+ awards/year.  Accessible.
 * Philip Leverhulme Prizes:  £100,000 for early-career researchers.  Economics and Geography in rotating cycle (next eligible ~2028).
@@ -203,6 +203,23 @@ The researcher's methods are QUANTITATIVE: spatial econometrics, microsimulation
 - Set methods_relevance to describe the mismatch clearly (e.g. "Primarily qualitative — ethnographic fieldwork, not aligned with researcher's quantitative toolkit").
 - Mixed-methods positions that also value quantitative skills should NOT be penalised.
 - Positions that are methods-agnostic or policy-focused should NOT be penalised.
+
+UK AFFILIATION REQUIREMENT — HARD PENALTY:
+The researcher does NOT have a UK degree, UK nationality, UK settled status, or prior UK academic employment.
+Many British fellowships and grants require one or more of these as hard eligibility criteria:
+- ESRC Postdoctoral Fellowships: require UK-connected degree or prior UK institutional affiliation.
+- Leverhulme Early Career Fellowships: applicants must have a connection to the UK (typically UK PhD or UK employment).
+- British Academy Postdoctoral Fellowships: require UK nationality OR a UK PhD.
+- Any grant stating "UK degree required", "British nationality required", "must have held a UK academic position", "UKRI eligibility" (when nationality-restricted), or similar.
+
+When a grant requires UK-specific affiliation that the researcher does NOT have:
+- Set eligibility_verdict to "not_eligible".
+- Set eligibility_reason to clearly explain which UK requirement disqualifies the researcher.
+- Apply a SEVERE scoring penalty: subtract 40 to 50 points from relevance_score.
+- Set tier to 0 regardless of how well the topic fits — the researcher CANNOT apply.
+- Do NOT assign Tier 1/2/3 to grants requiring UK affiliation the researcher lacks.
+
+EXCEPTION: Grants that only require a UK HOST INSTITUTION (not UK degree/nationality) are fine — the researcher's Cardiff affiliation satisfies that.  E.g. MSCA-PF, UKRI Future Leaders (no nationality restriction), ERC grants hosted at Cardiff — these remain eligible.
 
 CAREER-LEVEL SCORING ADJUSTMENT:
 The researcher is completing his PhD (submission October 2026) and is looking for his FIRST postdoctoral position. Apply these adjustments:

@@ -170,12 +170,12 @@ PORTABLE FELLOWSHIP KNOWLEDGE BASE
 ===================================================================
 UK-BASED:
 * MSCA Postdoctoral Fellowships (Marie Curie): PORTABLE. Open to all nationalities. If hostable at Cardiff -> Tier 1.
-* Leverhulme Early Career Fellowships: UK host required. UK degree NOT required. ~£130K/3yr. If Cardiff hosts -> Tier 1.
-* ESRC Postdoctoral Fellowships: UK institution as host. 12 months + £10K research. If Cardiff hosts -> Tier 1.
+* Leverhulme Early Career Fellowships: Requires UK PhD or 2+ years UK academic employment. Researcher does NOT qualify -> Tier 0.
+* ESRC Postdoctoral Fellowships: Requires UK-connected degree. Researcher does NOT qualify -> Tier 0.
 * ESRC New Investigator Grants: £100K–£300K, rolling. PI at UK institution. If Cardiff -> Tier 1.
 * UKRI Future Leaders Fellowships: £300K–£2M+, 4–7yr. NO nationality restrictions. If Cardiff -> Tier 1.
 * ERC Starting Grants: PORTABLE within EU/associated. Up to €1.5M/5yr. 2–7yr post-PhD. If Cardiff -> Tier 1.
-* British Academy Postdoctoral Fellowships: 3yr salary + £6K research. Within 3yr of viva. If Cardiff -> Tier 1.
+* British Academy Postdoctoral Fellowships: Requires UK/Commonwealth nationality OR UK PhD. Researcher has neither -> Tier 0.
 * British Academy International Fellowships (formerly Newton): For non-UK researchers. Up to £420K/3yr. Indonesian eligible. If Cardiff -> Tier 1.
 * BA/Leverhulme Small Research Grants: Up to £10K, lottery-based. 400+ awards/year.
 * Nuffield Foundation: Under £300K. Priorities: geographical inequality, cost of living, labour mobility.

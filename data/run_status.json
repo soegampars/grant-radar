@@ -1,13 +1,5 @@
 [
   {
-    "source_name": "weekly_pipeline",
-    "source_type": "pipeline",
-    "status": "never_checked",
-    "last_checked": null,
-    "error": null,
-    "grants_found": 0
-  },
-  {
     "source_name": "arXiv Economics",
     "status": "disabled",
     "last_checked": "2026-03-06T06:54:55.713195+00:00",
@@ -17,71 +9,78 @@
   {
     "source_name": "INOMICS",
     "status": "success",
-    "last_checked": "2026-03-08T04:08:01.632554+00:00",
+    "last_checked": "2026-03-08T08:38:44.637092+00:00",
     "error": null,
     "grants_found": 10
   },
   {
     "source_name": "EconJobMarket",
     "status": "success",
-    "last_checked": "2026-03-08T04:08:05.115699+00:00",
+    "last_checked": "2026-03-08T08:38:45.343949+00:00",
     "error": null,
-    "grants_found": 147
+    "grants_found": 148
   },
   {
     "source_name": "Jobs.ac.uk - Geography",
     "status": "success",
-    "last_checked": "2026-03-08T04:08:07.921175+00:00",
+    "last_checked": "2026-03-08T08:38:47.476121+00:00",
     "error": null,
     "grants_found": 25
   },
   {
     "source_name": "Jobs.ac.uk - Economics",
     "status": "success",
-    "last_checked": "2026-03-08T04:08:11.394476+00:00",
+    "last_checked": "2026-03-08T08:38:51.266516+00:00",
     "error": null,
     "grants_found": 25
   },
   {
     "source_name": "Academic Transfer (Netherlands)",
     "status": "success",
-    "last_checked": "2026-03-08T04:09:19.332661+00:00",
+    "last_checked": "2026-03-08T08:39:58.815094+00:00",
     "error": null,
     "grants_found": 30
   },
   {
     "source_name": "EURAXESS",
     "status": "success",
-    "last_checked": "2026-03-08T04:09:53.489737+00:00",
+    "last_checked": "2026-03-08T08:40:38.425673+00:00",
     "error": null,
     "grants_found": 20
   },
   {
     "source_name": "RSA - Regional Studies Association",
     "status": "success",
-    "last_checked": "2026-03-08T04:10:04.114684+00:00",
+    "last_checked": "2026-03-08T08:40:44.193498+00:00",
     "error": null,
     "grants_found": 40
   },
   {
     "source_name": "ERSA",
     "status": "success",
-    "last_checked": "2026-03-08T04:10:14.452752+00:00",
+    "last_checked": "2026-03-08T08:40:53.596983+00:00",
     "error": null,
     "grants_found": 20
   },
   {
     "source_name": "BRIN Talent Management",
     "status": "success",
-    "last_checked": "2026-03-08T04:10:36.149898+00:00",
+    "last_checked": "2026-03-08T08:41:17.323842+00:00",
     "error": null,
     "grants_found": 7
   },
   {
     "source_name": "daily_pipeline",
     "status": "success",
-    "last_checked": "2026-03-08T04:19:22.426738+00:00",
+    "last_checked": "2026-03-08T08:47:09.478270+00:00",
     "error": null,
-    "grants_found": 20
+    "grants_found": 17
+  },
+  {
+    "source_name": "weekly_pipeline",
+    "status": "success",
+    "last_checked": "2026-03-08T08:55:46.842699+00:00",
+    "error": null,
+    "grants_found": 40
   }
 ]

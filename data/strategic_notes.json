@@ -1,38 +1,11 @@
 {
-  "generated_at": "2026-03-02T08:00:00Z",
-  "upcoming_deadlines": [
-    "Cardiff postdoc (Tier 1): 25 March 2026 - 23 days remaining. PRIORITY.",
-    "Groningen lectureship: 1 April 2026 - 30 days remaining.",
-    "PoliMi assegno: 15 April 2026 - 44 days remaining.",
-    "LSE research fellow: 30 April 2026 - 59 days remaining.",
-    "BRIN peneliti: 31 May 2026 - 90 days remaining.",
-    "TUM postdoc: 15 June 2026 - 105 days remaining.",
-    "MSCA-PF 2026 call: September 2026 - start preparing proposal now."
-  ],
+  "generated_at": "2026-03-08T08:55:44.519370+00:00",
+  "grant_cycles": [],
+  "upcoming_deadlines": [],
   "strategy_recommendations": [
-    "Prioritise Cardiff application immediately - direct connection via Prof Huggins is a rare advantage. Prepare research statement linking SimJogja to Welsh regional economics by mid-March.",
-    "Begin MSCA-PF proposal outline now - even though deadline is Sep 2026, strong proposals take 3-4 months to prepare. Utrecht or Cardiff could be host institutions.",
-    "Contact Groningen MSc supervisor for recommendation letters - useful for both Groningen lectureship and other Dutch opportunities.",
-    "Prepare a 'core application package': updated CV, 2-page research statement, teaching statement, and 3 reference letters. Reusable across all applications.",
-    "Monitor NWO Veni grant call (expected May 2026) - Dutch MSc makes you eligible for this prestigious early-career grant."
+    "Strategic notes generation failed -- manual review needed."
   ],
-  "grant_cycles": [
-    "MSCA Postdoctoral Fellowships: Annual call usually opens April, deadline September. Start preparing now.",
-    "NWO Veni: Expected call May 2026, deadline typically October. Dutch MSc provides eligibility.",
-    "British Academy Postdoctoral Fellowships: Usually advertised October-November for April start.",
-    "ESRC Postdoctoral Fellowships: Rolling, but most advertised Sep-Nov.",
-    "Italian PRIN/PNRR calls: Irregular, monitor EURAXESS Italy."
-  ],
-  "emerging_opportunities": [
-    "EU Cohesion Policy evaluation positions expected as 2021-2027 programming period enters final phase - strong fit for spatial microsimulation skills.",
-    "UK Levelling Up Fund creating demand for regional economists in Welsh universities - Cardiff likely to advertise more positions.",
-    "OECD Regional Development Division occasionally recruits - monitor OECD careers portal.",
-    "World Bank spatial analysis team expanding - relevant for Indonesia/development angle."
-  ],
-  "cv_gaps_to_address": [
-    "Publication record: Submit at least one paper before October 2026 to strengthen applications.",
-    "Teaching experience: Limited formal teaching - consider offering a guest lecture at PoliMi to add to CV.",
-    "Grant writing: No independent grant applications yet - MSCA-PF would be first, which is typical for early career.",
-    "International collaboration: Research visit to Cardiff (Aug-Jan) provides this, ensure it is highlighted."
-  ]
+  "emerging_opportunities": [],
+  "cv_gaps_to_address": [],
+  "error": "Generation failed"
 }

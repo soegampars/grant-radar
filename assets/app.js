@@ -526,6 +526,7 @@
             ${g.url ? `<a href="${esc(g.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(g.title || "Untitled")}</a>` : esc(g.title || "Untitled")}
           </div>
           <div class="card-meta">
+            ${g.id ? `<span class="card-meta-item card-id-badge" title="Grant ID: ${esc(g.id)}">#${esc(g.id.slice(0, 6))}</span>` : ""}
             ${g.institution ? `<span class="card-meta-item">${countryFlag(g.country)}${esc(g.institution)}</span>` : ""}
             ${g.country ? `<span class="card-meta-item">${esc(g.country)}</span>` : ""}
             ${renderDeadline(g)}
@@ -678,6 +679,7 @@
       ${g.degree_requirement ? `<dl class="detail-kv"><dt>Degree</dt><dd>${esc(g.degree_requirement)}</dd></dl>` : ""}
       ${g.language_requirement ? `<dl class="detail-kv"><dt>Language</dt><dd>${esc(g.language_requirement)}</dd></dl>` : ""}
       ${g.eligibility_timeline_note ? `<dl class="detail-kv"><dt>Timeline Note</dt><dd>${esc(g.eligibility_timeline_note)}</dd></dl>` : ""}
+      ${g.eligibility_unclear && g.eligibility_unclear.length ? `<dl class="detail-kv eligibility-unclear"><dt>⚠️ Needs Clarification</dt><dd><ul>${g.eligibility_unclear.map(q => `<li>${esc(q)}</li>`).join("")}</ul></dd></dl>` : ""}
     </div>`;
   }
 
@@ -860,6 +862,8 @@
         institution: grant.institution || "",
         tier: grant.tier,
         score: grant.relevance_score,
+        eligibility_verdict: grant.eligibility_verdict || null,
+        eligibility_unclear: grant.eligibility_unclear || null,
       };
     }
     saveRatings();
@@ -901,6 +905,23 @@
       byTier[t][r.rating]++;
     });
 
+    // Collect all unclear eligibility questions for improvement review
+    const unclearQuestions = [];
+    entries.forEach(([id, r]) => {
+      if (r.eligibility_unclear && r.eligibility_unclear.length) {
+        r.eligibility_unclear.forEach(q => {
+          unclearQuestions.push({
+            grant_id: id,
+            title: r.title,
+            tier: r.tier,
+            verdict: r.eligibility_verdict || "unknown",
+            question: q,
+            user_rating: r.rating,
+          });
+        });
+      }
+    });
+
     const exportData = {
       export_date: todayISO(),
       period: { from: fromDate, to: toDate },
@@ -912,12 +933,16 @@
         score: r.score,
         rating: r.rating,
         rated_at: r.timestamp,
+        eligibility_verdict: r.eligibility_verdict || null,
+        eligibility_unclear: r.eligibility_unclear || null,
       })),
+      unclear_requirements: unclearQuestions,
       summary: {
         total_rated: entries.length,
         thumbs_up: upCount,
         thumbs_down: downCount,
         by_tier: byTier,
+        unclear_count: unclearQuestions.length,
       },
     };
 

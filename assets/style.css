@@ -422,6 +422,17 @@ a:hover { text-decoration: underline; }
   flex-wrap: wrap;
 }
 .card-meta-item { display: flex; align-items: center; gap: .2rem; white-space: nowrap; }
+.card-id-badge {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: .7rem;
+  background: rgba(255,255,255,.08);
+  padding: .1rem .35rem;
+  border-radius: 3px;
+  color: var(--text-dim);
+  letter-spacing: .03em;
+  cursor: default;
+  user-select: all;
+}
 .meta-icon { font-size: .85rem; }
 
 .card-deadline { font-weight: 600; }
@@ -646,6 +657,16 @@ a:hover { text-decoration: underline; }
   background: var(--t2-bg);
   border-left: 3px solid var(--t2);
 }
+.eligibility-unclear {
+  background: rgba(255, 193, 7, .08);
+  border-left: 3px solid var(--yellow);
+  padding: .4rem .6rem;
+  border-radius: 4px;
+  margin-top: .3rem;
+}
+.eligibility-unclear dt { color: var(--yellow); font-weight: 600; }
+.eligibility-unclear ul { margin: .2rem 0 0 1rem; padding: 0; }
+.eligibility-unclear li { margin-bottom: .15rem; font-size: .82rem; }
 
 
 /* ================================================================

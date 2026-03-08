@@ -82,6 +82,7 @@ HARD FACTS — always apply these:
 * He holds an Italian student residence permit tied to his PhD (time-limited).  This does NOT equal "EU residency" for grants that require EU citizenship.
 * He has a Dutch MSc (Groningen).  This satisfies "European postgraduate degree" but NOT "British degree" or "UK university graduate".
 * He does NOT have a British degree or UK nationality/settled status.
+* He completed a 6-month PhD research visit at Cardiff University (August 2025 – January 2026).  This establishes a connection to the UK academic system but is NOT equivalent to holding a UK degree or a paid UK academic post.  Some fellowships that require a "connection to the UK" may accept a research visit — evaluate on a case-by-case basis and set eligibility_verdict to "check" when uncertain.
 * Italian is NOT a proficient working language — only basic daily use.  Positions requiring professional Italian should be flagged as a barrier.
 * PhD is not yet complete.  Positions requiring a completed PhD at time of application should be checked against the timeline (submission October 2026, defence Q1 2027).
 * The researcher is NOT looking for another PhD / doctoral position.  If a listing is clearly a PhD studentship, doctoral position, or pre-doctoral fellowship (not a postdoc), set relevance_score to 0, tier to 0, and set career_stage to "phd" so the dashboard can filter it.
@@ -100,7 +101,7 @@ Known fellowships and funding schemes:
 
 UK-BASED:
 * MSCA Postdoctoral Fellowships (Marie Curie):  PORTABLE within EU/associated countries.  Applicant chooses host.  Open to all nationalities.  If hostable at Cardiff -> Tier 1.
-* Leverhulme Early Career Fellowships:  Requires applicant to have a connection to the UK academic system (UK PhD or current UK academic post for 2+ years).  Researcher does NOT qualify — no UK degree, no prior UK employment.  -> Tier 0, not_eligible.
+* Leverhulme Early Career Fellowships:  Requires a "connection to the UK academic system" (UK PhD or UK academic post).  Researcher has a 6-month Cardiff research visit — this MAY partially count.  -> eligibility "check", cap at Tier 2.  Note ambiguity in eligibility_unclear.
 * ESRC Postdoctoral Fellowships:  Requires UK-connected degree or established link to UK research base.  Researcher does NOT qualify — no UK degree.  -> Tier 0, not_eligible.
 * ESRC New Investigator Grants:  £100,000–£300,000, rolling submission.  PI must be at eligible UK institution.  If at Cardiff -> Tier 1.
 * UKRI Future Leaders Fellowships:  £300,000–£2M+, 4–7 years.  NO nationality restrictions.  Global Talent visa eligible.  If at Cardiff -> Tier 1.
@@ -170,6 +171,7 @@ Every field must be present.  Use null for unknown values.
   "language_requirement": "extracted requirement or 'none stated'",
   "eligibility_verdict": "eligible" | "not_eligible" | "check",
   "eligibility_reason": "one-paragraph explanation of verdict",
+  "eligibility_unclear": ["list of specific requirements that are ambiguous or need researcher clarification, e.g. 'Does a 6-month research visit count as UK academic connection for Leverhulme?', 'Does Indonesian nationality qualify under Commonwealth route?'. Use null if everything is clear."],
   "eligibility_timeline_note": "note if eligibility depends on PhD completion timing, or null",
   "research_theme": "required/preferred research theme of the position",
   "theme_flexibility": "locked" | "flexible" | "open",
@@ -205,19 +207,29 @@ The researcher's methods are QUANTITATIVE: spatial econometrics, microsimulation
 - Positions that are methods-agnostic or policy-focused should NOT be penalised.
 
 UK AFFILIATION REQUIREMENT — HARD PENALTY:
-The researcher does NOT have a UK degree, UK nationality, UK settled status, or prior UK academic employment.
-Many British fellowships and grants require one or more of these as hard eligibility criteria:
-- ESRC Postdoctoral Fellowships: require UK-connected degree or prior UK institutional affiliation.
-- Leverhulme Early Career Fellowships: applicants must have a connection to the UK (typically UK PhD or UK employment).
-- British Academy Postdoctoral Fellowships: require UK nationality OR a UK PhD.
-- Any grant stating "UK degree required", "British nationality required", "must have held a UK academic position", "UKRI eligibility" (when nationality-restricted), or similar.
+The researcher does NOT have a UK degree, UK nationality, UK settled status, or prior paid UK academic employment.
+He DOES have a 6-month PhD research visit at Cardiff University (Aug 2025 – Jan 2026), which establishes a partial connection to the UK academic system.
 
-When a grant requires UK-specific affiliation that the researcher does NOT have:
+Many British fellowships and grants require specific UK affiliations:
+- ESRC Postdoctoral Fellowships: require UK-connected degree or established link to UK research base.  A 6-month visit is unlikely to satisfy this — set verdict to "check" and note the ambiguity.
+- Leverhulme Early Career Fellowships: require "connection to the UK academic system" — a Cardiff research visit MAY partially satisfy this.  Set verdict to "check", not "not_eligible", and note that the 6-month visit should be verified against their specific criteria.
+- British Academy Postdoctoral Fellowships: require UK/Commonwealth nationality OR a UK doctoral degree.  The Cardiff visit does NOT satisfy either — set to "not_eligible".
+- Any grant explicitly stating "UK degree required" or "British nationality required" → "not_eligible".
+- Any grant stating "connection to UK academia" or "UK research experience" → "check" (the Cardiff visit may count).
+
+When a grant CLEARLY requires UK credentials the researcher lacks (UK degree, UK nationality):
 - Set eligibility_verdict to "not_eligible".
 - Set eligibility_reason to clearly explain which UK requirement disqualifies the researcher.
 - Apply a SEVERE scoring penalty: subtract 40 to 50 points from relevance_score.
-- Set tier to 0 regardless of how well the topic fits — the researcher CANNOT apply.
-- Do NOT assign Tier 1/2/3 to grants requiring UK affiliation the researcher lacks.
+- Set tier to 0 regardless of how well the topic fits.
+- Add an "eligibility_unclear" note explaining what needs clarification.
+
+When a grant's UK requirement is AMBIGUOUS (might accept research visits):
+- Set eligibility_verdict to "check".
+- Set eligibility_reason explaining the ambiguity and the Cardiff visit.
+- Apply a MODERATE penalty: subtract 15 to 25 points from relevance_score.
+- Tier assignment can remain based on fit, but DO NOT assign Tier 1.  Cap at Tier 2.
+- Add an "eligibility_unclear" note explaining exactly what needs to be verified.
 
 EXCEPTION: Grants that only require a UK HOST INSTITUTION (not UK degree/nationality) are fine — the researcher's Cardiff affiliation satisfies that.  E.g. MSCA-PF, UKRI Future Leaders (no nationality restriction), ERC grants hosted at Cardiff — these remain eligible.
 
@@ -241,7 +253,8 @@ _EXPECTED_FIELDS: list[str] = [
     "salary", "salary_eur", "duration", "start_date", "full_time",
     "funding_covers", "career_stage",
     "nationality_requirement", "degree_requirement", "language_requirement",
-    "eligibility_verdict", "eligibility_reason", "eligibility_timeline_note",
+    "eligibility_verdict", "eligibility_reason", "eligibility_unclear",
+    "eligibility_timeline_note",
     "research_theme", "theme_flexibility", "methods_relevance",
     "policy_relevant", "funding_portable", "portability_note",
     "tier", "tier_reason", "relevance_score",

@@ -68,23 +68,40 @@ def _load_config() -> dict:
         return json.load(f)
 
 
-def _mark_expired(grants: list[dict]) -> list[dict]:
-    """Set expired=True on grants whose deadline has passed.
+def _mark_expired(grants: list[dict], max_age_days: int = 60) -> list[dict]:
+    """Set expired=True on grants whose deadline has passed or that are too old.
+
+    Two rules:
+      1. Deadline-based: if deadline < today, mark expired.
+      2. Age-based: if no deadline and date_found is older than max_age_days, mark expired.
 
     Never deletes grants -- only adds the flag.
     """
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    age_cutoff = (datetime.now(timezone.utc) - timedelta(days=max_age_days)).strftime("%Y-%m-%d")
     changed = 0
     for g in grants:
+        if g.get("expired"):
+            continue
+
         dl = g.get("deadline")
+        # Rule 1: deadline has passed
         if dl and isinstance(dl, str) and len(dl) >= 10:
             try:
                 if dl[:10] < today:
-                    if not g.get("expired"):
-                        g["expired"] = True
-                        changed += 1
+                    g["expired"] = True
+                    changed += 1
+                    continue
             except (TypeError, ValueError):
                 pass
+        else:
+            # Rule 2: no deadline — expire after max_age_days
+            date_found = g.get("date_found", "")
+            if date_found and isinstance(date_found, str) and len(date_found) >= 10:
+                if date_found[:10] < age_cutoff:
+                    g["expired"] = True
+                    changed += 1
+
     if changed:
         logger.info("Marked %d grants as expired.", changed)
     return grants
@@ -248,7 +265,13 @@ def run_daily(config: dict, dry_run: bool = False) -> dict:
     summary["analysis_errors"] = failed
     logger.info("Analysis: %d succeeded, %d failed.", succeeded, failed)
 
-    # --- 5. Tier 1 alerts ---
+    # --- 5. Save FIRST (before alerts, so data is never lost) ---
+    all_grants = existing_grants + analysed
+    all_grants = _mark_expired(all_grants)
+    save_grants(all_grants)
+    logger.info("Saved %d total grants (%d new).", len(all_grants), len(analysed))
+
+    # --- 6. Tier 1 alerts (after save, so grants are persisted) ---
     tier1_new = [g for g in analysed if g.get("tier") == 1]
     if tier1_new:
         logger.info("Found %d new Tier 1 grants!", len(tier1_new))
@@ -264,12 +287,6 @@ def run_daily(config: dict, dry_run: bool = False) -> dict:
                     logger.error("Tier 1 alert failed for '%s': %s",
                                  g.get("title"), exc)
                     summary["errors"].append(f"Tier 1 alert: {exc}")
-
-    # --- 6. Append and save ---
-    all_grants = existing_grants + analysed
-    all_grants = _mark_expired(all_grants)
-    save_grants(all_grants)
-    logger.info("Saved %d total grants (%d new).", len(all_grants), len(analysed))
 
     # --- 7. Update run status ---
     update_run_status(
@@ -326,6 +343,7 @@ def run_weekly(config: dict, dry_run: bool = False) -> dict:
 
     # --- 2. Deduplicate discovered grants ---
     existing_grants = load_grants()
+    disc_tier1 = []
     if discovered:
         new_discovered = deduplicate(discovered, existing_grants)
         logger.info("Discovery after dedup: %d new.", len(new_discovered))
@@ -341,20 +359,8 @@ def run_weekly(config: dict, dry_run: bool = False) -> dict:
         existing_grants.extend(new_discovered)
         summary["discovered"] = len(new_discovered)
 
-        # Check for Tier 1 among discovered
+        # Collect Tier 1 discovered grants (alerts sent after save)
         disc_tier1 = [g for g in new_discovered if g.get("tier") == 1]
-        for g in disc_tier1:
-            if dry_run:
-                logger.info("[DRY RUN] Would send Tier 1 alert (discovery): %s",
-                            g.get("title"))
-            else:
-                try:
-                    sent = send_tier1_alert(g, config)
-                    if sent:
-                        summary["tier1_alerts_sent"] += 1
-                except Exception as exc:
-                    logger.error("Tier 1 alert (discovery) failed: %s", exc)
-                    summary["errors"].append(f"Tier 1 discovery alert: {exc}")
 
     # --- 3. Re-evaluate recent grants ---
     recent = _recent_grants(existing_grants, days=7)
@@ -384,23 +390,16 @@ def run_weekly(config: dict, dry_run: bool = False) -> dict:
             summary["reeval_changes"] = changes
             logger.info("Re-evaluation: %d changes applied.", changes)
 
-            # Alert on newly-upgraded Tier 1
-            for g in newly_tier1:
-                try:
-                    sent = send_tier1_alert(g, config)
-                    if sent:
-                        summary["tier1_alerts_sent"] += 1
-                        logger.info("Tier 1 upgrade alert sent: %s", g.get("title"))
-                except Exception as exc:
-                    logger.error("Tier 1 upgrade alert failed: %s", exc)
-                    summary["errors"].append(f"Tier 1 upgrade alert: {exc}")
-
         except Exception as exc:
             logger.error("Re-evaluation failed: %s", exc, exc_info=True)
             summary["errors"].append(f"Re-evaluation: {exc}")
+            newly_tier1 = []
     elif dry_run:
         logger.info("[DRY RUN] Skipping Opus re-evaluation of %d recent grants.",
                      len(recent))
+        newly_tier1 = []
+    else:
+        newly_tier1 = []
 
     # --- 4. Strategic notes ---
     if dry_run:
@@ -431,11 +430,27 @@ def run_weekly(config: dict, dry_run: bool = False) -> dict:
                 "cv_gaps_to_address": [],
             }
 
-    # --- 5. Save everything ---
+    # --- 5. Save FIRST (before alerts, so data is never lost) ---
     existing_grants = _mark_expired(existing_grants)
     save_grants(existing_grants)
     save_json("strategic_notes.json", strategic_notes)
     logger.info("Saved %d grants and strategic notes.", len(existing_grants))
+
+    # --- 5b. Send Tier 1 alerts (after save) ---
+    all_tier1 = disc_tier1 + newly_tier1
+    for g in all_tier1:
+        if dry_run:
+            logger.info("[DRY RUN] Would send Tier 1 alert: %s", g.get("title"))
+        else:
+            try:
+                sent = send_tier1_alert(g, config)
+                if sent:
+                    summary["tier1_alerts_sent"] += 1
+                    logger.info("Tier 1 alert sent: %s", g.get("title"))
+            except Exception as exc:
+                logger.error("Tier 1 alert failed for '%s': %s",
+                             g.get("title"), exc)
+                summary["errors"].append(f"Tier 1 alert: {exc}")
 
     # --- 6. Send weekly digest ---
     # Compile this week's new grants by tier

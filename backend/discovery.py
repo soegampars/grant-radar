@@ -37,15 +37,18 @@ logger = logging.getLogger(__name__)
 # URL validation for discovery results
 # -------------------------------------------------------------------
 
-# Aggregator/search domains whose listing pages are never valid URLs
+# Pure re-scraping aggregators whose listing pages are never valid URLs.
+# NOTE: econjobmarket.org and academictransfer.com are PRIMARY platforms
+# (institutions post directly there) — do NOT block them.
 _AGGREGATOR_DOMAINS = {
-    "econjobmarket.org", "academicpositions.com", "findapostdoc.com",
-    "inomics.com", "applykite.com", "scholarshipdb.net",
+    "academicpositions.com", "findapostdoc.com",
+    "applykite.com", "scholarshipdb.net",
     "opportunitiesforafricans.com", "jobsacademic.com",
-    "timeshighereducation.com",
 }
 
 # Path patterns that indicate a search/listing page rather than specific posting
+# Path patterns that indicate a search/listing page rather than a specific posting.
+# These block e.g. /positions but NOT /positions/12345 (a specific EJM listing).
 _BAD_PATH_PATTERNS = [
     r"^/search",
     r"^/jobs/?$",
@@ -56,7 +59,7 @@ _BAD_PATH_PATTERNS = [
     r"/results/?$",
     r"^/en/jobs/?$",
     r"^/careers/?$",
-    r"^/jobs/position/",        # academicpositions pattern
+    r"^/jobs/position/",        # academicpositions wildcard search pattern
 ]
 
 

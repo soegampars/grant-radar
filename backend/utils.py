@@ -300,6 +300,19 @@ def save_grants(
     dirpath.mkdir(parents=True, exist_ok=True)
     filepath = dirpath / "grants.json"
 
+    # Deduplicate by ID (keep last occurrence = most recently analysed)
+    seen: dict[str, int] = {}
+    for i, g in enumerate(grants):
+        gid = g.get("id", "")
+        if gid:
+            seen[gid] = i
+    if len(seen) < len(grants):
+        logger.info("save_grants: deduplicating %d -> %d grants.",
+                     len(grants), len(seen))
+        keep_idx = set(seen.values())
+        # Also keep grants with no id (shouldn't happen, but safety)
+        grants = [g for i, g in enumerate(grants) if i in keep_idx or not g.get("id")]
+
     # Two-pass stable sort: date_found DESC first, then tier ASC
     # Python's sort is stable, so the secondary key is preserved.
     sorted_grants = sorted(

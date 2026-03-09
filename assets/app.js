@@ -66,7 +66,7 @@
   async function init() {
     bindEvents();
     await Promise.all([
-      fetchJSON("data/grants.json").then(d => { allGrants = d || []; }),
+      fetchJSON("data/grants.json").then(d => { allGrants = _dedup(d || []); }),
       fetchJSON("data/run_status.json").then(d => { runStatus = d || []; }),
       fetchJSON("data/strategic_notes.json").then(d => { strategic = d || {}; }),
     ]);
@@ -278,12 +278,18 @@
   // Stats bar
   // ------------------------------------------------------------------
   function renderStats() {
-    const nonExpired = allGrants.filter(g => !g.expired);
-    const cutoff = daysAgoISO(7);
-    const newThisWeek = allGrants.filter(g => (g.date_found || "") >= cutoff);
-    const byTier = groupByTier(nonExpired);
+    // Use the same base filter as the card view (minus tier filter)
+    // so stats reflect what the user actually sees
+    const savedTier = filters.tier;
+    filters.tier = "all";
+    const visible = filterGrants(allGrants);
+    filters.tier = savedTier;
 
-    document.getElementById("statTotal").textContent = nonExpired.length;
+    const cutoff = daysAgoISO(7);
+    const newThisWeek = visible.filter(g => (g.date_found || "") >= cutoff);
+    const byTier = groupByTier(visible);
+
+    document.getElementById("statTotal").textContent = visible.length;
     document.getElementById("statNew").textContent = newThisWeek.length;
     document.getElementById("statT1").textContent = (byTier[1] || []).length;
     document.getElementById("statT2").textContent = (byTier[2] || []).length;
@@ -291,14 +297,14 @@
     document.getElementById("statT4").textContent = (byTier[4] || []).length;
 
     // Eligibility
-    const eligible = nonExpired.filter(g => g.eligibility_verdict === "eligible").length;
-    const check    = nonExpired.filter(g => g.eligibility_verdict === "check").length;
+    const eligible = visible.filter(g => g.eligibility_verdict === "eligible").length;
+    const check    = visible.filter(g => g.eligibility_verdict === "check").length;
     document.getElementById("statEligible").textContent = eligible;
     document.getElementById("statCheck").textContent = check;
 
     // Next deadline
     const today = todayISO();
-    const upcoming = nonExpired
+    const upcoming = visible
       .filter(g => g.deadline && g.deadline >= today)
       .sort((a, b) => a.deadline.localeCompare(b.deadline));
     if (upcoming.length > 0) {
@@ -996,6 +1002,15 @@
   // ------------------------------------------------------------------
   // Utilities
   // ------------------------------------------------------------------
+  function _dedup(grants) {
+    const seen = new Map();
+    for (const g of grants) {
+      const id = g.id || "";
+      if (!seen.has(id)) seen.set(id, g);
+    }
+    return [...seen.values()];
+  }
+
   function esc(s) {
     if (!s) return "";
     const d = document.createElement("div");

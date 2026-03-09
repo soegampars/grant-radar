@@ -23,12 +23,63 @@ we must send the assistant message back to continue.
 
 import json
 import logging
+import re
 import time
 from datetime import datetime, timezone
+from urllib.parse import urlparse
 
 from anthropic import Anthropic, APIError, RateLimitError
 
 logger = logging.getLogger(__name__)
+
+
+# -------------------------------------------------------------------
+# URL validation for discovery results
+# -------------------------------------------------------------------
+
+# Aggregator/search domains whose listing pages are never valid URLs
+_AGGREGATOR_DOMAINS = {
+    "econjobmarket.org", "academicpositions.com", "findapostdoc.com",
+    "inomics.com", "applykite.com", "scholarshipdb.net",
+    "opportunitiesforafricans.com", "jobsacademic.com",
+    "timeshighereducation.com",
+}
+
+# Path patterns that indicate a search/listing page rather than specific posting
+_BAD_PATH_PATTERNS = [
+    r"^/search",
+    r"^/jobs/?$",
+    r"^/positions/?$",
+    r"^/vacancies/?$",
+    r"^/opportunities/?$",
+    r"/search/",
+    r"/results/?$",
+    r"^/en/jobs/?$",
+    r"^/careers/?$",
+    r"^/jobs/position/",        # academicpositions pattern
+]
+
+
+def _validate_discovery_url(url: str) -> str | None:
+    """Validate a discovery URL.  Returns None if OK, or a rejection reason."""
+    if not url or not url.startswith("http"):
+        return "missing or non-HTTP URL"
+
+    parsed = urlparse(url)
+    domain = parsed.netloc.lower().replace("www.", "")
+
+    # Check aggregator domains
+    for agg in _AGGREGATOR_DOMAINS:
+        if domain == agg or domain.endswith("." + agg):
+            return f"aggregator domain: {agg}"
+
+    # Check for generic listing paths
+    path = parsed.path.rstrip("/")
+    for pattern in _BAD_PATH_PATTERNS:
+        if re.search(pattern, path, re.IGNORECASE):
+            return f"generic listing path: {path}"
+
+    return None
 
 # -------------------------------------------------------------------
 # Retry / back-off settings
@@ -214,17 +265,53 @@ ELIGIBILITY HARD FACTS
 * PhD not yet complete (submission October 2026, defence Q1 2027).
 
 ===================================================================
+CRITICAL: URL AND DATA INTEGRITY RULES
+===================================================================
+These rules are NON-NEGOTIABLE.  Violating them produces garbage data.
+
+URL RULES:
+1. The "url" field MUST be a direct link to a SPECIFIC job/grant posting or call page.
+   GOOD:  https://www.mpg.de/26205453/post-doctoral-researcher-ld  (specific posting)
+   GOOD:  https://www.nwo.nl/en/calls/nwo-talent-programme-veni-ssh-2025  (specific call page)
+   BAD:   https://econjobmarket.org/positions  (generic listing/search page)
+   BAD:   https://academicpositions.com/jobs/position/post-doc/field/economics  (search results)
+   BAD:   https://www.polimi.it/en/faculty-and-researchers/calls-and-competitions/research-grants  (generic index)
+   BAD:   https://www.applykite.com/en-tr/search/positions/all/netherlands/economics  (aggregator search)
+
+2. NEVER use URLs from job aggregators or search result pages.  If you found a grant via an
+   aggregator (INOMICS, FindAPostDoc, academicpositions.com, etc.), follow the link to the
+   ORIGINAL posting on the institution's own website and use that URL instead.
+
+3. If you CANNOT find a direct URL to the specific posting, DO NOT include the entry.
+   It is better to return fewer, high-quality results than many broken ones.
+
+METADATA RULES:
+4. The "title" MUST reflect what is ACTUALLY on the linked page.  Do not invent a title
+   that sounds like what you hope the page contains.  If the page says "Veni SSH 2025",
+   the title must say 2025, not 2026.
+
+5. The "deadline" MUST come from the actual page content, not from your assumptions.
+   If the page shows a deadline of January 2026, do NOT change it to September 2026.
+   If no deadline is visible on the page, set deadline to null.
+
+6. Do NOT create entries for grants/calls that have not yet been announced.
+   If the 2026 round has not been published, do NOT fabricate a 2026 entry from the 2025 page.
+   Only report what actually exists right now.
+
+7. If a page is empty, under construction, or shows no current openings, skip it entirely.
+
+===================================================================
 OUTPUT FORMAT
 ===================================================================
 After completing your searches, return a JSON array of opportunity objects.
 Each object must have these fields (use null for unknown values):
 
 {
-  "title": "standardised title",
+  "title": "standardised title (must match actual page content)",
   "institution": "institution name",
   "country": "country",
   "city": "city or null",
-  "url": "direct URL to the listing",
+  "url": "direct URL to the SPECIFIC posting (NOT a search/listing page)",
   "date_posted": "ISO date or null",
   "deadline": "ISO date or null",
   "deadline_display": "human-readable deadline or null",
@@ -680,8 +767,26 @@ def discover_opportunities(config: dict) -> list[dict]:
 
     # Filter out non-dict items
     results = [g for g in parsed if isinstance(g, dict)]
-    logger.info("Discovery found %d opportunities.", len(results))
-    return results
+
+    # Post-processing validation: reject entries with bad URLs
+    validated = []
+    for g in results:
+        url = (g.get("url") or "").strip()
+        reject_reason = _validate_discovery_url(url)
+        if reject_reason:
+            logger.warning("Rejected discovery entry: %s — URL: %s — Reason: %s",
+                           g.get("title", "?")[:60], url[:80], reject_reason)
+        else:
+            validated.append(g)
+
+    rejected = len(results) - len(validated)
+    if rejected:
+        logger.info("URL validation: kept %d, rejected %d of %d discovery results.",
+                     len(validated), rejected, len(results))
+    else:
+        logger.info("Discovery found %d opportunities (all passed URL validation).",
+                     len(validated))
+    return validated
 
 
 # -------------------------------------------------------------------

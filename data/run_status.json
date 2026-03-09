@@ -7,69 +7,6 @@
     "grants_found": 0
   },
   {
-    "source_name": "INOMICS",
-    "status": "success",
-    "last_checked": "2026-03-08T08:38:44.637092+00:00",
-    "error": null,
-    "grants_found": 10
-  },
-  {
-    "source_name": "EconJobMarket",
-    "status": "success",
-    "last_checked": "2026-03-08T08:38:45.343949+00:00",
-    "error": null,
-    "grants_found": 148
-  },
-  {
-    "source_name": "Jobs.ac.uk - Geography",
-    "status": "success",
-    "last_checked": "2026-03-08T08:38:47.476121+00:00",
-    "error": null,
-    "grants_found": 25
-  },
-  {
-    "source_name": "Jobs.ac.uk - Economics",
-    "status": "success",
-    "last_checked": "2026-03-08T08:38:51.266516+00:00",
-    "error": null,
-    "grants_found": 25
-  },
-  {
-    "source_name": "Academic Transfer (Netherlands)",
-    "status": "success",
-    "last_checked": "2026-03-08T08:39:58.815094+00:00",
-    "error": null,
-    "grants_found": 30
-  },
-  {
-    "source_name": "EURAXESS",
-    "status": "success",
-    "last_checked": "2026-03-08T08:40:38.425673+00:00",
-    "error": null,
-    "grants_found": 20
-  },
-  {
-    "source_name": "RSA - Regional Studies Association",
-    "status": "success",
-    "last_checked": "2026-03-08T08:40:44.193498+00:00",
-    "error": null,
-    "grants_found": 40
-  },
-  {
-    "source_name": "ERSA",
-    "status": "success",
-    "last_checked": "2026-03-08T08:40:53.596983+00:00",
-    "error": null,
-    "grants_found": 20
-  },
-  {
-    "source_name": "BRIN Talent Management",
-    "status": "success",
-    "last_checked": "2026-03-08T08:41:17.323842+00:00",
-    "error": null,
-    "grants_found": 7
-  },
-  {
     "source_name": "daily_pipeline",
     "status": "success",
     "last_checked": "2026-03-08T08:47:09.478270+00:00",
@@ -82,5 +19,68 @@
     "last_checked": "2026-03-08T08:55:46.842699+00:00",
     "error": null,
     "grants_found": 40
+  },
+  {
+    "source_name": "INOMICS",
+    "status": "success",
+    "last_checked": "2026-03-09T04:13:14.646667+00:00",
+    "error": null,
+    "grants_found": 10
+  },
+  {
+    "source_name": "EconJobMarket",
+    "status": "success",
+    "last_checked": "2026-03-09T04:13:16.879022+00:00",
+    "error": null,
+    "grants_found": 148
+  },
+  {
+    "source_name": "Jobs.ac.uk - Geography",
+    "status": "success",
+    "last_checked": "2026-03-09T04:13:18.614603+00:00",
+    "error": null,
+    "grants_found": 25
+  },
+  {
+    "source_name": "Jobs.ac.uk - Economics",
+    "status": "success",
+    "last_checked": "2026-03-09T04:13:21.871935+00:00",
+    "error": null,
+    "grants_found": 25
+  },
+  {
+    "source_name": "Academic Transfer (Netherlands)",
+    "status": "success",
+    "last_checked": "2026-03-09T04:14:23.843572+00:00",
+    "error": null,
+    "grants_found": 30
+  },
+  {
+    "source_name": "EURAXESS",
+    "status": "success",
+    "last_checked": "2026-03-09T04:14:58.654755+00:00",
+    "error": null,
+    "grants_found": 20
+  },
+  {
+    "source_name": "RSA - Regional Studies Association",
+    "status": "success",
+    "last_checked": "2026-03-09T04:15:07.045201+00:00",
+    "error": null,
+    "grants_found": 40
+  },
+  {
+    "source_name": "ERSA",
+    "status": "success",
+    "last_checked": "2026-03-09T04:15:15.568932+00:00",
+    "error": null,
+    "grants_found": 20
+  },
+  {
+    "source_name": "BRIN Talent Management",
+    "status": "success",
+    "last_checked": "2026-03-09T04:15:42.546678+00:00",
+    "error": null,
+    "grants_found": 0
   }
 ]

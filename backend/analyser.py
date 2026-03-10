@@ -199,6 +199,13 @@ Scoring guidance for relevance_score (0-100):
 - 10-29:  Poor match — outside core field but still within economics/geography broadly.
 - 0-9:    Not relevant but collected anyway (e.g. pure mathematics paper from arXiv).
 
+CRITICAL — TIER vs RELEVANCE CONSISTENCY RULE:
+The tier system rewards INSTITUTIONAL CONNECTION, but a position must ALSO be in a relevant field to deserve a high tier.  Apply this floor:
+- relevance_score below 30 → tier MUST be 0, regardless of institutional connection.  A geomorphology postdoc at a Dutch university is still irrelevant.
+- relevance_score 30-49 → tier capped at Tier 3 maximum.
+- relevance_score 50 or above → tier assignment follows normal rules.
+This prevents positions in completely unrelated fields from appearing as high-priority just because they happen to be at Cardiff, a Dutch university, or PoliMi.
+
 METHODS SCORING PENALTY:
 The researcher's methods are QUANTITATIVE: spatial econometrics, microsimulation, GIS, agent-based modelling.
 - Positions with a strong QUALITATIVE methods focus (ethnography, interviews, discourse analysis, participatory research, case studies as primary method) should receive a scoring penalty of -15 to -25 points.

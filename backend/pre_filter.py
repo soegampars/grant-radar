@@ -27,9 +27,10 @@ def keyword_filter(
 ) -> tuple[list[dict], list[dict]]:
     """Filter grants using config-driven keyword lists.
 
-    Two rules (both must pass for a grant to survive):
+    Three rules (all must pass for a grant to survive):
       1. Title must NOT contain any exclude keyword.
-      2. Title + description must contain at least one require keyword.
+      2. Title must contain at least one require keyword (title-only check).
+      3. Title must NOT match any exclude field pattern (irrelevant academic fields).
 
     Returns:
         (keep, filtered) — two lists.
@@ -37,6 +38,7 @@ def keyword_filter(
     pf = config.get("pre_filter", {})
     exclude_kws = [kw.lower() for kw in pf.get("exclude_title_keywords", [])]
     require_kws = [kw.lower() for kw in pf.get("require_any_keywords", [])]
+    exclude_fields = [kw.lower() for kw in pf.get("exclude_title_fields", [])]
 
     keep: list[dict] = []
     filtered: list[dict] = []
@@ -56,14 +58,26 @@ def keyword_filter(
             filtered.append(g)
             continue
 
-        # Rule 2: require at least one domain keyword in title + description
+        # Rule 2: require at least one domain keyword in TITLE ONLY
+        # (previously checked title + description, which was too permissive)
         if require_kws:
-            text = title_lower + " " + (g.get("description") or g.get("raw_content") or "").lower()
-            found = any(kw in text for kw in require_kws)
+            found = any(kw in title_lower for kw in require_kws)
             if not found:
-                g["filter_reason"] = "no_domain_keyword_match"
+                g["filter_reason"] = "no_domain_keyword_in_title"
                 filtered.append(g)
                 continue
+
+        # Rule 3: exclude irrelevant academic fields mentioned in title
+        field_excluded_by = None
+        for kw in exclude_fields:
+            if kw in title_lower:
+                field_excluded_by = kw
+                break
+
+        if field_excluded_by:
+            g["filter_reason"] = f"irrelevant_field: {field_excluded_by}"
+            filtered.append(g)
+            continue
 
         keep.append(g)
 
@@ -80,11 +94,21 @@ def keyword_filter(
 
 _TRIAGE_SYSTEM = """You are a pre-filter for an academic grant monitoring system.
 
-The researcher is a PhD candidate in Regional Economics / Economic Geography at Politecnico di Milano (Indonesian nationality, Groningen MSc). He is looking for POSTDOCTORAL positions, fellowships, research associate roles, and academic grants in economics, geography, regional science, spatial economics, urban studies, policy, planning, or development — anywhere in Europe or Indonesia.
+The researcher is a PhD candidate (final year, expecting defence Q1 2027) in Regional Economics / Economic Geography at Politecnico di Milano (Indonesian nationality, Groningen MSc). He is looking for POSTDOCTORAL positions, fellowships, research associate roles, and academic grants in economics, geography, regional science, spatial economics, urban studies, policy, planning, or development.
 
-Given a numbered list of job/grant listing titles, identify which ones are CLEARLY IRRELEVANT and should be excluded from detailed analysis. Only exclude listings that are obviously outside the researcher's broad academic domain.
+TARGET GEOGRAPHY: Europe (especially UK, Netherlands, Italy) and Indonesia ONLY.
 
-KEEP when in doubt. Borderline cases should always be kept.
+Given a numbered list of job/grant listing titles with institutions, EXCLUDE the following:
+
+1. PhD / doctoral / pre-doctoral positions (researcher needs POSTDOC level).
+2. Positions clearly outside Europe and Indonesia (e.g., US, Canada, Australia, Asia except Indonesia, Latin America, Middle East, Africa).
+3. News articles, blog posts, announcements, award ceremonies, book launches, conference highlights — anything that is NOT a job or grant listing.
+4. Pure finance, accounting, or marketing faculty positions with no regional/spatial/policy dimension.
+5. Positions in clearly irrelevant fields that somehow passed keyword filtering (natural sciences, engineering, medicine, law, computer science, etc.).
+
+KEEP when in doubt. If geography or field is ambiguous, keep it.
+KEEP all portable fellowships (MSCA, ERC, Humboldt, etc.) regardless of host institution geography.
+KEEP positions that mention economics, geography, regional, spatial, urban, policy, planning, development, inequality, labour, trade, innovation, or similar even if the subfield seems distant.
 
 Return ONLY a JSON object: {"exclude": [list of numbers to exclude], "reasons": {"1": "brief reason", ...}}
 Only include excluded items in the reasons dict."""

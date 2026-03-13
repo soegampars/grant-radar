@@ -71,14 +71,17 @@ def _load_config() -> dict:
 def _mark_expired(grants: list[dict], max_age_days: int = 60) -> list[dict]:
     """Set expired=True on grants whose deadline has passed or that are too old.
 
-    Two rules:
+    Three rules:
       1. Deadline-based: if deadline < today, mark expired.
       2. Age-based: if no deadline and date_found is older than max_age_days, mark expired.
+      3. Low-score auto-archive: Tier 0 + score <= 10 + older than 14 days -> expired.
+         These entries are confirmed irrelevant and just clutter the dashboard.
 
     Never deletes grants -- only adds the flag.
     """
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     age_cutoff = (datetime.now(timezone.utc) - timedelta(days=max_age_days)).strftime("%Y-%m-%d")
+    junk_cutoff = (datetime.now(timezone.utc) - timedelta(days=14)).strftime("%Y-%m-%d")
     changed = 0
     for g in grants:
         if g.get("expired"):
@@ -99,6 +102,17 @@ def _mark_expired(grants: list[dict], max_age_days: int = 60) -> list[dict]:
             date_found = g.get("date_found", "")
             if date_found and isinstance(date_found, str) and len(date_found) >= 10:
                 if date_found[:10] < age_cutoff:
+                    g["expired"] = True
+                    changed += 1
+                    continue
+
+        # Rule 3: auto-archive low-score junk after 14 days
+        score = g.get("relevance_score", 0) or 0
+        tier = g.get("tier", 0) or 0
+        if tier == 0 and score <= 10:
+            date_found = g.get("date_found", "")
+            if date_found and isinstance(date_found, str) and len(date_found) >= 10:
+                if date_found[:10] < junk_cutoff:
                     g["expired"] = True
                     changed += 1
 

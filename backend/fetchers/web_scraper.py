@@ -565,6 +565,43 @@ RSA_FEED_URL = "https://www.regionalstudies.org/feed/?post_type=news"
 RSA_FEED_PAGES = 2  # Fetch first N pages of the RSS feed
 
 
+# RSA news detection — filters out non-job/grant content from the RSS feed
+_RSA_NEWS_MARKERS = [
+    "announcing", "highlights from", "in memoriam", "welcome to the new",
+    "celebrating", "introducing the", "book launch", "book series",
+    "blog award", "best blog", "honorary membership", "award ceremony",
+    "conference highlights", "conference faqs", "conference tours",
+    "submitted sessions", "open sessions", "closed sessions",
+    "plenary speakers", "anniversary workshop", "workshop:",
+    "journal of regional", "knowbot", "call for papers",
+    "call for proposals", "call for rsrs", "call for expressions",
+    "policy impact", "rsa session at", "latin america",
+    "women's network", "phd student representative",
+    "most read", "around the world", "rsa opportunities",
+]
+
+# If the title contains ANY job/grant indicator, keep it regardless of news markers
+_RSA_JOB_INDICATORS = [
+    "position", "postdoc", "fellowship", "grant scheme", "grant holder",
+    "lecturer in", "lecturer /", "vacancy", "funding", "award scheme",
+    "research associate", "research fellow", "call for applications",
+    "assistant professor", "associate professor", "full professor",
+    "tenure", "research grant",
+]
+
+
+def _is_rsa_news(title: str) -> bool:
+    """Return True if an RSA RSS entry is a news article (not a job/grant listing)."""
+    t = title.lower()
+    # If it clearly looks like a job/grant listing, always keep it
+    if any(ind in t for ind in _RSA_JOB_INDICATORS):
+        return False
+    # If it matches any news marker pattern, skip it
+    if any(marker in t for marker in _RSA_NEWS_MARKERS):
+        return True
+    return False
+
+
 def _scrape_rsa(source_config: dict) -> list[dict]:
     """Scrape news/announcements from the Regional Studies Association.
 
@@ -619,6 +656,12 @@ def _scrape_rsa(source_config: dict) -> list[dict]:
                 continue
 
             title = getattr(entry, "title", "(no title)")
+
+            # Filter out news articles, announcements, and non-job content.
+            # RSA RSS feed mixes job/grant listings with news posts.
+            if _is_rsa_news(title):
+                logger.debug(f"  Skipping RSA news: {title[:60]}")
+                continue
 
             # Extract date from published_parsed
             date_posted = None

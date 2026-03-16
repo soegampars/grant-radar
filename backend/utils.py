@@ -177,7 +177,7 @@ def deduplicate(
     """Return grants from *new_grants* not already in *existing_grants*.
 
     Matching criteria (either triggers duplicate removal):
-      - **URL exact match**.
+      - **URL exact match** (including previously-seen URLs from seen_urls.json).
       - **Normalised title similarity > 90 %** (difflib SequenceMatcher).
 
     Args:
@@ -188,6 +188,16 @@ def deduplicate(
         A list containing only the non-duplicate grants.
     """
     existing_urls: set[str] = {g.get("url", "") for g in existing_grants}
+
+    # Also load previously-seen URLs (grants removed from grants.json but
+    # still known to the system, so we don't re-analyse them).
+    seen_urls_file = DATA_DIR / "seen_urls.json"
+    try:
+        seen_list = load_json("seen_urls.json")
+        if isinstance(seen_list, list):
+            existing_urls.update(seen_list)
+    except Exception:
+        pass
     existing_titles: list[str] = [
         _normalise_title(g.get("title", "")) for g in existing_grants
     ]
@@ -329,6 +339,38 @@ def save_grants(
         json.dump(sorted_grants, f, indent=2, default=str)
 
     logger.info("Saved %d grants to %s", len(sorted_grants), filepath)
+
+    # Update seen_urls.json with all URLs from saved grants
+    _update_seen_urls([g.get("url", "") for g in sorted_grants if g.get("url")],
+                      data_dir=dirpath)
+
+
+def _update_seen_urls(new_urls: list[str], data_dir: Path | None = None) -> None:
+    """Append URLs to seen_urls.json so dedup recognises them in future runs.
+
+    This file persists URLs of grants that have been processed (analysed),
+    even if they are later removed from grants.json (e.g., by data cleanup).
+    Prevents re-analysing the same listings and wasting API costs.
+    """
+    dirpath = data_dir or DATA_DIR
+    try:
+        existing = load_json("seen_urls.json", data_dir=dirpath)
+        if not isinstance(existing, list):
+            existing = []
+    except Exception:
+        existing = []
+
+    existing_set = set(existing)
+    added = 0
+    for url in new_urls:
+        if url and url not in existing_set:
+            existing.append(url)
+            existing_set.add(url)
+            added += 1
+
+    if added:
+        save_json("seen_urls.json", existing, data_dir=dirpath)
+        logger.debug("seen_urls.json: added %d URLs (total %d)", added, len(existing))
 
 
 # ───────────────────────────────────────────────────────────────────

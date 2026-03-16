@@ -29,7 +29,7 @@ permissions:
 jobs:
   daily-run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30     # Daily pipeline typically finishes in ~10 min
+    timeout-minutes: 45     # Daily pipeline typically finishes in ~10 min
 
     steps:
       - name: Checkout repository

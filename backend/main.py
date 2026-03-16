@@ -467,8 +467,14 @@ def run_weekly(config: dict, dry_run: bool = False) -> dict:
                 summary["errors"].append(f"Tier 1 alert: {exc}")
 
     # --- 6. Send weekly digest ---
-    # Compile this week's new grants by tier
+    # Compile this week's new grants by tier.
+    # Filter out low-score Tier 0 junk so digest matches dashboard quality.
     this_week = _recent_grants(existing_grants, days=7)
+    this_week = [
+        g for g in this_week
+        if (g.get("tier", 0) or 0) > 0
+        or (g.get("relevance_score", 0) or 0) > 10
+    ]
     by_tier = _grants_by_tier(this_week)
 
     # Load source status for the digest

@@ -1,6 +1,10 @@
-# daily.yml -- GitHub Actions workflow for daily Sonnet grant collection.
+# daily.yml -- GitHub Actions workflow for on-demand Sonnet grant collection.
 #
-# Runs every day at 06:00 UTC. Executes the daily pipeline:
+# Daily cron DISABLED — the weekly workflow (weekly.yml) now handles all
+# scheduled runs. This workflow can still be triggered manually from the
+# Actions tab when needed.
+#
+# Executes the daily pipeline (on manual trigger only):
 #   1. Checks out the repo (with push-capable token).
 #   2. Sets up Python and installs dependencies.
 #   3. Runs backend/main.py --mode daily to fetch, analyse, and store grants.
@@ -19,8 +23,9 @@
 name: Daily Grant Collection
 
 on:
-  schedule:
-    - cron: "0 2 * * *"   # Every day at 02:00 UTC (03:00 CET)
+  # Daily cron disabled — consolidated to weekly-only schedule (weekly.yml).
+  # schedule:
+  #   - cron: "0 2 * * *"   # Every day at 02:00 UTC (03:00 CET)
   workflow_dispatch:        # Allow manual trigger from Actions tab
 
 permissions:

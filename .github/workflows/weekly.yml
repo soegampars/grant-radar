@@ -1,9 +1,11 @@
-# weekly.yml -- GitHub Actions workflow for weekly Opus deep search.
+# weekly.yml -- GitHub Actions workflow for weekly grant collection + Opus deep search.
+#
+# This is the SOLE scheduled workflow. Daily cron is disabled.
 #
 # Runs every Sunday at 08:00 UTC. Executes the weekly pipeline:
 #   1. Checks out the repo (with push-capable token).
 #   2. Sets up Python and installs dependencies.
-#   3. Runs backend/main.py --mode weekly, which performs the daily pipeline
+#   3. Runs backend/main.py --mode weekly, which performs the full pipeline
 #      PLUS Claude Opus deep web search, re-evaluation of recent grants,
 #      strategic notes generation, and sends the weekly digest email.
 #   4. Commits updated data/ JSON files (grants.json, strategic_notes.json,

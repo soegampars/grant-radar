@@ -440,6 +440,9 @@
   function _isPhd(g) {
     if ((g.career_stage || "").toLowerCase() === "phd") return true;
     const t = (g.title || "").toLowerCase();
+    // "postdoctoral" contains "doctoral" as a substring, so postdoc titles
+    // would falsely match patterns like "doctoral fellowship". Exclude them.
+    if (t.includes("postdoc") || t.includes("post-doc")) return false;
     return _PHD_PATTERNS.some(p => t.includes(p));
   }
 

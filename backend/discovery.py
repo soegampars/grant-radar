@@ -144,24 +144,24 @@ SEARCH STRATEGY
 You MUST search strategically using a variety of query categories.  Below are suggested starting queries -- you may add others that you judge useful.  Spend your search budget wisely: run the most promising queries first, then branch out.
 
 General academic:
-- "postdoc economic geography 2026"
+- "postdoc economic geography Europe"
 - "research fellow regional economics Europe"
 - "postdoctoral position spatial economics"
 - "research associate urban economics"
 
 UK funding-specific:
-- "MSCA postdoctoral fellowship 2026 call"
-- "Leverhulme early career fellowship 2026"
-- "ERC starting grant 2026 social science"
+- "MSCA postdoctoral fellowship call open"
+- "Leverhulme early career fellowship apply"
+- "ERC starting grant social science call"
 - "ESRC postdoctoral fellowship"
 - "British Academy postdoctoral fellowship"
-- "UKRI Future Leaders Fellowship 2026"
-- "British Academy International Fellowship 2026"
+- "UKRI Future Leaders Fellowship call"
+- "British Academy International Fellowship call"
 - "Nuffield Foundation grant geographical inequality"
 - "BA Leverhulme small research grant"
 
 European funding:
-- "NWO Veni social science 2026"
+- "NWO Veni social science call"
 - "NWO Vidi economic geography"
 - "Humboldt postdoctoral fellowship economics"
 - "DFG Walter Benjamin economic geography"
@@ -200,7 +200,7 @@ Japan-specific:
 - "Japan Foundation research fellowship economics"
 
 Indonesia-specific:
-- "postdoc BRIN 2026"
+- "postdoc BRIN Indonesia"
 - "lowongan peneliti BRIN"
 - "postdoc UGM ekonomi"
 - "beasiswa postdoc Indonesia"
@@ -292,16 +292,41 @@ METADATA RULES:
 4. The "title" MUST reflect what is ACTUALLY on the linked page.  Do not invent a title
    that sounds like what you hope the page contains.  If the page says "Veni SSH 2025",
    the title must say 2025, not 2026.
+   - Do NOT append a year to the title unless the page explicitly states that year.
+   - If a page describes a fellowship scheme without mentioning a specific round year,
+     title it as the scheme name only (e.g. "Leverhulme Early Career Fellowships",
+     NOT "Leverhulme Early Career Fellowship 2027").
 
 5. The "deadline" MUST come from the actual page content, not from your assumptions.
    If the page shows a deadline of January 2026, do NOT change it to September 2026.
    If no deadline is visible on the page, set deadline to null.
+   - NEVER guess deadlines from previous years or from your training data.
+   - If only a past year's deadline is shown, report that in timeline_note but set deadline to null.
 
 6. Do NOT create entries for grants/calls that have not yet been announced.
    If the 2026 round has not been published, do NOT fabricate a 2026 entry from the 2025 page.
    Only report what actually exists right now.
 
 7. If a page is empty, under construction, or shows no current openings, skip it entirely.
+
+8. GENERAL INFO PAGES vs SPECIFIC CALLS:
+   - If a page describes a fellowship scheme IN GENERAL (eligibility, past rounds, how to apply)
+     but does NOT have a specific active call with dates, it is still valuable to report —
+     BUT you must clearly indicate this:
+     * Set deadline to null
+     * Set timeline_fit to "unknown"
+     * In timeline_note, state: "This is a general information page. No specific round is
+       currently announced. Monitor for future calls."
+     * Do NOT fabricate a year, deadline, or "expected" dates.
+   - If you find a page with the SPECIFIC current/upcoming round (with actual dates and
+     application forms), prefer that URL over the general info page.
+   - Check sidebar links, related pages, and "Apply" buttons — some sites (like ERC, NWO)
+     put current call details on linked subpages rather than the main scheme page.
+
+9. INSTITUTIONAL HOST PAGES (e.g. "Cardiff University Fellowships", "PoliMi Research Grants"):
+   - These generic pages list HOW to apply through the institution, not specific calls.
+   - Do NOT create an entry for a generic institutional fellowships/jobs page.
+   - Only create an entry if the page has a SPECIFIC call with dates and requirements.
 
 ===================================================================
 OUTPUT FORMAT

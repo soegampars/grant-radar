@@ -150,8 +150,16 @@ OUTPUT FORMAT
 Return ONLY a single JSON object (no markdown fences, no commentary).
 Every field must be present.  Use null for unknown values.
 
+CRITICAL — DATA INTEGRITY:
+- The "title" must reflect what is ACTUALLY on the linked page. Do NOT append a year
+  (e.g. "2027") unless the page explicitly mentions that specific round year.
+- The "deadline" must come from the actual page content. If no deadline is stated,
+  set it to null. NEVER guess deadlines from previous years or training data.
+- If the page is a general scheme info page (not a specific call), note this clearly
+  in timeline_note and set timeline_fit to "unknown".
+
 {
-  "title": "cleaned/standardised title",
+  "title": "cleaned/standardised title (must match actual page content)",
   "institution": "extracted institution name",
   "country": "country",
   "city": "city if available",

@@ -2,22 +2,22 @@
   "mode": "weekly",
   "daily_summary": {
     "mode": "daily",
-    "started_at": "2026-03-16T08:16:18.415571+00:00",
-    "fetched": 290,
-    "new_after_dedup": 91,
-    "analysed": 41,
+    "started_at": "2026-03-23T11:27:01.862543+00:00",
+    "fetched": 293,
+    "new_after_dedup": 100,
+    "analysed": 47,
     "analysis_errors": 0,
     "tier1_alerts_sent": 0,
     "errors": [],
-    "pre_filtered": 50,
-    "completed_at": "2026-03-16T08:33:57.273724+00:00"
+    "pre_filtered": 53,
+    "completed_at": "2026-03-23T11:48:15.649603+00:00"
   },
-  "started_at": "2026-03-16T08:33:57.274257+00:00",
-  "discovered": 2,
-  "reevaluated": 59,
+  "started_at": "2026-03-23T11:48:15.650258+00:00",
+  "discovered": 4,
+  "reevaluated": 119,
   "reeval_changes": 0,
   "tier1_alerts_sent": 1,
   "digest_sent": true,
   "errors": [],
-  "completed_at": "2026-03-16T08:41:48.323377+00:00"
+  "completed_at": "2026-03-23T11:55:55.138494+00:00"
 }

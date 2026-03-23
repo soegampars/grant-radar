@@ -237,7 +237,15 @@ UK-BASED:
 EUROPE-WIDE:
 * NWO Veni (Netherlands): €320K/3yr. Dutch host required. Any nationality. -> Tier 2.
 * NWO Vidi: €850K/5yr. -> Tier 2.
-* Humboldt Research Fellowships: Germany. €3K/month, 6–24 months. Open to all, no deadlines. -> Tier 3.
+* Humboldt Research Fellowships for Postdoctoral Researchers: Germany. €3,000/month + benefits, 6–24 months (can split into 3 stays over 3 years).
+  Open to all nationalities (PhD within last 4 years).  Must identify German host researcher.  Host receives €500–800/month for research costs.
+  THREE ANNUAL ROUNDS:
+    Call 1: opens 15 March → selection November → start February
+    Call 2: opens 15 July → selection March → start May  [RESEARCHER TARGET: PhD defence expected March 2027, can apply July 2026 for March 2027 selection]
+    Call 3: opens 15 November → selection July → start September
+  Each round closes after 800 applications.  PhD must be complete before selection meeting.
+  Apply at: https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship
+  -> Tier 3.
 * DFG Walter Benjamin: Postdoc, up to 2yr, can apply from abroad. -> Tier 3.
 * FWF Lise Meitner (Austria): ~€200K/2yr for incoming international postdocs. -> Tier 3.
 * ANR JCJC (France): Up to ~€300K for early-career.

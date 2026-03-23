@@ -376,12 +376,14 @@ def run_weekly(config: dict, dry_run: bool = False) -> dict:
         # Collect Tier 1 discovered grants (alerts sent after save)
         disc_tier1 = [g for g in new_discovered if g.get("tier") == 1]
 
-    # --- 3. Re-evaluate recent grants ---
-    recent = _recent_grants(existing_grants, days=7)
-    if recent and not dry_run:
-        logger.info("Re-evaluating %d recent grants with Opus...", len(recent))
+    # --- 3. Re-evaluate all active (non-expired) grants ---
+    # Re-evaluates ALL active grants each week so prompt improvements
+    # (eligibility rules, tier changes, etc.) propagate to existing cards.
+    active_grants = [g for g in existing_grants if not g.get("expired")]
+    if active_grants and not dry_run:
+        logger.info("Re-evaluating %d active grants with Opus...", len(active_grants))
         try:
-            reevaluated = reevaluate_grants(recent, config)
+            reevaluated = reevaluate_grants(active_grants, config)
             summary["reevaluated"] = len(reevaluated)
 
             # Apply updates back into the full grants list

@@ -118,7 +118,10 @@ EUROPE-WIDE:
 * ERC Synergy Grants:  Up to €10M for collaborative teams.
 * NWO Veni (Netherlands):  €320,000 over 3 years.  Dutch host required.  Any nationality with embedding guarantee.  -> Tier 2 (Groningen connection).
 * NWO Vidi:  €850,000 over 5 years.  -> Tier 2.
-* Humboldt Research Fellowships:  Germany-based.  €3,000/month for 6–24 months.  Open to all nationalities, no deadlines.  -> Tier 3.
+* Humboldt Research Fellowships for Postdoctoral Researchers:  Germany.  €3,000/month + benefits, 6–24 months (divisible into up to 3 stays within 3 years).  Open to all nationalities, PhD within last 4 years.  Must have German host researcher.
+  THREE ANNUAL ROUNDS: Call 1 opens 15 March (selection Nov), Call 2 opens 15 July (selection March), Call 3 opens 15 Nov (selection July).
+  RESEARCHER NOTE: Call 2 (opens July 2026, selection March 2027) is the target round — PhD defence expected March 2027, must be complete before selection meeting.
+  -> Tier 3.
 * DFG Walter Benjamin Programme:  German postdoc fellowships, up to 2 years, can apply from abroad.  -> Tier 3.
 * DFG Emmy Noether Programme:  €1–1.5M for junior research groups.  -> Tier 3.
 * FWF Lise Meitner Programme (Austria):  ~€200,000 over 2 years.  Targets incoming international postdocs.  -> Tier 3.

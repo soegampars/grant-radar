@@ -2,7 +2,7 @@
 #
 # This is the SOLE scheduled workflow. Daily cron is disabled.
 #
-# Runs every Sunday at 08:00 UTC. Executes the weekly pipeline:
+# Runs every Sunday at 03:00 UTC (04:00 CET). Executes the weekly pipeline:
 #   1. Checks out the repo (with push-capable token).
 #   2. Sets up Python and installs dependencies.
 #   3. Runs backend/main.py --mode weekly, which performs the full pipeline
@@ -24,7 +24,7 @@ name: Weekly Deep Search
 
 on:
   schedule:
-    - cron: "0 8 * * 0"   # Every Sunday at 08:00 UTC
+    - cron: "0 3 * * 0"   # Every Sunday at 03:00 UTC (04:00 AM CET)
   workflow_dispatch:        # Allow manual trigger from Actions tab
 
 permissions:

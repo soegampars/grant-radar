@@ -5285,8 +5285,8 @@
     "city": null,
     "url": "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship",
     "date_posted": null,
-    "deadline": null,
-    "deadline_display": "Rolling — applications accepted any time. Selection committee meets March, July, November.",
+    "deadline": "2026-07-15",
+    "deadline_display": "Call 2 opens 15 July 2026 (closes after 800 applications)",
     "salary": null,
     "salary_eur": "€2,700–3,000/month + mobility + insurance + family allowance",
     "duration": "6–24 months",
@@ -5309,8 +5309,8 @@
     "tier": 3,
     "tier_reason": "European postdoctoral fellowship in Germany — excellent but not in priority tier geography",
     "relevance_score": 75,
-    "timeline_fit": "acceptable",
-    "timeline_note": "Rolling deadline — can apply after PhD defence (Q1 2027). Selection takes ~5 months. Start flexible. May have gap after PNRR expiry.",
+    "timeline_fit": "ideal",
+    "timeline_note": "Three annual rounds. Call 2 (opens 15 July 2026, selection March 2027) is the target: PhD defence expected March 2027, must be complete before selection meeting. Fellowship starts May 2027. Apply from July 2026. Call 1 (March 2026) is too early — PhD not complete. Call 3 (Nov 2026, selection July 2027) is a fallback if Call 2 timing does not work out.",
     "pros": [
       "Highly prestigious — ~500 awards/year",
       "Rolling deadline — no rush",
@@ -5328,10 +5328,13 @@
       "6-24 months — relatively short-term"
     ],
     "next_steps": [
-      "Identify potential German hosts in economic geography",
-      "Ensure key PhD publications are published/accepted before applying",
-      "Apply after PhD defence with well-developed research plan",
-      "Consider Georg Forster Fellowship variant (for developing countries — higher success rate)"
+      "TARGET Call 2: opens 15 July 2026, selection March 2027, start May 2027",
+      "Identify a German host researcher in economic geography / regional economics — reach out by May-June 2026",
+      "Prepare research outline (5 pages max) and CV (2 pages max)",
+      "Secure two expert review letters before July 2026",
+      "Obtain host confirmation letter with mentoring agreement",
+      "Monitor https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship for Call 2 opening",
+      "FALLBACK: Call 3 opens 15 November 2026 (selection July 2027, start September 2027) if Call 2 does not work out"
     ],
     "competition_level": "medium",
     "one_line_summary": "Humboldt Research Fellowship — prestigious rolling-deadline postdoc in Germany — apply after PhD defence.",

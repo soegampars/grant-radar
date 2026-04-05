@@ -1,155 +1,195 @@
 {
-  "generated_at": "2026-03-29T05:34:33.751068+00:00",
+  "generated_at": "2026-04-05T05:28:16.253794+00:00",
   "grant_cycles": [
     {
-      "programme": "MSCA Postdoctoral Fellowship (MSCA-PF)",
+      "programme": "MSCA Postdoctoral Fellowship (European)",
       "funder": "European Commission (Horizon Europe)",
       "typical_deadline": "September annually",
       "next_deadline": "2026-09-09",
       "eligibility_match": "check",
-      "notes": "Call opens 9 April 2026, deadline 9 September 2026. Budget \u20ac399.05M. Open to researchers of any nationality. Applicant MUST hold PhD at the call deadline (9 Sep 2026). Researcher's PhD submission is Oct 2026 \u2014 this is AFTER the MSCA-PF deadline. Unless the PhD can be defended before 9 September 2026, the researcher is NOT eligible for the 2026 call. Mobility rule: must not have resided in host country for >12 months in 3 years prior to deadline. If applying to Italy-based host, the researcher would fail mobility (3+ years in Italy). Applying to a non-Italy host (e.g., Netherlands, UK, or other EU country) would satisfy mobility. The nominal success rate is around 15%. This is the TOP PRIORITY scheme if the PhD timeline can be accelerated."
+      "notes": "Call opens 9 April 2026, deadline 9 September 2026. Budget \u20ac399 million. Open to researchers of any nationality. Requires PhD at call deadline \u2014 researcher's PhD submission is October 2026 and defence Q1 2027, so PhD will NOT be awarded by 9 Sept 2026. CRITICAL: Check whether PhD can be submitted early or whether the defence can be brought forward. Mobility rule: must not have resided in host country >12 months in 36 months before deadline. If applying to a non-Italian host, the researcher's time in Italy does NOT disqualify. If applying to Italy, need to check. Cardiff connection (research visit Aug 2025\u2013Jan 2026) may help with UK host but UK stay was <12 months so OK for UK host. New for 2026: resubmission restrictions apply for applications scoring below 80% the previous year. Grants start approx. May 2027 \u2014 aligns well with the researcher's timeline."
     },
     {
-      "programme": "British Academy International Fellowship",
-      "funder": "British Academy / Royal Society (joint)",
-      "typical_deadline": "March annually",
-      "next_deadline": "2027-03 (estimated, 2027 round)",
-      "eligibility_match": "eligible",
-      "notes": "2026 round closed 11 March 2026 \u2014 MISSED. The 2027 round should open ~Jan 2027 with deadline ~Mar 2027. Two-year fellowship at a UK institution. Eligibility: non-UK PhD (\u2713 \u2014 PoliMi), working outside UK (\u2713 if still in Italy at application time), not UK citizen (\u2713), within 5 years post-PhD, competent in English (\u2713). Researcher's Cardiff connection (Prof Huggins) is a strong asset for identifying a UK host. This is an EXCELLENT match: social sciences/humanities remit, non-UK national, non-UK PhD, policy-relevant economic geography. Must have viva before Awards Committee (~June 2027). Strong fit with researcher's timeline if PhD defended Q1 2027."
+      "programme": "MSCA Postdoctoral Fellowship (Global)",
+      "funder": "European Commission (Horizon Europe)",
+      "typical_deadline": "September annually",
+      "next_deadline": "2026-09-09",
+      "eligibility_match": "check",
+      "notes": "Same deadline as European PF. Global PF requires nationality or long-term residency of EU MS/AC. Researcher is Indonesian with Italian student visa \u2014 likely NOT qualifying as long-term resident. CHECK carefully. Outgoing phase 1-2 years in a non-associated third country (e.g. Indonesia) with mandatory 1-year return to EU. Same PhD timing issue as European PF."
+    },
+    {
+      "programme": "ERC Starting Grant (ERC-2027-StG)",
+      "funder": "European Research Council",
+      "typical_deadline": "October annually",
+      "next_deadline": "2026-10-14 (expected)",
+      "eligibility_match": "check",
+      "notes": "Major eligibility change from 2027: researchers eligible immediately after defending PhD and up to 10 years after. Call expected to open July 2026, deadline mid-October 2026. Up to \u20ac1.5 million for 5 years. Any nationality can apply. HOWEVER, the researcher would need to have defended PhD by the deadline \u2014 PhD defence expected Q1 2027, AFTER the October 2026 deadline. Unless defence is brought forward, NOT eligible for the 2027 call. Could target the 2028 call instead. Very high prestige but extremely competitive (success rate ~10%). The researcher's publication record (3 papers, only 1 sole-authored in a top journal) may be insufficient for StG at this stage."
+    },
+    {
+      "programme": "Leverhulme Early Career Fellowship",
+      "funder": "Leverhulme Trust",
+      "typical_deadline": "February annually",
+      "next_deadline": "2027-02 (expected, for 2027 round)",
+      "eligibility_match": "check",
+      "notes": "2026 round closed (deadline was 19 Feb 2026). Next round expected February 2027. Internal university deadlines typically Nov\u2013Dec 2026. Requires UK degree (any level) OR a UK academic position of at least 4 months at application deadline. Researcher has NO UK degree and the Cardiff research visit (Aug 2025\u2013Jan 2026) was a visit, not a formal academic position. Unless the researcher secures a UK academic position by ~October 2026, NOT ELIGIBLE. Must have submitted PhD thesis within 4 years of closing date. 3-year fellowship, ~145 awards/year, highly competitive (~25% success rate). If the researcher obtains a UK postdoc or fellowship by late 2026, this becomes viable for the Feb 2027 round. Funding: 100% salary year 1 (up to \u00a356k), 50% years 2-3 (up to \u00a328k/yr), plus \u00a36k/yr research expenses."
     },
     {
       "programme": "British Academy Postdoctoral Fellowship",
-      "funder": "British Academy",
-      "typical_deadline": "October (outline stage) annually",
-      "next_deadline": "2026-09-30",
-      "eligibility_match": "not_eligible",
-      "notes": "2026-27 round deadline for submissions is 30 September 2026. Three-year fellowship, UK-based. Tenable from Autumn 2027. However, for 2025-26 round, viva must be between 1 Apr 2023 and 1 Apr 2026 \u2014 researcher won't have viva by then. For 2026-27 round (expected deadline Oct 2026, viva window likely Apr 2024 \u2013 Apr 2027), researcher's expected Q1 2027 defence could fit IF the deadline requires viva by ~April 2027. HOWEVER: this scheme historically requires a UK PhD or a UK degree. The researcher has NO UK degree and NO UK institutional position. The scheme guidance does NOT list an explicit UK degree requirement like Leverhulme, but it requires institutional support from a UK host. The research visit at Cardiff (Aug 2025 \u2013 Jan 2026) may NOT qualify as an academic position. CHECK carefully when the 2026-27 guidance is published (expected July 2026). Social sciences remit is a strong match."
-    },
-    {
-      "programme": "Leverhulme Early Career Fellowship (ECF)",
-      "funder": "Leverhulme Trust",
-      "typical_deadline": "February annually",
-      "next_deadline": "2027-02 (estimated)",
-      "eligibility_match": "not_eligible",
-      "notes": "2026 round closed 19 February 2026. Next round expected to open Jan 2027 with deadline Feb 2027. Three-year award, ~145 fellowships/year. CRITICAL ELIGIBILITY BARRIER: Applicants must either hold a degree (any degree) from a UK higher education institution OR hold a UK academic position for \u22654 months prior to deadline. Researcher has NO UK degree (Indonesian and Dutch degrees only) and the Cardiff research visit (ended Jan 2026) does not constitute a UK academic position that would be current at the Feb 2027 deadline. INELIGIBLE unless a UK academic position is secured first."
-    },
-    {
-      "programme": "ERC Starting Grant (StG)",
-      "funder": "European Research Council",
-      "typical_deadline": "October annually",
-      "next_deadline": "2026-10 (ERC-2027-StG, expected)",
+      "funder": "British Academy (funded by DSIT)",
+      "typical_deadline": "October annually (outline stage)",
+      "next_deadline": "2026-09-30 (for 2026-27 round)",
       "eligibility_match": "check",
-      "notes": "ERC-2026-StG closed 14 October 2025 (4807 applications, 22.4% increase). ERC-2027-StG expected to launch July 2026 with deadline ~October 2026. MAJOR CHANGE FROM 2027: eligibility window extended to 0-10 years post-PhD (up from 2-7). This means the researcher becomes eligible immediately upon PhD defence. Up to \u20ac1.5M for 5 years. However, ERC StG is designed for researchers starting an independent research GROUP \u2014 this is a very senior grant. The researcher's publication record (3 publications, no single first-authored journal article in a top-tier journal) is likely too thin for a competitive ERC StG application at this stage. Consider as a medium-term target (2028-2029) once more publications and postdoc experience are accumulated. The widened eligibility window gives the researcher up to 10 years."
+      "notes": "The 2026-27 round deadline is 30 September 2026. 3-year fellowships, ~45 awards. For the 2026-27 round, applicants likely need viva between 1 April 2024 and 1 April 2027. Eligibility: must be a British or EEA national, OR have a UK doctorate. Researcher is Indonesian (non-EEA) with an Italian PhD \u2014 NOT ELIGIBLE unless rules have changed for 2026-27 round. The 2025-26 round required British/EEA nationality or UK doctorate. VERIFY whether 2026-27 round changes eligibility."
     },
     {
-      "programme": "NWO Veni",
-      "funder": "NWO (Dutch Research Council)",
-      "typical_deadline": "Pre-proposal: September; Full proposal: January",
-      "next_deadline": "2026-09 (pre-proposal for Veni 2026 round)",
-      "eligibility_match": "check",
-      "notes": "Veni 2025 round: pre-proposal deadline was 2 Sep 2025, full proposal deadline 27 Jan 2026. Veni 2026 round expected: pre-proposal ~Sep 2026, full proposal ~Jan 2027. Up to \u20ac320,000 for 3 years. Requires PhD obtained within 3 years of reference date (~Jan 2026 for 2025 round). For the 2026 round, reference date likely ~Jan 2027, meaning PhD must be obtained between ~Jan 2024 and Sep 2026 \u2014 researcher's expected Oct 2026 submission/Q1 2027 defence may just miss or fit depending on exact dates. CRITICAL REQUIREMENT: Must have an embedding guarantee from a Dutch research institution. Researcher's Groningen MSc connection is a strong lever to approach Dutch hosts (e.g., University of Groningen Faculty of Spatial Sciences). SSH domain panel is relevant. Any nationality can apply."
+      "programme": "British Academy International Fellowship",
+      "funder": "British Academy / Royal Society",
+      "typical_deadline": "March annually",
+      "next_deadline": "2027-03 (expected, for 2027 round)",
+      "eligibility_match": "eligible",
+      "notes": "2026 round closed (deadline 11 March 2026). Next round expected January\u2013March 2027. 2-year fellowship at a UK institution. KEY: requires PhD from a NON-UK institution \u2014 researcher qualifies (Italian PhD). Must be working outside UK and not hold UK citizenship \u2014 both conditions met. Within 0-5 years post PhD (changed from 0-7 years for 2026). Must have PhD completed before Final Awards Committee (~June 2027). Researcher's defence expected Q1 2027 \u2014 should be OK if defence happens by spring 2027. STRONG MATCH: this is one of the best-fitting UK programmes for the researcher's profile. Research in humanities/social sciences at a UK host. Cardiff connection (Prof Huggins) provides a natural sponsor/host pathway."
     },
     {
       "programme": "ESRC Postdoctoral Fellowship",
       "funder": "UKRI/ESRC",
-      "typical_deadline": "May-June annually",
+      "typical_deadline": "June annually (via DTPs)",
       "next_deadline": "2026-06-01",
       "eligibility_match": "not_eligible",
-      "notes": "2026 round deadline is 1 June 2026. Nine-month fellowships (or 18 months part-time) starting 1 Oct 2026. INELIGIBLE: requires PhD completed at a UK research organisation. Researcher's PhD is from Politecnico di Milano (Italy). This is a firm disqualifying criterion regardless of nationality."
+      "notes": "Deadline 1 June 2026. Requires PhD completed at a UK research organisation. Researcher's PhD is at Politecnico di Milano. NOT ELIGIBLE."
     },
     {
-      "programme": "ESRC New Investigator Grant",
-      "funder": "UKRI/ESRC",
-      "typical_deadline": "Rolling / periodic rounds",
-      "next_deadline": "2026-05-13 (Round 1 closing)",
+      "programme": "UKRI Future Leaders Fellowship (Round 11)",
+      "funder": "UK Research and Innovation",
+      "typical_deadline": "June 2026 (Round 11)",
+      "next_deadline": "2026-06-16",
       "eligibility_match": "check",
-      "notes": "ESRC responsive mode new investigator grants round one closing 13 May 2026. \u00a3100,000\u2013\u00a3300,000 FEC. Open to early career researchers from anywhere in the world BUT must be based at an eligible UK research organisation for the duration of the grant. Researcher would need to first secure a UK position (postdoc, fellowship, or lectureship). If a UK base is obtained, this is a strong match for policy-oriented economic geography research. Consider as a post-fellowship option once established in the UK."
+      "notes": "Deadline 16 June 2026. 4+3 year fellowship, no min/max budget (typically \u00a3300k\u2013\u00a32m). Requires support from a UK host institution. Open to all nationalities. Very competitive with institutional caps on submissions. Researcher would need to have already secured a UK host institution's support through their internal process (most internal deadlines were Jan\u2013Feb 2026 \u2014 now PASSED). For Round 12 (expected 2027), the researcher should begin building relationships with UK institutions NOW. The researcher's Cardiff connection is valuable but would need a formal institutional commitment. STRONG thematic fit but the researcher's publication record may need strengthening."
+    },
+    {
+      "programme": "NWO Veni (SSH domain, 2026 round)",
+      "funder": "NWO (Netherlands Organisation for Scientific Research)",
+      "typical_deadline": "Pre-proposal: September; Full proposal: January",
+      "next_deadline": "2026-09 (pre-proposal, expected)",
+      "eligibility_match": "check",
+      "notes": "For 2026 round, pre-proposal deadline expected early September 2026, full proposal January 2027. Up to \u20ac320,000 for 3 years. Requires an 'embedding guarantee' from a Dutch institution \u2014 researcher needs to secure commitment from a Dutch university (Groningen connection via MSc could help). PhD must be obtained within 3 years of reference date (likely 1 Jan 2026). If researcher defends Q1 2027, they would need to check if they fall within the eligibility window. The Groningen MSc alumni network is a strong asset. Any nationality can apply. Researcher's economic geography profile fits well within SSH domain panels."
+    },
+    {
+      "programme": "Kiel Institute Hirschman PostDoc Program",
+      "funder": "Kiel Institute for the World Economy",
+      "typical_deadline": "November annually",
+      "next_deadline": "2026-11 (expected, for 2027 cohort)",
+      "eligibility_match": "eligible",
+      "notes": "New programme launched 2026. First cohort starts September 2026. Highly selective (up to 5 per year). PhD in economics or closely related field within 3 years of start. Open to all nationalities. Based in Berlin or Kiel. The researcher's profile in regional/development economics with spatial methods could be a good fit. Watch for 2027 cohort application deadline expected November 2026."
     }
   ],
   "upcoming_deadlines": [
     {
-      "programme": "MSCA Postdoctoral Fellowship 2026 (MSCA-2026-PF)",
-      "deadline": "2026-09-09 (call opens 2026-04-09)",
-      "action_needed": "URGENT: Assess whether PhD defence can be brought forward to before 9 September 2026. If yes, this is the #1 priority application. Begin identifying a host supervisor at a non-Italy institution NOW (Netherlands ideal given Groningen connection, or UK given Cardiff connection). Draft a 10-page research proposal. Contact PoliMi and potential host institution research offices for internal support programmes.",
+      "programme": "MSCA Postdoctoral Fellowship 2026 (HORIZON-MSCA-2026-PF)",
+      "deadline": "2026-09-09",
+      "action_needed": "CRITICAL: Determine if PhD can be completed (defended) before 9 September 2026. If not, this cycle is not feasible \u2014 prepare for 2027 cycle instead. If feasible: identify host institution and supervisor NOW (April-May), draft research proposal (May-July), submit by September 9. Approach potential hosts at Cardiff (Huggins), Groningen, or other European institutions. Many universities have internal pre-deadlines in May-June 2026.",
       "priority": "high"
     },
     {
-      "programme": "British Academy Postdoctoral Fellowship 2026-27",
-      "deadline": "2026-09-30 (estimated)",
-      "action_needed": "Monitor for the call opening (expected July 2026). Review updated eligibility when guidance is published. If the viva window includes April 2027 defences, and there is no UK degree requirement, this is a strong option. Identify a UK host/mentor \u2014 Cardiff's Prof Huggins is an obvious candidate. Prepare 2-page project proposal draft.",
-      "priority": "high"
-    },
-    {
-      "programme": "ERC Starting Grant 2027 (ERC-2027-StG)",
-      "deadline": "2026-10 (expected)",
-      "action_needed": "With the new 0\u201310 year eligibility window, researcher becomes eligible immediately after PhD defence. However, do NOT apply in 2026 \u2014 publication record is insufficient. Use this cycle to study the application format, attend ERC info sessions, and plan a 2028 or 2029 application. Focus on building publication record over the next 2-3 years.",
+      "programme": "UKRI Future Leaders Fellowship Round 11",
+      "deadline": "2026-06-16",
+      "action_needed": "Internal deadlines at UK universities have passed (Jan-Feb 2026). For this round, the researcher has likely missed the window. Begin relationship-building for Round 12 (expected 2027). Contact potential UK host institutions, especially Cardiff University where Prof Huggins is based.",
       "priority": "low"
     },
     {
-      "programme": "NWO Veni 2026 (SSH domain)",
-      "deadline": "2026-09 (pre-proposal, estimated)",
-      "action_needed": "Contact University of Groningen Faculty of Spatial Sciences to explore hosting and embedding guarantee. The pre-proposal requires a narrative CV and research idea (500 words). PhD timing is tight \u2014 the reference date and exact eligibility window for the 2026 round will be published ~summer 2026. Begin drafting the research idea now. If timing works, this is a high-value target worth \u20ac320K.",
+      "programme": "ESRC Postdoctoral Fellowship",
+      "deadline": "2026-06-01",
+      "action_needed": "NOT ELIGIBLE \u2014 requires UK PhD. No action needed.",
+      "priority": "low"
+    },
+    {
+      "programme": "British Academy Postdoctoral Fellowship (2026-27 round)",
+      "deadline": "2026-09-30",
+      "action_needed": "CHECK eligibility for 2026-27 round when call opens (expected July 2026). If the scheme still requires British/EEA nationality or UK doctorate, the researcher is NOT eligible. If eligibility has broadened, prepare immediately. The researcher's viva timing (Q1 2027) needs to fall within the eligibility window (likely viva between April 2024 and April 2027).",
       "priority": "medium"
     },
     {
-      "programme": "British Academy International Fellowship 2027",
-      "deadline": "2027-03 (estimated, next round)",
-      "action_needed": "Begin preparation NOW. This is the STRONGEST eligibility match: non-UK PhD (\u2713), non-UK citizen (\u2713), working outside UK (\u2713 if still in Italy/Indonesia), within 5 years post-PhD (\u2713), English-proficient (\u2713), social sciences (\u2713). Identify a UK host \u2014 Prof Huggins at Cardiff is the natural choice given existing relationship. Develop a 2-year research proposal that extends the PhD work on childcare policy into a comparative UK-Italy-Indonesia framework. Draft proposal, CV, and budget by late 2026.",
+      "programme": "ERC Starting Grant 2027 (ERC-2027-StG)",
+      "deadline": "2026-10-14 (expected)",
+      "action_needed": "Call opens July 2026. New expanded eligibility: immediately after PhD defence up to 10 years. HOWEVER, researcher must have defended PhD by deadline \u2014 defence expected Q1 2027 is AFTER the October 2026 deadline. NOT feasible for this round unless defence is brought forward. Start preparing a concept for the 2028 call. Build publication record urgently.",
+      "priority": "low"
+    },
+    {
+      "programme": "NWO Veni 2026 (SSH domain, pre-proposal)",
+      "deadline": "2026-09 (expected early September)",
+      "action_needed": "START NOW: Contact University of Groningen faculty in economic geography/spatial economics about embedding guarantee. Draft narrative CV and research idea (500 words). Eligibility depends on PhD completion date relative to reference date. If eligible, this is a strong-fit opportunity. Pre-proposal is lightweight (CV + short research idea) so low investment for initial stage.",
       "priority": "high"
     },
     {
-      "programme": "Leverhulme ECF 2027",
-      "deadline": "2027-02 (estimated)",
-      "action_needed": "Currently INELIGIBLE (no UK degree). The ONLY route is to secure a UK academic position \u22654 months before the Feb 2027 deadline (i.e., by ~Oct 2026). If the researcher obtains a UK postdoc, research assistant post, or fellowship that starts before October 2026, they become eligible. Monitor but do NOT invest preparation time unless a UK position is secured first.",
-      "priority": "low"
+      "programme": "British Academy International Fellowship (2027 round)",
+      "deadline": "2027-03 (expected)",
+      "action_needed": "HIGHEST PRIORITY PREPARATION TARGET. Call expected to open January 2027, deadline March 2027. Begin preparing NOW: solidify Cardiff relationship with Prof Huggins as UK sponsor. Draft 2-page project proposal linking Italian childcare/spatial microsimulation expertise to UK policy context. This is arguably the strongest eligibility match for the researcher. Internal university deadlines typically January 2027.",
+      "priority": "high"
+    },
+    {
+      "programme": "Leverhulme Early Career Fellowship (2027 round)",
+      "deadline": "2027-02 (expected)",
+      "action_needed": "Requires UK degree OR UK academic position of 4+ months by deadline. Researcher has neither currently. If the researcher obtains a UK-based postdoc/fellowship (e.g. BA International Fellowship or other short-term position) before ~October 2026, this becomes viable. Internal deadlines November-December 2026. Keep as secondary target \u2014 eligibility depends on securing UK position first.",
+      "priority": "medium"
+    },
+    {
+      "programme": "MSCA Postdoctoral Fellowship 2027 (fallback if 2026 not feasible)",
+      "deadline": "2027-09 (expected)",
+      "action_needed": "If PhD is not completed by September 2026, target the 2027 call. Begin identifying host institutions and refining the proposal concept. Results notification ~Feb 2028, start ~May 2028. This creates a longer gap after PNRR expiry (Oct 2026) \u2014 plan bridge funding.",
+      "priority": "medium"
     }
   ],
   "strategy_recommendations": [
-    "IMMEDIATE PRIORITY (April\u2013May 2026): Determine whether PhD defence can be accelerated to before 9 September 2026. If yes, the MSCA-PF 2026 becomes the single best opportunity \u2014 open to any nationality, \u20ac399M budget, 12\u201324 month fellowship at any EU/associated country host. Contact PoliMi doctoral school NOW about defence scheduling.",
-    "MSCA-PF HOST STRATEGY: If MSCA-PF is feasible, choose a host in the Netherlands (Groningen, where you have a degree and network), the UK (Cardiff, where you have Prof Huggins), or another EU country. Do NOT choose Italy as the host \u2014 you fail the mobility rule after 3+ years of residence. The Netherlands is ideal: Groningen's Faculty of Spatial Sciences works on exactly your topics.",
-    "BRITISH ACADEMY INTERNATIONAL FELLOWSHIP is your strongest eligibility match for UK-based funding. The 2026 round is closed (deadline was 11 March 2026). Target the 2027 round (~March 2027). Your profile is textbook-eligible: non-UK PhD, non-UK citizen, based outside UK, social sciences, English-proficient. The Cardiff connection via Prof Huggins is a ready-made host relationship. Begin drafting the proposal this summer.",
-    "PUBLICATION STRATEGY IS CRITICAL: Your CV has 3 publications (one co-authored, one in a book series). Most competitive fellowships expect 3-5 peer-reviewed journal articles. Between now and October 2026, aim to submit at least 2 papers from your PhD: (1) a methods paper on spatial microsimulation for childcare policy, and (2) a substantive paper on PNRR Piano Asili Nido impact. Even 'under review' status strengthens applications significantly.",
-    "NWO VENI \u2014 GRONINGEN CONNECTION: Leverage your Groningen MSc to approach the Faculty of Spatial Sciences about hosting a Veni. You need an 'embedding guarantee' from a Dutch institution. Your profile (economic geography, spatial methods, policy evaluation) fits the SSH domain well. The Veni 2026 pre-proposal deadline is likely September 2026 \u2014 start discussions with potential Groningen supervisors NOW.",
-    "AVOID OVER-INVESTING IN SCHEMES WHERE YOU ARE INELIGIBLE: Leverhulme ECF (requires UK degree or UK position), ESRC Postdoctoral Fellowship (requires UK PhD), and any scheme requiring EU citizenship should be deprioritised unless eligibility changes. Focus energy on MSCA-PF, BA International Fellowship, NWO Veni, and direct postdoc job applications.",
-    "PARALLEL TRACK \u2014 POSTDOC JOB APPLICATIONS: Apply for advertised postdoc positions at UK, Dutch, and EU universities in economic geography, regional economics, and spatial analysis. Securing even a short-term UK position would unlock Leverhulme ECF eligibility. Monitor jobs.ac.uk, academictransfer.com (NL), and Euraxess.",
-    "ERC StG IS A MEDIUM-TERM TARGET (2028-2029): The new 10-year eligibility window from 2027 means you have until ~2037 to apply. Do not rush an ERC StG application with a thin CV. Build toward it over 2-3 postdoc years. Focus on accumulating publications, building a research team concept, and gaining project management experience.",
-    "EXPLOIT YOUR UNIQUE COMPARATIVE ADVANTAGE: The intersection of Italian childcare policy (PNRR), Indonesian development economics, and spatial microsimulation methods is genuinely distinctive. Very few researchers bridge EU welfare state policy and Global South development with spatial quantitative methods. Frame all applications around this unique positioning."
+    "IMMEDIATE PRIORITY (April-May 2026): Determine the exact PhD timeline. Can the thesis submission be moved earlier (e.g. July-August 2026 instead of October)? Can the defence be scheduled before 9 September 2026? This single factor determines eligibility for MSCA-PF 2026, ERC StG 2027, and NWO Veni 2026. Discuss this with your supervisor at Polimi immediately.",
+    "TOP-TIER TARGET \u2014 British Academy International Fellowship 2027: This is the strongest eligibility match. The researcher meets ALL criteria: non-UK nationality, non-UK PhD (Italian), working outside UK, early career. The Cardiff connection with Prof Huggins provides a ready-made UK sponsor. Start preparing a compelling 2-year research proposal NOW that extends your Italian childcare/spatial microsimulation work into a comparative UK-Italy dimension. This is the single best opportunity to transition to the UK.",
+    "TOP-TIER TARGET \u2014 MSCA Postdoctoral Fellowship: If PhD can be completed by September 2026, this is the single most important deadline. If not, target the 2027 call. Open to any nationality, well-funded (\u20ac6,350/month base), 1-2 years. The mobility rule works in your favour for any country where you have NOT been based. Consider hosts in UK (Cardiff, other geography depts), Netherlands (Groningen), or any EU country. Frame the proposal around spatial microsimulation for policy evaluation \u2014 a strong methodological niche.",
+    "STRONG TARGET \u2014 NWO Veni 2026 (SSH domain): Leverage your Groningen MSc connection to secure an embedding guarantee from a Dutch institution. Your economic geography profile and spatial econometrics skills are a natural fit. Contact former Groningen supervisors/faculty ASAP. Pre-proposal is low-cost to prepare. The Dutch system is nationality-blind. Timeline: pre-proposal Sept 2026, full proposal Jan 2027. Budget up to \u20ac320,000 for 3 years.",
+    "MEDIUM-TERM \u2014 Leverhulme ECF 2027: Currently not eligible (no UK degree, no UK position). However, if you secure a BA International Fellowship or any UK-based position by ~October 2026, you become eligible via the '4-month UK academic position' route. Keep this as a cascading strategy: BA International Fellowship \u2192 Leverhulme ECF.",
+    "MEDIUM-TERM \u2014 UKRI Future Leaders Fellowship Round 12 (expected 2027): Begin building the case for an ambitious 4+3 year programme. This requires a UK host institution's commitment to provide a permanent position on completion. Very competitive but transformative. Use the next 12 months to build your UK network. The Cardiff connection is key.",
+    "PUBLICATION STRATEGY: Your publication record (3 papers, 2022 being the most recent) needs urgent strengthening before applying for competitive fellowships. Target 1-2 additional publications by September 2026: (a) submit at least one paper from your PhD thesis to a strong journal NOW, (b) consider a rapid-turnaround methods or policy brief publication. MSCA and BA International Fellowship reviewers will evaluate track record heavily.",
+    "BRIDGE FUNDING: Your PNRR funding expires October 2026. If no fellowship starts before then, you need a bridge. Options: (a) approach Polimi for a short-term research contract, (b) apply for visiting researcher positions at UK/Dutch institutions, (c) apply for short-term mobility grants (e.g. COST Action STSMs, bilateral exchange programmes). Do NOT let a funding gap turn into a CV gap.",
+    "GEOGRAPHIC STRATEGY: Apply to multiple countries simultaneously. Your strongest institutional connections are: Italy (Polimi), UK (Cardiff), Netherlands (Groningen), Japan (Nagoya). The UK route (BA International \u2192 Leverhulme \u2192 UKRI FLF) offers the clearest career escalation path. The Netherlands (NWO Veni at Groningen) offers independence. Italy (MSCA-PF at another Italian institution, or RTD-a positions) offers continuity. Do not put all eggs in one basket.",
+    "NETWORKING: Attend the Regional Studies Association (RSA) conference and the European Regional Science Association (ERSA) congress in 2026. Present your PhD work, meet potential collaborators and fellowship hosts. These are the primary networking venues for economic geographers in Europe."
   ],
   "emerging_opportunities": [
     {
-      "opportunity": "ERC Starting Grant eligibility window extended to 0-10 years post-PhD from 2027",
+      "opportunity": "ERC eligibility expansion from 2027: Starting Grants now available immediately after PhD defence and up to 10 years post-PhD",
       "source": "ERC announcement on changes to 2026 and 2027 Work Programmes (erc.europa.eu)",
-      "relevance": "Researchers will be eligible 'immediately after successfully defending their PhD, and at any time within the following ten-year period.' This widens the window from the previous 2-7 years, giving the researcher a much longer runway to build a competitive application. No need to rush \u2014 build the CV first."
+      "relevance": "The researcher will be eligible for ERC StG from the moment of PhD defence (expected Q1 2027). While the 2027 call deadline (Oct 2026) will be too early, the 2028 call is a realistic target. Begin developing a bold, frontier research concept now. The expanded window means no urgency but start early."
     },
     {
-      "opportunity": "UKRI cross-council new investigator grants round (multi-council including ESRC)",
-      "source": "UKRI Funding Service \u2014 ESRC responsive mode round one, closing 13 May 2026",
-      "relevance": "ESRC new investigator grants (\u00a3100K\u2013\u00a3300K) are open to early career researchers from anywhere in the world with a UK host. Once the researcher secures a UK base, this becomes a key pathway to independent research funding. The scheme specifically targets researchers making the 'transition to independence'."
+      "opportunity": "Kiel Institute Hirschman PostDoc Program \u2014 new programme launched 2026",
+      "source": "Kiel Institute website (kielinstitut.de)",
+      "relevance": "Brand new highly selective postdoc programme (up to 5 per cohort) in international economics, development economics, and geoeconomics. First cohort September 2026. Based in Berlin or Kiel. Open to all nationalities. The researcher's development economics and spatial analysis skills are relevant. Watch for 2027 cohort deadline (expected November 2026)."
     },
     {
-      "opportunity": "British Academy International Fellowship scheme changes for 2026",
-      "source": "British Academy website and FAQs",
-      "relevance": "The BA has reduced the eligibility window from 0-7 to 0-5 years post-PhD, and award-holders are now classified as salaried employees (not stipend-based visitors). Award-holders get accelerated Global Talent Visa route. The scheme is now jointly run with the Royal Society. These changes make the fellowship more attractive and competitive \u2014 prepare early."
+      "opportunity": "UKRI strategy shift: ESRC highlight on AI for social science",
+      "source": "ESRC types of funding page (ukri.org)",
+      "relevance": "ESRC currently has a highlight for applications in the area of artificial intelligence for social science. If the researcher can frame spatial microsimulation/digital twin work as AI-adjacent for policy, this could open UK funding routes. Relevant for ESRC New Investigator Grants (always-open) once based at a UK institution."
     },
     {
-      "opportunity": "MSCA-PF 2026 increased budget to \u20ac399.05M",
-      "source": "European Research Executive Agency (rea.ec.europa.eu)",
-      "relevance": "The 2026 MSCA-PF call has a slightly reduced but still substantial budget of ~\u20ac399M. With a ~15% success rate, this remains the largest single postdoctoral fellowship programme in Europe. The researcher's Indonesian nationality is an advantage in MSCA evaluation (diversity/widening dimension)."
+      "opportunity": "NWO Talent Programme evaluation underway \u2014 potential changes to Veni format",
+      "source": "NWO/ZonMw announcement (December 2025)",
+      "relevance": "NWO is conducting a major evaluation of the Veni/Vidi/Vici programme, expected to complete September 2026. Changes may include revised success rates (target 25%), reduced workload, and evolved evidence-based CV approach. The 2026 Veni call may incorporate some of these changes. Monitor for updates."
     },
     {
-      "opportunity": "NWO evaluation reform and Veni narrative CV approach",
-      "source": "NWO Talent Programme pages",
-      "relevance": "NWO has moved to a narrative 'Evidence-Based CV' approach, valuing diverse career trajectories and broader impact beyond traditional publication metrics. This benefits the researcher, whose CV includes central bank research, policy evaluation, and cross-country experience rather than purely academic outputs."
+      "opportunity": "UKRI pauses and reopenings: some councils resuming funding after strategic pause",
+      "source": "UKRI pauses to funding opportunities page (ukri.org, March 2026)",
+      "relevance": "MRC and BBSRC had paused some applicant-led funding; reopening April-May 2026. ESRC funding continues as normal. This signals UKRI is stabilising its new 'always open' funding model. The ESRC New Investigator Grant (always-open, up to \u00a3500k) would be an excellent target once the researcher is UK-based."
+    },
+    {
+      "opportunity": "Leverhulme ECF funding model changed for 2026: Year 1 now 100% salary from Trust (up to \u00a356k), Years 2-3 50%",
+      "source": "Leverhulme Trust 2026 ECF Guidance",
+      "relevance": "This is a significant funding increase from previous years (was 50% throughout). Makes the scheme more attractive to host institutions, potentially increasing the number of departments willing to provide matching funds. Strengthens the case for applying if eligibility criteria can be met."
     }
   ],
   "cv_gaps_to_address": [
-    "PUBLICATION RECORD: With 3 publications (only 1 sole-authored in a ranked journal \u2014 BIES), the CV is thin for most competitive fellowship schemes. Target: submit 2 additional papers from PhD research by September 2026. Ideal outlets: Journal of Regional Science, Regional Studies, Spatial Economic Analysis, or Environment and Planning B. Even 'under review' or 'revise and resubmit' counts on applications.",
-    "NO FIRST-AUTHORED ARTICLE IN A TOP-TIER FIELD JOURNAL: The BIES publication is strong and sole-authored, but it's in an area-studies journal. A publication in a mainstream regional science/economics journal (e.g., Journal of Regional Science, Papers in Regional Science, Regional Studies) would significantly strengthen competitiveness for MSCA-PF and BA fellowships.",
-    "NO INDEPENDENT GRANT OR FUNDING TRACK RECORD: The researcher has never led or co-led a funded project. Consider applying for small grants (e.g., BA/Leverhulme Small Research Grants, RSA early career researcher grants) to demonstrate funding competitiveness. Even \u00a32,000\u2013\u00a35,000 grants show initiative.",
-    "LIMITED TEACHING EXPERIENCE: Many fellowship schemes (BA PDF, Leverhulme ECF) expect or include a teaching component. If opportunities arise to deliver guest lectures or seminar sessions at PoliMi or Cardiff during the remaining PhD period, take them and document them on the CV.",
-    "NO REFEREE NETWORK OUTSIDE PhD SUPERVISION: Fellowship applications typically require 1-3 referees. The researcher should cultivate relationships with: (1) Prof Huggins at Cardiff (already in place), (2) a senior figure from the Groningen network, and (3) someone from the IRSA/Indonesian academic network who can speak to policy impact. These referees should be approached proactively before applications are due.",
-    "NO UK DEGREE OR UK INSTITUTIONAL AFFILIATION (post-Cardiff visit): This is a structural gap that blocks Leverhulme ECF and constrains other UK-based schemes. The Cardiff research visit (Aug 2025 \u2013 Jan 2026) is over. If a UK-based postdoc or research position can be obtained, multiple new funding avenues open up. Prioritise this in the job search.",
-    "CONFERENCE PRESENTATION RECORD: Not detailed in the profile. Aim to present at RSA Annual Conference, ERSA Congress, or RGS-IBG Annual Conference before October 2026 to signal community engagement and visibility in the European regional science community.",
-    "SOFTWARE AND DATA OUTPUTS: The SimJogja microsimulation model is a strong asset but appears unpublished as a standalone data/software output. Consider depositing it on GitHub/Zenodo with a DOI, and publishing a short data/software paper. This is increasingly valued in MSCA-PF and NWO Veni applications under 'open science' criteria."
+    "PUBLICATIONS: Only 3 publications (2021-2022), with a 4-year gap since the most recent publication. This is the single biggest weakness. Reviewers for MSCA-PF, BA International Fellowship, and NWO Veni will expect evidence of ongoing productivity. ACTION: Submit at least one PhD chapter as a journal article within the next 2 months. Target journals like Journal of Regional Science, Regional Studies, Environment and Planning B, or Spatial Economic Analysis. Even a 'revise and resubmit' status by September 2026 strengthens applications.",
+    "SOLE/FIRST-AUTHORED PUBLICATIONS: Of the 3 papers, 1 is sole-authored (BIES 2022) and 1 is second-authored. For ERC StG (future) and MSCA-PF, sole/first-authored publications showing independence are essential. The PhD thesis papers should be published as sole-authored work.",
+    "POST-PhD INDEPENDENCE: The researcher has been a PhD candidate throughout the entire period since 2023. Fellowship reviewers want to see evidence of research independence beyond the PhD \u2014 conference presentations, invited talks, workshop organisation, peer review activity. ACTION: Organise a workshop or panel session at RSA/ERSA 2026, serve as a journal referee, write a policy brief.",
+    "GRANT WRITING EXPERIENCE: No previous grant applications on record. For MSCA-PF especially, reviewers value evidence that the researcher can manage a project. ACTION: Apply for any small grants available (travel grants, COST Action STSMs, Polimi internal research funds) to build a track record of successful applications.",
+    "INTERDISCIPLINARY/IMPACT NARRATIVE: The current CV is strong on methods but weaker on the 'so what' dimension. Fellowship applications (especially MSCA and BA) require a clear impact narrative. ACTION: Develop a compelling 1-paragraph elevator pitch connecting spatial microsimulation \u2192 childcare policy \u2192 female labour force participation \u2192 regional economic growth. Frame the research as having direct policy relevance to the EU's childcare guarantee and Italy's PNRR implementation.",
+    "INTERNATIONAL COLLABORATION NETWORK: The CV shows connections to Cardiff (UK), Nagoya (Japan), and Groningen (Netherlands), which is excellent geographic spread. However, these need to be activated for fellowship purposes. ACTION: Co-author a paper or working paper with each collaborator network in the next 6 months. Letters of support from these contacts will be needed for fellowship applications.",
+    "TEACHING EXPERIENCE: Not evident on the CV. BA Postdoctoral Fellowship and Leverhulme ECF both involve some teaching. ACTION: Seek opportunities to deliver guest lectures or tutorials at Polimi before October 2026. Document any teaching or supervision activities.",
+    "DIGITAL TWIN / COMPUTATIONAL METHODS BRANDING: The researcher lists 'digital twin integration' as a skill but this is not reflected in publications. If this is a genuine capability, it should be developed into a visible research output. Digital twins for urban/regional policy is a hot topic that could distinguish fellowship applications."
   ]
 }

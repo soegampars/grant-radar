@@ -135,7 +135,11 @@ FIELD-SPECIFIC:
 * RSA Fellowship Research Grants:  Up to £8,250.
 
 JAPAN:
-* JSPS International Postdoctoral Fellowships:  ¥362,000/month (~$2,400) for 12–24 months.  Within 6 years of PhD.  Must identify Japanese host researcher.  ~230 awards/year.  -> Tier 0.
+* JSPS Postdoctoral Fellowships for Research in Japan (Standard Programme):  ¥362,000/month + airfare + ¥200,000 settling-in + insurance.  12–24 months.
+  PhD within last 6 years.  Must identify Japanese host researcher at MEXT-approved institution.  Host submits application.
+  FY2026 deadline: 28 April 2026 17:00 JST.  PhD must be obtained within 6 years before fellowship START (not application).
+  RESEARCHER NOTE: April 2026 deadline is before PhD completion — verify with JSPS whether pre-completion application is possible for post-defence start.
+  Apply: https://www.jsps.go.jp/english/e-fellow/application.html  -> Tier 0.
 * JSPS Short-term Programme:  1–12 months, same stipend.  For researchers from EU, UK, US, Canada, Switzerland, Norway.
 * Japan Foundation Long-term Research Fellowships:  ¥400,000/month for 4–12 months.  Must have Japan-related research element.
 * Canon Foundation in Europe:  Up to €30,000/year for 3–12 months.  European researchers to Japan (or vice versa).  ~15 awards/year.

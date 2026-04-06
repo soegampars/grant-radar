@@ -253,7 +253,17 @@ EUROPE-WIDE:
 * ESPON: Service contracts for applied territorial analysis. Core economic geography domain.
 
 JAPAN:
-* JSPS International Postdoctoral Fellowships: ¥362K/month, 12–24 months. Within 6yr of PhD. ~230 awards/yr. -> Tier 0.
+* JSPS Postdoctoral Fellowships for Research in Japan (Standard Programme):
+  ¥362,000/month + round-trip airfare + ¥200,000 settling-in allowance + insurance.  12–24 months.
+  PhD within last 6 years.  Must identify Japanese host researcher (affiliated with MEXT-approved institution).
+  Host researcher submits application via JSPS Electronic Application System.
+  FY2026 deadline: 28 April 2026, 17:00 JST (host institutions may have earlier internal deadlines).
+  RESEARCHER NOTE: Deadline is April 2026 — PhD not yet complete (submission Oct 2026).
+  However, PhD must be obtained within 6 years BEFORE fellowship start (not before application).
+  If selected, fellowship could start after PhD defence (Q1 2027).  Verify with JSPS whether
+  application is possible before PhD completion.
+  Apply: https://www.jsps.go.jp/english/e-fellow/application.html
+  -> Tier 0.
 * Canon Foundation in Europe: Up to €30K/yr, 3–12 months. ~15 awards/yr. -> Tier 0.
 * Japan Foundation Research Fellowships: ¥400K/month, 4–12 months. Japan-related research. -> Tier 0.
 

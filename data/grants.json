@@ -1,5 +1,762 @@
 [
   {
+    "title": "Econometrics with EViews: Time Series, and Panel Data",
+    "institution": "INOMICS / Online Course Provider",
+    "country": "Online",
+    "city": null,
+    "url": "https://inomics.com/course/econometrics-with-eviews-time-series-and-panel-data-1550819",
+    "date_posted": null,
+    "deadline": null,
+    "deadline_display": null,
+    "salary": null,
+    "salary_eur": null,
+    "duration": null,
+    "start_date": null,
+    "full_time": null,
+    "funding_covers": null,
+    "career_stage": "none stated \u2014 training course, not a position or grant",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "none stated",
+    "language_requirement": "none stated",
+    "eligibility_verdict": "check",
+    "eligibility_reason": "This is a training course, not a grant, fellowship, or postdoctoral position. There are no eligibility barriers per se, but it is not within the scope of Grant Radar's mandate (grants, fellowships, postdoc positions). Included and flagged accordingly.",
+    "eligibility_unclear": [
+      "This is a commercial training course \u2014 not a grant or academic position. Verify whether INOMICS RSS feed should be filtered to exclude course listings."
+    ],
+    "eligibility_timeline_note": null,
+    "research_theme": "Econometrics training: OLS, ARDL, VAR, GARCH, cointegration, causality, panel data analysis using EViews software",
+    "theme_flexibility": "locked",
+    "methods_relevance": "Covers econometric methods broadly relevant to the researcher's quantitative toolkit (panel data, time series), but EViews is not a primary tool in the researcher's workflow (which is spatial econometrics-oriented). No spatial econometrics or microsimulation content mentioned.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "This is a commercial training course, not a grant, fellowship, or academic position. Does not fit any tier. Tier 0 by default.",
+    "relevance_score": 0,
+    "timeline_fit": "ideal",
+    "timeline_note": "No start date or deadline stated. Course is presumably available on demand. Timeline is not a constraint, but this listing is outside Grant Radar's scope regardless.",
+    "pros": [
+      "Covers panel data methods which are part of the researcher's existing skill set \u2014 could serve as a refresher",
+      "Freely enrollable, no eligibility barriers"
+    ],
+    "cons": [
+      "Not a grant, fellowship, or postdoctoral position \u2014 outside Grant Radar's core mandate",
+      "EViews is not the researcher's primary software environment (likely uses R, Python, or Stata for spatial econometrics)",
+      "No spatial econometrics content mentioned \u2014 core research methods not addressed",
+      "No funding, salary, or career advancement value",
+      "Commercial course \u2014 may have a fee"
+    ],
+    "next_steps": [
+      "Disregard as a funding or career opportunity",
+      "Consider filtering INOMICS RSS feed to exclude 'course' listings to reduce noise in Grant Radar",
+      "If interested in EViews skills as a complement, evaluate against existing software competencies \u2014 likely low priority"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "Online econometrics training course (EViews) \u2014 not a grant or postdoc position; outside Grant Radar scope and scored accordingly.",
+    "id": "9c197618e653",
+    "source_name": "INOMICS",
+    "source_type": "rss",
+    "raw_content": "Title: Econometrics with EViews: Time Series, and Panel Data\nDescription: <p>Master Econometrics from Basics to Advanced: OLS, ARDL, VAR, GARCH, Cointegration, Causality &amp; Panel Data Analysis.</p>",
+    "analysed_at": "2026-05-10T06:00:48.776763+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "Postdoctoral Scholar - Climate Policy Lab",
+    "institution": "The Fletcher School, Tufts University",
+    "country": "United States",
+    "city": "Medford, Massachusetts",
+    "url": "https://inomics.com/job/postdoctoral-scholar-climate-policy-lab-1553619",
+    "date_posted": null,
+    "deadline": null,
+    "deadline_display": null,
+    "salary": null,
+    "salary_eur": null,
+    "duration": "1 year (academic year 2026\u20132027)",
+    "start_date": "2026-09-01",
+    "full_time": true,
+    "funding_covers": null,
+    "career_stage": "Postdoctoral (recent PhD)",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "PhD required",
+    "language_requirement": "none stated",
+    "eligibility_verdict": "check",
+    "eligibility_reason": "No explicit nationality or degree-country requirement is stated, so the researcher's Indonesian nationality and Italian PhD are not disqualifying on their face. The main eligibility question is whether the PhD will be completed in time: submission is October 2026 and defence is expected Q1 2027, while the position runs the 2026\u20132027 academic year. A September 2026 start would precede PhD submission by roughly one month, making this technically 'early'. However, many US postdoc programmes accept candidates who are ABD (all but dissertation) or who will defend during the appointment period \u2014 this needs to be confirmed with the hiring lab. US work authorisation (typically J-1 or H-1B visa) would need to be arranged, which Tufts generally sponsors for postdoctoral scholars.",
+    "eligibility_unclear": [
+      "Does the position require the PhD to be completed before the start date, or will ABD / expected-defence-during-appointment candidates be considered?",
+      "What visa sponsorship arrangements does Tufts/Fletcher provide for international postdoctoral scholars?",
+      "Full call text not available from snippet \u2014 check the actual posting for any specific thematic or methodological requirements."
+    ],
+    "eligibility_timeline_note": "Position starts approximately September 2026; PhD submission is October 2026 and defence expected Q1 2027. Candidate would begin the role before completing the PhD \u2014 confirm whether Tufts accepts ABD candidates for this postdoc.",
+    "research_theme": "Climate policy (implied by lab name); specific thematic focus not specified in available content",
+    "theme_flexibility": "locked",
+    "methods_relevance": "Climate policy labs often employ quantitative and econometric methods for policy evaluation \u2014 potentially aligned with the researcher's spatial econometrics and ex-ante impact assessment toolkit. However, the substantive focus on climate rather than regional economics, labour markets, or childcare/welfare policy is a significant thematic distance from the researcher's current work. Without the full job description, methods fit cannot be fully assessed.",
+    "policy_relevant": true,
+    "funding_portable": false,
+    "portability_note": "This is a fixed position at Tufts University (USA); not portable to Cardiff or any European institution.",
+    "tier": 0,
+    "tier_reason": "Position is in the United States at a US institution with no connection to Cardiff, the Netherlands, PoliMi, or Indonesia. Thematic focus (climate policy) is outside the researcher's core domain of regional economics, spatial labour markets, and welfare/childcare policy. Tier 0 by geography and theme.",
+    "relevance_score": 28,
+    "timeline_fit": "early",
+    "timeline_note": "The position covers the academic year 2026\u20132027, likely starting September 2026 \u2014 approximately one month before the researcher's PhD submission deadline of October 2026 and roughly six months before the expected defence in Q1 2027. This is an 'early' start and would require Tufts to accept a pre-completion candidate.",
+    "pros": [
+      "Postdoctoral level matches the researcher's career stage target",
+      "Policy-focused environment aligns with the researcher's interest in ex-ante policy evaluation",
+      "No stated nationality restriction \u2014 Indonesian passport is not a barrier in principle",
+      "US postdoc experience could broaden the researcher's international academic profile",
+      "Quantitative policy analysis methods may overlap with the researcher's skill set"
+    ],
+    "cons": [
+      "Located in the USA \u2014 outside the researcher's target geography (Europe, UK, Indonesia)",
+      "Not portable to Cardiff or any preferred institution",
+      "Thematic focus is climate policy, not regional economics, spatial labour markets, or welfare/childcare \u2014 significant substantive mismatch",
+      "Start date (September 2026) is before PhD submission (October 2026) \u2014 eligibility risk",
+      "Requires US work visa arrangement (J-1/H-1B) \u2014 administrative overhead",
+      "Very limited content available \u2014 full requirements unknown"
+    ],
+    "next_steps": [
+      "Retrieve the full job posting from Tufts/Fletcher School website to confirm thematic and methodological requirements",
+      "Check whether ABD candidates or those completing defence during the appointment period are accepted",
+      "Assess whether climate policy research connects sufficiently to the researcher's regional economics expertise to make a competitive application",
+      "If pursuing, contact the Climate Policy Lab director to discuss fit before applying"
+    ],
+    "competition_level": "high",
+    "one_line_summary": "US-based climate policy postdoc at Tufts Fletcher School for 2026\u20132027 \u2014 policy-relevant but geographically and thematically distant from core profile, with a pre-PhD-completion start date that needs clarification.",
+    "id": "1a5f94172a22",
+    "source_name": "INOMICS",
+    "source_type": "rss",
+    "raw_content": "Title: Postdoctoral Scholar - Climate Policy Lab\nDescription: <p>The Climate Policy Lab at The Fletcher School, Tufts University, is seeking a Postdoctoral Scholar for the academic year 2026\u20132027.</p>",
+    "analysed_at": "2026-05-10T06:01:44.622551+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "TEaM \u2013 Two Year Master's Programme in Tourism Economics and Management",
+    "institution": "Alma Mater Studiorum - Universit\u00e0 di Bologna",
+    "country": "Italy",
+    "city": "Bologna",
+    "url": "https://inomics.com/program/team-two-year-masters-programme-in-tourism-economics-and-management-alma-mater-studiorum-universita-di-bologna-1532765",
+    "date_posted": null,
+    "deadline": null,
+    "deadline_display": null,
+    "salary": null,
+    "salary_eur": null,
+    "duration": "2 years",
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": null,
+    "career_stage": "Master's programme (pre-doctoral / student level)",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "Bachelor's degree (implied for Master's admission)",
+    "language_requirement": "none stated",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "This is a Master's degree programme (MSc-level taught course), not a postdoctoral position, fellowship, or research grant. The researcher already holds an MSc in Economic Geography from the University of Groningen and is in the final year of a PhD. Enrolling in another Master's programme would represent a significant career regression and is entirely outside the scope of what the researcher is seeking. This listing is a student programme, not an academic employment or funding opportunity.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Tourism economics, sustainable tourism, tourism management, cultural heritage",
+    "theme_flexibility": "locked",
+    "methods_relevance": "Not applicable \u2014 this is a taught Master's programme, not a research position. Tourism economics has limited overlap with the researcher's core focus on regional economics, spatial econometrics, and childcare/labour policy.",
+    "policy_relevant": true,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "This is a Master's-level taught programme, not a postdoc, fellowship, or research grant. Relevance score is 0 by design for student programmes. Does not fit any tier.",
+    "relevance_score": 0,
+    "timeline_fit": "expired",
+    "timeline_note": "Not applicable as a student programme. The researcher is a final-year PhD candidate and is not seeking admission to a Master's programme. No relevant timeline alignment exists.",
+    "pros": [],
+    "cons": [
+      "This is a student Master's programme \u2014 completely inappropriate career stage for a final-year PhD candidate seeking postdoctoral opportunities",
+      "Tourism economics is not the researcher's core field (regional economics, spatial policy, childcare policy)",
+      "No salary or funding indicated \u2014 would require tuition fees",
+      "Requires Italian proficiency likely for daily study life; researcher has only basic Italian",
+      "Represents career regression (already holds an MSc and is completing a PhD)"
+    ],
+    "next_steps": [
+      "Discard \u2014 this is a Master's programme and not relevant to a PhD candidate seeking postdoctoral positions or research funding"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "A Master's-level taught programme in tourism economics at Bologna \u2014 irrelevant for a PhD candidate seeking postdoctoral research positions; scored 0 and collected per design principles.",
+    "id": "e11fae8ceea0",
+    "source_name": "INOMICS",
+    "source_type": "rss",
+    "raw_content": "Title: TEaM \u2013 Two year Master's programme in Tourism Economics and Management, Alma Mater Studiorum - Universit\u00e0 di Bologna\nDescription: <p>Tourism Economics and Management (TEaM) aims at preparing managers, professionals, and researchers to tackle the global challenges of contemporary tourism: being an engine for economic growth, a key player in the green transition to sustainable development, and a promoter of cultural heritage.</p>",
+    "analysed_at": "2026-05-10T06:02:02.006417+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "PhD Studentship: When Things Won't Let Go: Mathematical Modelling of a Sticky Problem in Industrial Drying",
+    "institution": "University of Warwick",
+    "country": "United Kingdom",
+    "city": "Coventry",
+    "url": "https://www.jobs.ac.uk/job/DRM451/phd-studentship-when-things-wont-let-go-mathematical-modelling-of-a-sticky-problem-in-industrial-drying",
+    "date_posted": "2026-05-09",
+    "deadline": null,
+    "deadline_display": "Not stated",
+    "salary": "\u00a321,805 per year (UKRI standard rate 2026/27)",
+    "salary_eur": "~\u20ac26,000",
+    "duration": null,
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": "Full University fees, research training budget, tax-free stipend",
+    "career_stage": "PhD studentship (pre-doctoral)",
+    "nationality_requirement": "UK applicants (stipend/fees for UK applicants; international eligibility unclear from listing)",
+    "degree_requirement": "Undergraduate degree (entry to doctoral programme)",
+    "language_requirement": "none stated",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "This is a PhD studentship \u2014 a pre-doctoral position \u2014 and the researcher is already completing his PhD at Politecnico di Milano. He is not seeking another doctoral degree. Furthermore, the subject matter (mathematical modelling of industrial drying / heterogeneous materials engineering) is entirely outside his field of regional economics, economic geography, or related social sciences. The stipend is also noted as covering UK applicants specifically, adding a further barrier.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Mathematical and computational modelling of adhesion/stickiness in industrial drying processes (materials science / chemical engineering)",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No relevance \u2014 this is a materials science/engineering modelling project using physics-based mathematical models, entirely unrelated to spatial econometrics, microsimulation, or economic geography methods.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "PhD studentship in materials science/engineering \u2014 completely outside the researcher's field and career stage. Tier 0 by both career stage and subject matter rules.",
+    "relevance_score": 0,
+    "timeline_fit": "early",
+    "timeline_note": "PhD studentships are irrelevant to the researcher's timeline regardless; he is completing his PhD and seeking a postdoctoral position. Start would be before or around PhD submission (October 2026) in any case.",
+    "pros": [],
+    "cons": [
+      "PhD studentship \u2014 researcher is already a PhD candidate seeking a postdoctoral position",
+      "Subject is materials science / industrial engineering, entirely unrelated to regional economics or economic geography",
+      "Funding explicitly structured for UK applicants",
+      "University of Warwick School of Engineering \u2014 no relevant departmental connection"
+    ],
+    "next_steps": [
+      "Discard \u2014 not relevant to researcher's career stage or field"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "PhD studentship in materials science engineering at Warwick \u2014 completely outside researcher's field and career stage; collected but irrelevant.",
+    "id": "c6dcfff6b71e",
+    "source_name": "Jobs.ac.uk - Economics",
+    "source_type": "web_scrape",
+    "raw_content": "Title: PhD Studentship: When Things Won't Let Go: Mathematical Modelling of a Sticky Problem in Industrial Drying\nEmployer: University of Warwick\nDepartment: Centre for Doctoral Training in the Modelling of Heterogeneous Materials (HetSys), School of Engineering\nLocation: Coventry, University of Warwick\nSalary: Awards for UK applicants cover full University fees, give a research training budget and a tax-free stipend to cover living costs (standard UKRI rate \u00a321,805 in 26/27 - equivalent to national living wage)\nDate placed: 09 May\nURL: https://www.jobs.ac.uk/job/DRM451/phd-studentship-when-things-wont-let-go-mathematical-modelling-of-a-sticky-problem-in-industrial-drying\nContext: PhD Studentship: When Things Won't Let Go: Mathematical Modelling of a Sticky Problem in Industrial Drying Centre for Doctoral Training in the Modelling of Heterogeneous Materials (HetSys), School of Engineering University of Warwick Location:\n            Coventry, University of Warwick Salary: Awards for UK applicants cover full University fees, give a research training budget and a tax-free stipend to cover living costs (standard UKRI rate \u00a321,805 in 26/27 - equivalent to national living wage) Date Placed: 09 May",
+    "analysed_at": "2026-05-10T06:03:11.863552+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "PhD Studentship: Machine Learning Accelerated Electronic Transport Calculations For Complex Materials",
+    "institution": "University of Warwick",
+    "country": "United Kingdom",
+    "city": "Coventry",
+    "url": "https://www.jobs.ac.uk/job/DRM440/phd-studentship-machine-learning-accelerated-electronic-transport-calculations-for-complex-materials",
+    "date_posted": "2026-05-09",
+    "deadline": null,
+    "deadline_display": "Not stated",
+    "salary": "\u00a321,805 stipend (2026/27 UKRI rate, tax-free) + full fees + research training budget",
+    "salary_eur": null,
+    "duration": null,
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": "Full university fees, research training budget, tax-free stipend",
+    "career_stage": "PhD studentship (pre-doctoral)",
+    "nationality_requirement": "UK applicants specified for full award; international eligibility not stated",
+    "degree_requirement": "Undergraduate degree (implied for PhD entry)",
+    "language_requirement": "none stated",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "This is a PhD studentship, not a postdoctoral position. The researcher is already a PhD candidate in his final year and is seeking his first postdoctoral role. Additionally, the funding is explicitly for UK applicants at the standard UKRI rate, which the researcher as an Indonesian national would not qualify for. The research topic \u2014 machine learning for electronic transport calculations in complex materials (condensed matter physics / materials science / engineering) \u2014 is entirely outside the researcher's field of regional economics, economic geography, and spatial policy analysis.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Machine learning, electronic transport calculations, heterogeneous materials, condensed matter physics, materials science engineering",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No relevance \u2014 the position concerns machine learning applied to quantum/electronic physics in engineering materials, entirely unrelated to the researcher's spatial econometrics, microsimulation, and regional policy evaluation toolkit.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "PhD studentship in an unrelated scientific field (materials science/engineering physics). Does not fall within any tier category \u2014 not economic geography, regional economics, or any related social science field.",
+    "relevance_score": 0,
+    "timeline_fit": "early",
+    "timeline_note": "This is a PhD studentship, not a postdoc. The researcher is completing his PhD (submission October 2026) and is not seeking another doctoral position. Timeline is entirely irrelevant.",
+    "pros": [],
+    "cons": [
+      "PhD studentship \u2014 researcher is already a final-year PhD candidate seeking postdoctoral positions",
+      "Research topic is materials science/engineering physics \u2014 completely outside regional economics and economic geography",
+      "Funding restricted to UK applicants; researcher is Indonesian",
+      "No relevance to spatial econometrics, regional policy, or any of the researcher's skills",
+      "Based at University of Warwick with no connection to researcher's institutional network"
+    ],
+    "next_steps": [
+      "Discard \u2014 no relevance to researcher's field, career stage, or eligibility"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "PhD studentship in materials science/engineering at Warwick \u2014 completely outside the researcher's field and career stage; no action required.",
+    "id": "9be33d17db9b",
+    "source_name": "Jobs.ac.uk - Economics",
+    "source_type": "web_scrape",
+    "raw_content": "Title: PhD Studentship: Machine Learning Accelerated Electronic Transport Calculations For Complex Materials\nEmployer: University of Warwick\nDepartment: Centre for Doctoral Training in the Modelling of Heterogeneous Materials (HetSys), School of Engineering\nLocation: Coventry, University of Warwick\nSalary: Awards for UK applicants cover full University fees, give a research training budget and a tax-free stipend to cover living costs (standard UKRI rate \u00a321,805 in 26/27 - equivalent to national living wage)\nDate placed: 09 May\nURL: https://www.jobs.ac.uk/job/DRM440/phd-studentship-machine-learning-accelerated-electronic-transport-calculations-for-complex-materials\nContext: PhD Studentship: Machine Learning Accelerated Electronic Transport Calculations For Complex Materials Centre for Doctoral Training in the Modelling of Heterogeneous Materials (HetSys), School of Engineering University of Warwick Location:\n            Coventry, University of Warwick Salary: Awards for UK applicants cover full University fees, give a research training budget and a tax-free stipend to cover living costs (standard UKRI rate \u00a321,805 in 26/27 - equivalent to national living wage) Date Placed: 09 May",
+    "analysed_at": "2026-05-10T06:03:29.572976+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "PhD Studentship: From Brittle to Ductile: Machine Learning 3D Fracture Simulations for Extreme Environments",
+    "institution": "University of Warwick",
+    "country": "United Kingdom",
+    "city": "Coventry",
+    "url": "https://www.jobs.ac.uk/job/DRM435/phd-studentship-from-brittle-to-ductile-machine-learning-3d-fracture-simulations-for-extreme-environments",
+    "date_posted": "2026-05-09",
+    "deadline": null,
+    "deadline_display": "Not stated",
+    "salary": "\u00a321,805 stipend (26/27 UKRI rate, tax-free) + full fees + research training budget",
+    "salary_eur": null,
+    "duration": null,
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": "Full University fees, research training budget, tax-free stipend at UKRI rate",
+    "career_stage": "PhD studentship (pre-doctoral)",
+    "nationality_requirement": "UK applicants specified for full award; international eligibility not stated in excerpt",
+    "degree_requirement": "Undergraduate degree in relevant engineering/materials/computational science discipline (implied)",
+    "language_requirement": "none stated",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "This is a PhD studentship, not a postdoctoral position. The researcher is a final-year PhD candidate seeking his first postdoctoral role and is not looking for another PhD. Additionally, the listing specifies awards for 'UK applicants' for the full stipend package, and the research topic \u2014 machine learning fracture simulations for materials science / engineering \u2014 is entirely outside the researcher's field of regional economics, economic geography, and spatial analysis.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Machine learning, computational mechanics, 3D fracture simulation, materials science, heterogeneous materials, engineering for extreme environments",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No relevance \u2014 this is a materials engineering and computational mechanics PhD. The researcher's quantitative methods (spatial econometrics, microsimulation, regional economics) have no application here.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "PhD studentship in materials engineering \u2014 entirely outside economics, geography, or regional science. Career stage and subject matter both disqualify this from any meaningful tier.",
+    "relevance_score": 0,
+    "timeline_fit": "early",
+    "timeline_note": "This is a PhD studentship, so timeline is irrelevant. The researcher submits his PhD in October 2026 and is not seeking a doctoral position.",
+    "pros": [],
+    "cons": [
+      "PhD studentship \u2014 researcher is completing a PhD, not seeking another one",
+      "Materials science / engineering \u2014 entirely unrelated to regional economics or economic geography",
+      "UK applicant preference for full funding \u2014 Indonesian nationality may further restrict eligibility",
+      "No transferable relevance to researcher's skills, methods, or research agenda"
+    ],
+    "next_steps": [
+      "No action required \u2014 discard this listing",
+      "Confirm dashboard PhD-filter is toggled to hide PhD/pre-doctoral listings by default"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "PhD studentship in materials engineering at Warwick \u2014 completely outside the researcher's field and career stage; no action needed.",
+    "id": "2cd622e0c225",
+    "source_name": "Jobs.ac.uk - Economics",
+    "source_type": "web_scrape",
+    "raw_content": "Title: PhD Studentship: From Brittle to Ductile: Machine Learning 3D Fracture Simulations for Extreme Environments\nEmployer: University of Warwick\nDepartment: Centre for Doctoral Training in the Modelling of Heterogeneous Materials (HetSys), School of Engineering\nLocation: Coventry, University of Warwick\nSalary: Awards for UK applicants cover full University fees, give a research training budget and a tax-free stipend to cover living costs (standard UKRI rate \u00a321,805 in 26/27 - equivalent to national living wage)\nDate placed: 09 May\nURL: https://www.jobs.ac.uk/job/DRM435/phd-studentship-from-brittle-to-ductile-machine-learning-3d-fracture-simulations-for-extreme-environments\nContext: PhD Studentship: From Brittle to Ductile: Machine Learning 3D Fracture Simulations for Extreme Environments Centre for Doctoral Training in the Modelling of Heterogeneous Materials (HetSys), School of Engineering University of Warwick Location:\n            Coventry, University of Warwick Salary: Awards for UK applicants cover full University fees, give a research training budget and a tax-free stipend to cover living costs (standard UKRI rate \u00a321,805 in 26/27 - equivalent to national living wage) Date Placed: 09 May",
+    "analysed_at": "2026-05-10T06:03:46.915439+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "Postdoctoral position in Computerised Image Processing with focus on Machine Learning for Data-Driven Precision Medicine and Diagnostics",
+    "institution": "Uppsala Universitet",
+    "country": "Sweden",
+    "city": "Uppsala",
+    "url": "https://euraxess.ec.europa.eu/jobs/434887",
+    "date_posted": "2026-05-09",
+    "deadline": "2026-06-01",
+    "deadline_display": "1 June 2026",
+    "salary": null,
+    "salary_eur": null,
+    "duration": "2 years",
+    "start_date": "2026-09-01",
+    "full_time": true,
+    "funding_covers": "Standard Swedish university employment package (collective agreement)",
+    "career_stage": "PhD required at time of employment decision; preference for PhD completed within last 3 years",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "PhD in computerised image analysis/processing, machine learning, AI, data science, or computer science",
+    "language_requirement": "Excellent English (oral and written); no other language required",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "The position requires a PhD in a field closely related to computerised image analysis, machine learning, artificial intelligence, data science, or computer science. The researcher's PhD is in Regional Economics and his skills are in spatial econometrics, microsimulation, and regional policy analysis. These fields are entirely unrelated to the computational image processing and deep learning methods (PyTorch, TensorFlow, convolutional neural networks) that are the explicit and non-negotiable requirements of this role. There is no plausible route to satisfying the degree and documented experience requirements.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": "Start date of 1 September 2026 is before PhD submission (October 2026), but eligibility is moot given the field mismatch.",
+    "research_theme": "AI and machine learning methods for cancer diagnostics and clinical pathology; computerised image analysis; deep learning on biomedical/histopathology data",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No alignment. The researcher uses spatial econometrics, microsimulation, and GIS for regional policy analysis. This position requires deep learning, convolutional/transformer neural networks, and biomedical image processing \u2014 an entirely different methodological and disciplinary domain.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "Completely outside the researcher's field (economics, geography, regional science, urban policy). No institutional connection to Cardiff, Dutch universities, PoliMi, BRIN, or UGM. Relevance score is below 10, confirming Tier 0.",
+    "relevance_score": 2,
+    "timeline_fit": "early",
+    "timeline_note": "Start date 1 September 2026 is before the researcher's PhD submission deadline of October 2026. However, this is irrelevant given the position is entirely outside the researcher's field.",
+    "pros": [
+      "Open to all nationalities \u2014 no eligibility barrier on that front",
+      "2-year temporary contract provides stability",
+      "Uppsala University is a prestigious European institution"
+    ],
+    "cons": [
+      "Completely outside the researcher's field \u2014 Regional Economics vs. Computer Science/Biomedical Image Processing",
+      "Requires documented expertise in deep learning, PyTorch, TensorFlow, convolutional neural networks \u2014 skills the researcher does not possess",
+      "PhD must be in a closely related computer science field \u2014 Regional Economics PhD does not qualify",
+      "No relevance to spatial econometrics, microsimulation, regional policy, or economic geography",
+      "Start date (September 2026) is before PhD submission (October 2026)",
+      "No connection to any of the researcher's priority institutions or networks"
+    ],
+    "next_steps": [
+      "Do not apply \u2014 this position is outside the researcher's field and he does not meet the disciplinary or technical requirements"
+    ],
+    "competition_level": "high",
+    "one_line_summary": "Biomedical image processing and deep learning postdoc at Uppsala \u2014 entirely outside the researcher's field of regional economics and spatial analysis; not relevant.",
+    "id": "0ad2884446a3",
+    "source_name": "EURAXESS",
+    "source_type": "web_scrape",
+    "raw_content": "Title: Postdoctoral position in Computerised Image Processing with focus on Machine Learning for Data-Driven Precision Medicine and Diagnostics\nType: JOB\nInstitution: Uppsala Universitet via MyNetwork\nCountry: Sweden\nPosted: 9 May 2026\nDeadline: 2026-06-01\nResearch fields: Computer science, Technology, Information technology\nURL: https://euraxess.ec.europa.eu/jobs/434887\nSnippet: Are you interested in developing new image analysis and machine learning methods for cancer diagnostics and clinical decision support? Would you like to work in a multidisciplinary team together with competent and friendly colleagues in an international environment? Are you looking for an employer...\nFull description: Organisation/Company: Uppsala universitet\nDepartment: Uppsala University, Department of Information Technology\nResearch Field: Computer scienceTechnology \u00bb Information technology\nResearcher Profile: Recognised Researcher (R2)\nApplication Deadline: 1 Jun 2026 - 21:59 (UTC)\nCountry: Sweden\nType of Contract: Temporary\nJob Status: Full-time\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: Are you interested in developing new image analysis and machine learning methods for cancer diagnostics and clinical decision support? Would you like to work in a multidisciplinary team together with competent and friendly colleagues in an international environment? Are you looking for an employer that invests in sustainable employeeship and offers safe, favourable working conditions? We welcome you to apply for a postdoctoral research position at the Department of Information Technology, Uppsala University.The Department of Information Technology holds a leading position in both research and education at all levels. We are currently Uppsala University's third largest department, with 350 employees, including 120 teachers and 120 PhD students. Approximately 5,000 undergraduate students take one or more courses at the department each year. You can find more information about us on the Department of Information Technologywebsite.The project is led by ProfessorJoakim Lindblad, within theMIDA\u2013 Methods for Image Data Analysis \u2013 research group at the Department of Information Technology, and will be conducted alongside other researchers at theCentre for Image Analysiswho develop computational methods with a particular focus on deep learning and image analysis. The project relies on a close collaboration with researchers at theDepartment of Immunology, Genetics and Pathology (IGP)at Uppsala University andSciLifeLab, the national infrastructure for life science.Project descriptionThe development of artificial intelligence (AI) and computerised image processing in combination with advanced digital microscopy is enabling major advances in clinical pathology and cancer diagnostics. Today's AI methods require large amounts of data with a detailed ground truth annotation that the AI system can learn from. In healthcare, in most cases, there is only access to information at the patient level, about the patient's health status and disease development. In this project, we will develop theory, algorithms and methods to effectively train AI models based on limited and imprecise information as well as unbalanced and heterogeneous multimodal data.This needs-driven method development finds direct application in healthcare. Together with our partners in healthcare and biomedicine, we will apply the developed methods to detect cancer from cell and tissue samples as early as possible and to individually predict which treatment is expected to give the best result for the patient.DutiesThe successful candidate will devote the majority of their time to research.The duties include method development, implementation, data management, evaluation and analysis, manuscript preparation, as well as own career development. Assisting PhD students in the research group on related research tasks will be a part of the duties. Teaching in related subjects (max 20%), including master student supervision, can also be included depending on availability and interest.The candidate is expected to take an active role in the MIDA research environment and contribute to the development of the research milieu.RequirementsPhD degree in a field closely related to the position (e.g., computerized image analysis/processing, machine learning, artificial intelligence, data science, computer science) or a foreign degree equivalent to a PhD degree in a field closely related to the position. The degree needs to be obtained by the time of the decision of employment. Priority will be given to applicants who have completed their degree no more than three years before the deadline for applications. Due to special circumstances, the degree may have been obtained earlier. The three-year period can be extended due to circumstances such as sick leave, parental leave, duties in labour unions, etc.The candidate must have documented experience in image analysis, machine and deep learning, including completed courses in these fields, at the master and doctoral level of education, as well as first-hand experience in method development, implementation, evaluation, and publication (first author) of scientific articles in internationally recognized journals and presentations at international conferences.We are looking for candidates with:A solid academic background with thorough computational and analytical understanding;Proficiency in programming in Python and deep learning frameworks such as PyTorch and TensorFlow;Excellent communication skills in oral and written English;Creativity, thoroughness, and a structured approach to problem-solving;Good collaborative skills, drive, and independence.Additional qualificationsMeriting is:Interest in biomedical research and experience in application of image analysis in medicine.Experience of programming in JavaScript, software version control with Git, typesetting with LaTeX, use of Linux computers;Experience with convolutional and transformer-based neural networks for image analysis;Experience of university level teaching and supervision.When selecting among the applicants we will assess their ability to independently drive their work forward, to collaborate with others, to have a diligent and professional approach and to analyse and address complex problems. An emphasis will be placed on personal characteristics and personal suitability.ApplicationThe application should consist of:A Curriculum Vitae (CV);A copy of relevant grade documents (translated into Swedish or English);A list of publications;Up to five selected publications in electronic format;Contact details (names, emails, and telephone numbers) of minimum two references, also specifying the context, duration, and nature of the relationship with the candidate. Reference letters may be provided as supporting documents but are not required at the time of the application.A personal letter (max 1 page) which includes:Described motivation for the application for this position;A list with your up to three main scientific achievements;A research statement describing your past and current research activities;The earliest possible starting date of employment.About the employmentThe employment is a temporary position of 2 years according to central collective agreement. Full time position. Starting date 1 September 2026 or as agreed. Placement: UppsalaFor further information about the position, please contact:Prof. Joakim Lindblad (e-mail:joakim.lindblad@it.uu.se)Please submit your application by 1 June 2026, UFV-PA 2026/1409.Are you considering moving to Sweden to work at Uppsala University?Find out more about what it\u00b4s like to work and live in Sweden.\nRequirements: Research FieldComputer scienceEducation LevelPhD or equivalent\nAdditional info: ",
+    "analysed_at": "2026-05-10T06:05:54.078307+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "Postdoctoral researcher in Single-molecule biophysics",
+    "institution": "Uppsala Universitet (Department of Cell and Molecular Biology)",
+    "country": "Sweden",
+    "city": "Uppsala",
+    "url": "https://euraxess.ec.europa.eu/jobs/434888",
+    "date_posted": "2026-05-09",
+    "deadline": "2026-06-15",
+    "deadline_display": "15 June 2026",
+    "salary": null,
+    "salary_eur": null,
+    "duration": "2 years (extendable to 3)",
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": null,
+    "career_stage": "First Stage Researcher (R1); PhD required, preference for PhD obtained within last 3 years",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "PhD in biophysics, biochemistry, physics, molecular biology, cell biology, or related field",
+    "language_requirement": "Excellent English proficiency required",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "This position requires a PhD in biophysics, biochemistry, physics, molecular biology, cell biology, or a closely related natural/life science field. The researcher holds degrees in Economics and Regional Economics and has no background in single-molecule biophysics, genome biology, fluorescence microscopy, biochemistry, or any related biological or physical science discipline. The degree requirement is not merely a formality \u2014 the role demands deep expertise in molecular biology laboratory techniques entirely outside the researcher's profile. This is a hard disciplinary mismatch, not an eligibility technicality.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Single-molecule biophysics; genome biology; DNA recognition and remodeling; single-molecule fluorescence microscopy; molecular biology",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No overlap whatsoever. The researcher's methods are quantitative spatial econometrics, microsimulation, and GIS applied to regional economics and policy. This role requires single-molecule fluorescence imaging, in vitro biochemical reconstitution, and molecular biology laboratory techniques \u2014 an entirely different scientific domain.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "Completely outside the researcher's field (regional economics / economic geography). Biology / biophysics has no connection to any defined tier. Assigned Tier 0 per design principles \u2014 never exclude, but classify accordingly.",
+    "relevance_score": 0,
+    "timeline_fit": "early",
+    "timeline_note": "Start date is 'as soon as possible', which is before the researcher's PhD submission deadline of October 2026. However, timeline is irrelevant here given the fundamental field mismatch \u2014 the position is in molecular biophysics, not economics or geography.",
+    "pros": [
+      "Postdoctoral career stage is appropriate for the researcher's upcoming career phase",
+      "Swedish academic system is internationally respected",
+      "No nationality restrictions stated"
+    ],
+    "cons": [
+      "Completely outside the researcher's field \u2014 molecular biophysics vs regional economics",
+      "Requires laboratory skills (fluorescence microscopy, biochemical techniques) the researcher does not possess",
+      "Wrong disciplinary degree required (biophysics/biology vs economics/geography)",
+      "No connection to economic geography, regional science, spatial analysis, or policy",
+      "Not relevant to any of the researcher's research interests or career goals"
+    ],
+    "next_steps": [
+      "Do not apply \u2014 this position is fundamentally outside the researcher's discipline and expertise",
+      "No further action required"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "Single-molecule biophysics postdoc at Uppsala University \u2014 entirely outside the researcher's field of regional economics and economic geography; irrelevant.",
+    "id": "39e01e832954",
+    "source_name": "EURAXESS",
+    "source_type": "web_scrape",
+    "raw_content": "Title: Postdoctoral researcher in Single-molecule biophysics\nType: JOB\nInstitution: Uppsala Universitet via MyNetwork\nCountry: Sweden\nPosted: 9 May 2026\nDeadline: 2026-06-15\nResearch fields: Biological sciences, Biology\nURL: https://euraxess.ec.europa.eu/jobs/434888\nSnippet: Are you interested in exploring fundamental mechanisms in genome biology, with the support of skilled and supportive colleagues in an international environment? Are you looking for an employer that invests in a sustainable workforce and offers safe, favorable working conditions? We welcome you to...\nFull description: Organisation/Company: Uppsala universitet\nDepartment: Uppsala University, Department of Cell and Molecular Biology\nResearch Field: Biological sciences \u00bb Biology\nResearcher Profile: First Stage Researcher (R1)\nApplication Deadline: 15 Jun 2026 - 21:59 (UTC)\nCountry: Sweden\nType of Contract: Temporary\nJob Status: Full-time\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: Are you interested in exploring fundamental mechanisms in genome biology, with the support of skilled and supportive colleagues in an international environment? Are you looking for an employer that invests in a sustainable workforce and offers safe, favorable working conditions? We welcome you to apply for a postdoctoral position at Uppsala University.The Department of Cell and Molecular Biology is organized into seven research programmes which all focus on different areas of cell and molecular biology: Computational Biology and Bioinformatics, Microbiology and Immunology, Molecular Biology, Molecular Biophysics, Molecular Evolution, Molecular Systems Biology and Structural Biology. The scientific basis of what we do lies in biology, but our research overlaps with other areas such as medicine, computer science, mathematics, chemistry, engineering sciences and physics. In total, we are over 200 staff and ~60 PhD students. Please read more about the department\u2019s work athttps://icm.uu.se.The Deindl lab offers a stimulating multidisciplinary environment where you will work closely with experts in biophysics, biochemistry, structural and molecular biology. Our overall mission is to investigate the molecular mechanisms underlying genome-interacting processes using a highly multidisciplinary approach that combines advanced single-molecule fluorescence imaging with a range of structural, biophysical, and biochemical techniques. For more information about the research in the Deindl laboratory, please visithttp://www.deindl-lab.com/.DutiesThe postdoctoral researcher will investigate fundamental mechanisms underlying programmable DNA recognition and genome reorganization. This project offers a unique opportunity to develop innovative experimental approaches aimed at resolving key questions in molecular specificity, DNA remodeling, and cellular genome dynamics. The successful candidate will combine advanced single-molecule fluorescence microscopy with a diverse toolkit of molecular biology andin vitrobiochemical approaches to advance our understanding of this emerging area.RequirementsWe are seeking a highly motivated candidate with a PhD in biophysics, biochemistry, physics, molecular biology, cell biology, or a related field. The degree must be obtained by the time the employment decision is made. In accordance with eligibility requirements, priority will be given to candidates who obtained their PhD no more than three years before the application deadline. The three-year period is calculated from the application deadline and may be extended in cases of documented special circumstances, including sick leave, parental leave, or duties in labour unions.The candidate should be able to work independently and must have excellent proficiency in English, as the position is based in an international research environment. We value strong collaborative skills, self-motivation, and a genuine interest in basic research, particularly in addressing fundamental biological questions through quantitative approaches.Additional qualificationsPrior experience and a strong interest in fluorescence microscopy, single-molecule microscopy, and related quantitative approaches are highly valued. Experience with protein-DNA or nucleic acid-protein complexes, DNA recognition systems, genome engineering approaches, orin vitrobiochemical reconstitution will be considered an advantage.About the employmentThe employment is atemporary position of two years with the possibility to extend to three years according to the Higher Education Ordinance chapter 5 \u00a7 7.Scope of employment 100 %.Starting date as soon as possible or as agreed. Placement: UppsalaFor further information about the position, please contact:Sebastian Deindl,sebastian.deindl@icm.uu.sePlease submit your application by June 15, 2026, UFV-PA 2026/1516.Are you considering moving to Sweden to work at Uppsala University?Find out more about what it is like to work and live in Sweden.\nRequirements: \nAdditional info: ",
+    "analysed_at": "2026-05-10T06:06:14.086945+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "Postdoctoral Researcher in Structural Biology",
+    "institution": "Uppsala Universitet (Department of Cell and Molecular Biology)",
+    "country": "Sweden",
+    "city": "Uppsala",
+    "url": "https://euraxess.ec.europa.eu/jobs/434889",
+    "date_posted": "2026-05-09",
+    "deadline": "2026-06-15",
+    "deadline_display": "15 June 2026",
+    "salary": null,
+    "salary_eur": null,
+    "duration": "2 years (extendable to 3)",
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": "Employment contract with Uppsala University; access to cryo-EM facilities and research infrastructure",
+    "career_stage": "First Stage Researcher (R1); PhD required by employment decision date; priority to candidates with PhD no more than 3 years before deadline",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "PhD in structural biology, biophysics, biochemistry, molecular biology, or related field",
+    "language_requirement": "Excellent proficiency in English",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "This position is in structural biology / genome biology, a natural science field entirely outside the researcher's domain of economics, economic geography, and regional science. While there are no nationality or degree-origin barriers that would disqualify an Indonesian PhD candidate formally, the substantive requirement \u2014 a PhD in structural biology, biophysics, biochemistry, molecular biology, or a related natural science field, plus hands-on experience with cryo-electron microscopy, protein purification, and chromatin systems \u2014 is wholly incompatible with a PhD in Regional Economics. The researcher has no academic background, training, or publications in any biological science, making him substantively ineligible regardless of formal criteria.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Structural biology; chromatin organisation and genome regulation; cryo-electron microscopy; molecular mechanisms of genome-interacting processes",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No alignment whatsoever. The researcher's methods are spatial econometrics, microsimulation, GIS, and policy evaluation applied to socioeconomic data. The position requires cryo-electron microscopy, X-ray crystallography, NMR spectroscopy, biochemical reconstitution, and structural biology techniques \u2014 an entirely different scientific discipline.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "Structural biology at Uppsala University has no connection to any of the four tiers (Cardiff economic geography, Dutch universities in economics/geography, PoliMi, or Indonesian institutions). Field is entirely outside economics, geography, or related social sciences.",
+    "relevance_score": 0,
+    "timeline_fit": "ideal",
+    "timeline_note": "Start date is 'as soon as possible or as agreed', which could in principle align with the researcher's Q4 2026 window, but timeline is entirely moot given the complete field mismatch.",
+    "pros": [
+      "No nationality restriction \u2014 formally open to international candidates",
+      "English-language working environment",
+      "International, multidisciplinary research setting"
+    ],
+    "cons": [
+      "Completely outside the researcher's field \u2014 structural biology vs regional economics",
+      "Requires PhD in natural/biological sciences; researcher holds PhD in regional economics",
+      "Requires hands-on laboratory skills (cryo-EM, protein purification, biochemistry) the researcher does not possess",
+      "No connection to any priority institution or country in the tier system",
+      "Research theme (chromatin architecture, genome regulation) has zero relevance to economic geography or policy"
+    ],
+    "next_steps": [
+      "No action required \u2014 this listing is irrelevant to the researcher's field and career trajectory",
+      "Dismiss from dashboard or archive"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "Structural biology postdoc at Uppsala University investigating chromatin mechanisms via cryo-EM \u2014 entirely outside the researcher's field of regional economics and economic geography; no action needed.",
+    "id": "25ea06239e6c",
+    "source_name": "EURAXESS",
+    "source_type": "web_scrape",
+    "raw_content": "Title: Postdoctoral researcher in Structural Biology\nType: JOB\nInstitution: Uppsala Universitet via MyNetwork\nCountry: Sweden\nPosted: 9 May 2026\nDeadline: 2026-06-15\nResearch fields: Biological sciences, Biology\nURL: https://euraxess.ec.europa.eu/jobs/434889\nSnippet: Are you interested in exploring fundamental mechanisms in genome biology, with the support of skilled and supportive colleagues in an international environment? Are you looking for an employer that invests in a sustainable workforce and offers safe, favorable working conditions? We welcome you to...\nFull description: Organisation/Company: Uppsala universitet\nDepartment: Uppsala University, Department of Cell and Molecular Biology\nResearch Field: Biological sciences \u00bb Biology\nResearcher Profile: First Stage Researcher (R1)\nApplication Deadline: 15 Jun 2026 - 21:59 (UTC)\nCountry: Sweden\nType of Contract: Temporary\nJob Status: Full-time\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: Are you interested in exploring fundamental mechanisms in genome biology, with the support of skilled and supportive colleagues in an international environment? Are you looking for an employer that invests in a sustainable workforce and offers safe, favorable working conditions? We welcome you to apply for a postdoctoral position at Uppsala University.The Department of Cell and Molecular Biologyis organized into seven research programmes which all focus on different areas of cell and molecular biology: Computational Biology and Bioinformatics, Microbiology and Immunology, Molecular Biology, Molecular Biophysics, Molecular Evolution, Molecular Systems Biology and Structural Biology. The scientific basis of what we do lies in biology, but our research overlaps with other areas such as medicine, computer science, mathematics, chemistry, engineering sciences and physics. In total, we are over 200 staff and ~60 PhD students. Please read more about the department\u2019s work athttps://icm.uu.se.The Deindl lab offers a stimulating multidisciplinary environment where you will work closely with experts in biophysics, biochemistry, structural and molecular biology. Our overall mission is to investigate the molecular mechanisms underlying genome-interacting processes using a highly multidisciplinary approach that combines structural biology, including cryo-electron microscopy, with advanced imaging, biophysical analysis, and biochemical reconstitution. For more information about the research in the Deindl laboratory, please visithttp://www.deindl-lab.com/.Project descriptionThe postdoctoral researcher will investigate fundamental mechanisms that govern the organization and maintenance of chromatin. This project offers a unique opportunity to apply state-of-the-art cryo-electron microscopy, together with biochemical and biophysical approaches, to uncover how chromatin-associated molecular machines interact with, remodel, and regulate the genome. The successful candidate will work at the interface of structural biology, molecular biology, and biochemistry to address key questions in chromatin architecture and genome regulation.The postdoctoral researcher will join a vibrant structural biology environment within the department, with excellent access to state-of-the-art cryo-EM facilities, technical expertise, and infrastructure.RequirementsWe are seeking a highly motivated candidate with a PhD in structural biology, biophysics, biochemistry, molecular biology, or a related field. Applicants must have prior experience in structural biology, such as cryo-electron microscopy, X-ray crystallography, NMR spectroscopy, integrative structural biology, or related approaches. The PhD degree must be obtained by the time the employment decision is made. In accordance with eligibility requirements, priority will be given to candidates who obtained their PhD no more than three years before the application deadline. The three-year period is calculated from the application deadline and may be extended in cases of documented special circumstances, including sick leave, parental leave, or duties in labour unions.The candidate should be able to work independently and must have excellent proficiency in English, as the position is based in an international research environment. We value strong collaborative skills, self-motivation, scientific curiosity, and a genuine interest in basic research, particularly in addressing fundamental biological questions through structural, biochemical, and quantitative approaches.Additional qualificationsExperience with cryo-electron microscopy,in vitrobiochemical reconstitution, and biophysical analysis is highly valued. Experience with protein purification, protein-DNA complexes, chromatin or nucleosome-based systems, cryo-EM sample preparation, data processing, structure determination, or complementary biophysical methods will be considered an advantage.About the employmentThe employment is atemporary position of two years with the possibility to extend to three years according to the Higher Education Ordinance chapter 5 \u00a7 7.Scope of employment 100 %.Starting date as soon as possibleor as agreed. Placement: UppsalaFor further information about the position, please contact:Sebastian Deindl,sebastian.deindl@icm.uu.sePlease submit your application by June 15, 2026, UFV-PA 2026/1515.Are you considering moving to Sweden to work at Uppsala University?Find out more about what it is like to work and live in Sweden.\nRequirements: \nAdditional info: ",
+    "analysed_at": "2026-05-10T06:06:36.488112+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "Postdoc Researcher on Carburization and Melting Mechanism of H-DRI During REF Process",
+    "institution": "Delft University of Technology (TU Delft)",
+    "country": "Netherlands",
+    "city": "Delft",
+    "url": "https://euraxess.ec.europa.eu/jobs/434890",
+    "date_posted": "2026-05-09",
+    "deadline": "2026-06-07",
+    "deadline_display": "7 June 2026",
+    "salary": "In accordance with the Collective Labour Agreement for Dutch Universities",
+    "salary_eur": null,
+    "duration": "3 years",
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": "Pension scheme (ABP), health insurance discount, parental leave, relocation support via Coming to Delft Service, training and development opportunities",
+    "career_stage": "Recognised Researcher (R2) \u2014 PhD required in chemical, metallurgical or materials engineering or closely related field",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "PhD in chemical, metallurgical or materials engineering or closely related field",
+    "language_requirement": "Excellent written and verbal English",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "The position requires a PhD in chemical, metallurgical or materials engineering (or closely related field), with specialised knowledge in pyrometallurgy, ironmaking/steelmaking technologies, and advanced high-temperature experimental techniques (SEM-EDS, TEM, EPMA, furnaces, reactive gases). The researcher holds a PhD in Regional Economics and an MSc in Economic Geography \u2014 neither degree nor skills overlap with the required domain. This is a hard disciplinary mismatch, not merely an eligibility technicality.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Carburization and melting behaviour of hydrogen-based direct reduced iron (H-DRI) in reduced electric furnace (REF) operations; green/sustainable steelmaking; CO2-neutral metallurgy",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No alignment. The position requires high-temperature experimental metallurgy (SEM-EDS, TEM, EPMA, furnace experiments with reactive gases), which is entirely outside the researcher's quantitative economic geography and spatial econometrics toolkit.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "Completely outside the researcher's field (materials/metallurgical engineering vs regional economics and economic geography). Despite being at a Dutch university, the relevance score is far below the threshold for Tier 2 assignment. Tier 0 by mandatory consistency rule.",
+    "relevance_score": 2,
+    "timeline_fit": "ideal",
+    "timeline_note": "The 3-year position at TU Delft has a deadline of 7 June 2026 with no stated start date. Timing could theoretically align with the researcher's PhD completion (October 2026), but timeline is entirely irrelevant given the complete field mismatch.",
+    "pros": [
+      "Located in the Netherlands \u2014 researcher has a Dutch MSc connection to the country",
+      "No nationality requirement \u2014 Indonesian applicants are not excluded on citizenship grounds",
+      "3-year duration provides stability",
+      "TU Delft is a high-prestige institution"
+    ],
+    "cons": [
+      "Completely outside the researcher's field \u2014 materials/metallurgical engineering, not economics or geography",
+      "Requires specialised experimental skills (pyrometallurgy, SEM-EDS, TEM, EPMA, high-temperature furnace work) the researcher does not possess",
+      "PhD subject matter (Regional Economics) does not satisfy the 'closely related field' requirement",
+      "No overlap with any of the researcher's substantive research areas (childcare policy, regional convergence, spatial microsimulation, labour markets)",
+      "Not policy-relevant in any economic or social sense"
+    ],
+    "next_steps": [
+      "Do not apply \u2014 this position is in an entirely different scientific discipline",
+      "No further action required"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "Materials engineering postdoc at TU Delft focused on hydrogen-based steelmaking \u2014 entirely outside the researcher's field of regional economics and economic geography; no overlap whatsoever.",
+    "id": "30bfd643f954",
+    "source_name": "EURAXESS",
+    "source_type": "web_scrape",
+    "raw_content": "Title: Postdoc Researcher on Carburization and Melting Mechanism of H-DRI During REF Process\nType: JOB\nInstitution: Delft University of Technology via AcademicTransfer\nCountry: Netherlands\nPosted: 9 May 2026\nDeadline: 2026-06-07\nResearch fields: Engineering, Materials engineering\nURL: https://euraxess.ec.europa.eu/jobs/434890\nSnippet: Join TU Delft\u2019s contribution to the \u201cGroeien met Groen Staal (GGS)\u201d programme and accelerate the transition to CO\u2082-neutral steelmaking. As a postdoctoral researcher, in collaboration with Tata Steel Netherlands you will develop innovative carburization and melting strategies for hydrogen-based DRI...\nFull description: Organisation/Company: Delft University of Technology (TU Delft)\nResearch Field: Engineering \u00bb Materials engineering\nResearcher Profile: Recognised Researcher (R2)\nApplication Deadline: 7 Jun 2026 - 21:59 (UTC)\nCountry: Netherlands\nType of Contract: Temporary\nJob Status: Not Applicable\nHours Per Week: 40.0\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: Join TU Delft\u2019s contribution to the \u201cGroeien met Groen Staal (GGS)\u201d programme and accelerate the transition to CO\u2082-neutral steelmaking. As a postdoctoral researcher, in collaboration with Tata Steel Netherlands you will develop innovative carburization and melting strategies for hydrogen-based DRI under REF operating conditions.Job descriptionAt TU Delft, you will contribute to a transformative national initiative: the \u201cGroeien met Groen Staal(GGS)\u201d programme. Within this ambitious project, you will play a key role in advancing hydrogen-based steelmaking by addressing one of its central challenges: how to efficiently carburize and melt H-DRI in reduced electric furnace (REF) operations. Working at the forefront of sustainable metallurgy, you will combine experimental research and fundamental insights to unlock new process routes that support a circular and CO\u2082-neutral steel industry by 2050.TheMetals Production, Refining and Recycling (MPRR)group at TU Delft is actively involved in Theme II: Production within theGGS programme. This initiative pushes beyond current state-of-the-art technologies, exploring disruptive alternatives to conventional blast furnace (BF) and basic oxygen furnace (BOF) routes. A promising pathway involves hydrogen-based direct reduction (DRP) combined with REF and BOF, offering significant potential to reduce emissions while maintaining steel quality and process efficiency.A critical factor in this transition is the role of carbon. In the REF+BOF route, carbon is essential for refining hot metal and controlling the melting behaviour of iron-bearing materials. However, hydrogen-based DRI lacks intrinsic carbon, making controlled carburization during melting indispensable. Understanding how carbon influences phase transitions, and how it can be effectively introduced into the system is central to this research.Your responsibilitiesIn this role, you will develop fundamental and practical insights into the carburization and melting behaviour of H-DRI in REF operations, contributing to the advancement of green steelmaking within the GGS programme. As a postdoctoral researcher, you will:Explore carbonaceous materials that can be used in the REF processEvaluate the graphitization degree of carbonaceous materials and select those suitable for laboratory-scale experimentsDesign and perform lab-scale experiments to determine the wetting behaviour between selected carbonaceous materials and complex iron systemsDesign and perform lab-scale experiments to investigate the carburization and melting behaviour of complex ironCollaborate with researchers withindepartment MSEandTata Steel Netherlands, contributing to joint research activities and knowledge exchange.Contribute to scientific publications, conference presentations, and the development of new research proposals in the field of green steel.Your workenvironmentYou will be part of theMetals Production, Refining and Recycling (MPRR)section at TU Delft, where cutting-edge research is conducted to optimize resource efficiency and reduce environmental impacts in metal industries. The MPRR research team specializes in the elucidation of reaction mechanisms and kinetics using experimental studies and process modelling and simulation. The team bridges fundamental science with practical, real-world applications, contributing to circular economy innovations. At MPRR, we work closely every day to strengthen the group through each member\u2019s growth, fostering a collaborative culture without rigid hierarchies and plenty of opportunities for professional and academic development. You\u2019ll also collaborate with scientists from theGGS programme, andTata Steel Netherlands; colleagues passionate about green steel and sustainability.Job requirementsWe are looking for a self-motivated researcher to help developing new technologies for green steel production. You are able to work independently while also collaborating effectively with colleagues and industry partners, and are willing to engage in a multidisciplinary research environment.Furthermore, you meet the following requirements:You hold a PhD degree in chemical, metallurgical or materials engineering, or a closey related field.You have sound knowledge in pyrometallurgical fundamentals, and are acquainted with ironmaking and steelmaking technologies.You have experienced with advanced characterization and image analysis tools. Particularly, a knowledge on the following tools; SEM-EDS, TEM, and EPMA is a big plus.You are familiar with designing and conducting high temperature experiments and are familiar with using furnaces and reacting gases (in particularly O2, H2, CO/CO2 and natural gas).You have excellent written and verbal communication skills in English.You have a strong track record in scientific research, as evident from publications in international peer-reviewed journals and conference participation.Join this unique programme, where you can apply your technical knowledge to a project with Tata Steel Netherlands. Imagine designing new processes more sustainable and (cost-)efficient and improving the recyclability of steel. You can help make an impact on society!TU Delft (Delft University of Technology)Delft University of Technology is built on strong foundations. As creators of the world-famous Dutch waterworks and pioneers in biotech, TU Delft is a top international university combining science, engineering and design. It delivers world class results in education, research and innovation to address challenges in the areas of energy, climate, mobility, health and digital society. For generations, our engineers have proven to be entrepreneurial problem-solvers, both in business and in a social context.At TU Delft we embrace diversity as one of our corevaluesand we activelyengageto be a university where you feel at home and can flourish. We value different perspectives and qualities. We believe this makes our work more innovative, the TU Delft community more vibrant and the world more just. Together, we imagine, invent and create solutions using technology to have a positive impact on a global scale. That is why we invite you to apply. Your application will receive fair consideration.Challenge. Change. Impact!Faculty Mechanical EngineeringFrom chip to ship. From machine to human being. From idea to solution. Driven by a deep-rooted desire to understand our environment and discover its underlying mechanisms, research and education at the ME faculty focusses on fundamental understanding, design, production including application and product improvement, materials, processes and (mechanical) systems.ME is a dynamic and innovative faculty with high-tech lab facilities and international reach. It\u2019s a large faculty but also versatile, so we can often make unique connections by combining different disciplines. This is reflected in ME\u2019s outstanding, state-of-the-art education, which trains students to become responsible and socially engaged engineers and scientists. We translate our knowledge and insights into solutions to societal issues, contributing to a sustainable society and to the development of prosperity and well-being. That is what unites us in pioneering research, inspiring education and (inter)national cooperation.Clickhereto go to the website of the Faculty of Mechanical Engineering. Do you want to experience working at our faculty? Thesevideoswill introduce you to some of our researchers and their work.Conditions of employmentDuration of contract is 3 years. Temporary.A job of 38-40 hours per week.Salary and benefits are in accordance with the Collective Labour Agreement for Dutch Universities.An excellent pension scheme via the ABP.The possibility to compile an individual employment package every year.Discount with health insurers on supplemental packages.Flexible working week.Every year, 232 leave hours (at 38 hours). You can also sell or buy additional leave hours via the individual choice budget.Plenty of opportunities for education, training and courses.Partially paid parental leaveAttention for working healthy and energetically with the vitality program.Will you need to relocate to the Netherlands for this job? TU Delft is committed to make your move as smooth as possible! The HR unit,Coming to Delft Service, offers information on their website to help you prepare your relocation. In \u2026\nRequirements: \nAdditional info: ",
+    "analysed_at": "2026-05-10T06:06:58.744634+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "Postdoc Atomistic Insights into Carburization, Wetting and Graphitization of Carbonaceous Materials",
+    "institution": "Delft University of Technology (TU Delft)",
+    "country": "Netherlands",
+    "city": "Delft",
+    "url": "https://euraxess.ec.europa.eu/jobs/434891",
+    "date_posted": "2026-05-09",
+    "deadline": "2026-06-07",
+    "deadline_display": "7 June 2026",
+    "salary": "In accordance with the Collective Labour Agreement for Dutch Universities",
+    "salary_eur": null,
+    "duration": "3 years",
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": "Salary, ABP pension scheme, individual employment package options",
+    "career_stage": "Recognised Researcher (R2); PhD required",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "PhD in Materials Science and Engineering, Physics, Chemistry, or closely related discipline",
+    "language_requirement": "Excellent written and verbal communication skills in English",
+    "eligibility_verdict": "not_eligible",
+    "eligibility_reason": "The position requires a PhD in Materials Science and Engineering, Physics, Chemistry, or a closely related discipline, and demands strong expertise in atomistic and molecular simulation techniques (density functional theory, molecular dynamics, ab initio molecular dynamics, machine learning interatomic potentials), as well as knowledge of interfacial reaction phenomena and pyrometallurgical fundamentals. The researcher holds a PhD in Regional Economics (in progress) and an MSc in Economic Geography, with expertise in spatial econometrics, microsimulation, and regional policy analysis. There is no disciplinary overlap whatsoever with materials science, computational chemistry, or steelmaking. The researcher cannot meet the stated PhD subject requirement and lacks the technical skill set entirely.",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": "Atomistic mechanisms of carburization, wetting, and graphitization of carbonaceous materials for green (hydrogen-based) steelmaking; computational materials science",
+    "theme_flexibility": "locked",
+    "methods_relevance": "No relevance \u2014 the position requires density functional theory, molecular dynamics, ab initio simulations, and machine learning interatomic potentials. The researcher's quantitative toolkit (spatial econometrics, microsimulation, GIS) is entirely unrelated to computational materials science.",
+    "policy_relevant": false,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": "Although TU Delft is a Dutch university (normally Tier 2b via Groningen connection), the field is computational materials science with zero relevance to economic geography or regional economics. Relevance score is below 30, triggering the hard floor rule: tier must be 0 regardless of institutional location.",
+    "relevance_score": 2,
+    "timeline_fit": "ideal",
+    "timeline_note": "Start date not explicitly stated but a 3-year position posted May 2026 with June 2026 deadline would likely start Q3\u2013Q4 2026, which is near the ideal window. However, timeline is entirely moot given the complete disciplinary mismatch.",
+    "pros": [
+      "Located in the Netherlands, where the researcher has an academic connection via Groningen MSc",
+      "No nationality restrictions stated",
+      "English-language working environment",
+      "3-year duration would provide stability"
+    ],
+    "cons": [
+      "Completely outside the researcher's field \u2014 materials science / computational chemistry, not economics or geography",
+      "Requires PhD in Materials Science, Physics, or Chemistry \u2014 researcher does not qualify",
+      "Requires density functional theory, molecular dynamics, and machine learning interatomic potentials \u2014 skills the researcher does not possess",
+      "No connection to regional economics, spatial analysis, or policy evaluation",
+      "Collaboration with Tata Steel Netherlands is irrelevant to researcher's interests",
+      "Deadline is 7 June 2026 \u2014 very soon, but irrelevant given ineligibility"
+    ],
+    "next_steps": [
+      "Do not apply \u2014 this position is entirely outside the researcher's discipline and he does not meet the PhD subject requirement",
+      "No action needed"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "Computational materials science postdoc at TU Delft focused on atomistic steelmaking simulations \u2014 completely outside the researcher's field and discipline requirements.",
+    "id": "872d1d62099e",
+    "source_name": "EURAXESS",
+    "source_type": "web_scrape",
+    "raw_content": "Title: Postdoc Atomistic Insights into Carburization, Wetting and Graphitization of Carbonaceous Materials\nType: JOB\nInstitution: Delft University of Technology via AcademicTransfer\nCountry: Netherlands\nPosted: 9 May 2026\nDeadline: 2026-06-07\nResearch fields: Engineering, Materials engineering\nURL: https://euraxess.ec.europa.eu/jobs/434891\nSnippet: Join TU Delft\u2019s contribution to the \u201cGroeien met Groen Staal (GGS)\u201d programme and help drive the transition to CO\u2082-neutral steelmaking. As a postdoctoral researcher, you will uncover the atomistic mechanisms behind carburization, wetting and graphitization of carbonaceous materials, in close...\nFull description: Organisation/Company: Delft University of Technology (TU Delft)\nResearch Field: Engineering \u00bb Materials engineering\nResearcher Profile: Recognised Researcher (R2)\nApplication Deadline: 7 Jun 2026 - 21:59 (UTC)\nCountry: Netherlands\nType of Contract: Temporary\nJob Status: Not Applicable\nHours Per Week: 40.0\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: Join TU Delft\u2019s contribution to the \u201cGroeien met Groen Staal (GGS)\u201d programme and help drive the transition to CO\u2082-neutral steelmaking. As a postdoctoral researcher, you will uncover the atomistic mechanisms behind carburization, wetting and graphitization of carbonaceous materials, in close collaboration with Tata Steel Netherlands.Job descriptionAt TU Delft, you will contribute to a transformative national initiative: \u201cGroeien met Groen Staal(GGS)\u201d programme. The project aims to advance green steel production via hydrogen-based direct reduced iron (H-DRI). Within this ambitious project, you will focus on the atomistic mechanisms governing carburization, wetting and catalytic graphitization of carbonaceous materials. Using advanced atomistic modelling techniques, you will unravel iron-carbon interactions at the electronic and atomic scale delivering insights directly relevant to the sustainable steelmaking route.Team Deywithin theComputational Materials Sciencesection at TU Delft is actively involved in Theme II: Production within theGGS programme. This initiative pushes beyond current state-of-the-art technologies, exploring alternatives to conventional blast furnace (BF) and basic oxygen furnace (BOF) routes. A promising pathway combines hydrogen-based direct reduction (DR) with reduced electric furnace technologies (REF) and the BOF. Within this context, this position focuses on understanding the atomistic mechanisms that underpin these processes, providing fundamental insights into carbon behaviour, interfacial interactions and material transformations that are essential for optimising next-generation steelmaking routes.Where experimental work within the project focuses on process development and validation, this position addresses the underlying governing atomistic mechanisms. A critical factor in the REF route is the role of carbon, particularly in relation to graphitization, wetting behaviour and interfacial interactions. Understanding these processes at the atomistic level is essential to control carburization and the melting phenomena. Your work will provide the theoretical foundation that supports and complements experimental efforts within theGGS programme.Your responsibilitiesIn this role, you will develop fundamental insights into the atomistic mechanisms governing carburization, wetting and graphitization of carbonaceous materials in relation to H-DRI. As a postdoctoral researcher, you will:Perform atomistic simulations to obtain insights into the electronic structure of carbonaceous materialsPerform atomistic simulations to study the graphitization mechanisms of carbonaceous materialsPerform atomistic simulations to investigate carburization and the wetting behaviour at carbon\u2013iron interfacesCollaborate closely with researchers withindepartment MSE, theGGS programmeandTata Steel Netherlandsto connect modelling insights with process developmentContribute to scientific publications, conference presentations and the development of new research proposals in the field of green steelYour work environmentYou will be part ofTeam Deywithin theComputational Materials Sciencesection at TU Delft. This team focuses on atomistic simulations to investigate materials for sustainable energy, with proven expertise in hydrogen embrittlement, hydrogen storage and the behaviour of carbon-based materials such as graphene. Your project on the atomistic mechanisms of carburization, wetting and graphitization aligns with the team's broader interest in metal\u2013carbon interactions and its commitment to computation-guided design for green technologies including steel production.You will collaborate closely with researchers from theGGS programme, including experimental teams and partners such as Tata Steel Netherlands. TheComputational Materials Sciencesection offers a collaborative and intellectually stimulating environment, where researchers work across disciplines and scales, with ample opportunities for scientific development and impact.Job requirementsWe are looking for a self-motivated researcher to help develop new technologies for green steel production. You are independent but also a good team player and are willing to cooperate closely with other researchers and our industry partners.Furthermore, you meet the following requirements:You hold a PhD degree in Materials Science and Engineering, Physics, Chemistry, or a closely related discipline.You have sound knowledge in interfacial reactions phenomena. Prior knowledge in pyrometallurgical fundamentals (including thermodynamics and reaction kinetics) as well as in ironmaking and steelmaking technologies is a bonus.You have a strong expertise in atomistic and molecular simulation techniques (density functional theory, molecular dynamics, ab initio molecular dynamics), including experience with development of machine learning interatomic potentials, and can apply these to elucidate mechanisms governing wetting behavior, carburization and the mechanistic pathways of graphitization in carbon-based materials.You have a strong track record in scientific research, as evident from publications in peer-reviewed international journals and conference participation.You have excellent written and verbal communication skills in English.Join this unique programme, where you can apply your technical knowledge to a project with Tata Steel Netherlands. Imagine designing new processes more sustainable and (cost-)efficient and improving the recyclability of steel. You can help make an impact on society!TU Delft (Delft University of Technology)Delft University of Technology is built on strong foundations. As creators of the world-famous Dutch waterworks and pioneers in biotech, TU Delft is a top international university combining science, engineering and design. It delivers world class results in education, research and innovation to address challenges in the areas of energy, climate, mobility, health and digital society. For generations, our engineers have proven to be entrepreneurial problem-solvers, both in business and in a social context.At TU Delft we embrace diversity as one of our corevaluesand we activelyengageto be a university where you feel at home and can flourish. We value different perspectives and qualities. We believe this makes our work more innovative, the TU Delft community more vibrant and the world more just. Together, we imagine, invent and create solutions using technology to have a positive impact on a global scale. That is why we invite you to apply. Your application will receive fair consideration.Challenge. Change. Impact!Faculty Mechanical EngineeringFrom chip to ship. From machine to human being. From idea to solution. Driven by a deep-rooted desire to understand our environment and discover its underlying mechanisms, research and education at the ME faculty focusses on fundamental understanding, design, production including application and product improvement, materials, processes and (mechanical) systems.ME is a dynamic and innovative faculty with high-tech lab facilities and international reach. It\u2019s a large faculty but also versatile, so we can often make unique connections by combining different disciplines. This is reflected in ME\u2019s outstanding, state-of-the-art education, which trains students to become responsible and socially engaged engineers and scientists. We translate our knowledge and insights into solutions to societal issues, contributing to a sustainable society and to the development of prosperity and well-being. That is what unites us in pioneering research, inspiring education and (inter)national cooperation.Clickhereto go to the website of the Faculty of Mechanical Engineering. Do you want to experience working at our faculty? Thesevideoswill introduce you to some of our researchers and their work.Conditions of employmentDuration of contract is 3 years. Temporary.A job of 38-40 hours per week.Salary and benefits are in accordance with the Collective Labour Agreement for Dutch Universities.An excellent pension scheme via the ABP.The possibility to compile an individual employment package \u2026\nRequirements: \nAdditional info: ",
+    "analysed_at": "2026-05-10T06:07:21.122557+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "2026 Regional Studies, Regional and Urban Horizons Section Best Paper Award",
+    "institution": null,
+    "country": null,
+    "city": null,
+    "url": "https://www.regionalstudies.org/news/2026-regional-and-urban-horizons-best-paper/",
+    "date_posted": "2026-05-06",
+    "deadline": null,
+    "deadline_display": null,
+    "salary": null,
+    "salary_eur": null,
+    "duration": null,
+    "start_date": null,
+    "full_time": null,
+    "funding_covers": null,
+    "career_stage": null,
+    "nationality_requirement": null,
+    "degree_requirement": null,
+    "language_requirement": null,
+    "eligibility_verdict": "check",
+    "eligibility_reason": "Automated analysis failed: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CatPR6EiDffkHqLmHv5LT'}",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": null,
+    "theme_flexibility": null,
+    "methods_relevance": null,
+    "policy_relevant": null,
+    "funding_portable": null,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": null,
+    "relevance_score": 0,
+    "timeline_fit": "ideal",
+    "timeline_note": "Not assessed (analysis error)",
+    "pros": [],
+    "cons": [
+      "Automated analysis failed \u2014 manual review needed"
+    ],
+    "next_steps": [
+      "Review this listing manually"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "[Analysis failed] 2026 Regional Studies, Regional and Urban Horizons Section Best Paper Award",
+    "analysis_error": true,
+    "id": "de9fb10baca0",
+    "source_name": "RSA - Regional Studies Association",
+    "source_type": "web_scrape",
+    "raw_content": "Title: 2026 Regional Studies, Regional and Urban Horizons Section Best Paper Award\nDate: 2026-05-06\nURL: https://www.regionalstudies.org/news/2026-regional-and-urban-horizons-best-paper/\nContent: Watch as John Harrison, Editor of the Urban and Regional Horizons section of the academic journal, Regional Studies, presents the award for the Best Paper published in Urban and Regional Horizons to Kristin Smette Gulbrandsen (University of Copenhagen, Denmark) for her paper entitled: Regional counter-institutionalisation: contestation and propositions for alternative regionalities. Read the open access paper at https://doi.org/10.1080/00343404.2025.2514230 The post 2026 Regional Studies, Regional and Urban Horizons Section Best Paper Award appeared first on RSA Main .",
+    "analysed_at": "2026-05-10T06:07:22.262747+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
+    "title": "2026 Regional Studies Policy Debates Section Best Paper",
+    "institution": null,
+    "country": null,
+    "city": null,
+    "url": "https://www.regionalstudies.org/news/2026-policy-debates-best-paper/",
+    "date_posted": "2026-05-05",
+    "deadline": null,
+    "deadline_display": null,
+    "salary": null,
+    "salary_eur": null,
+    "duration": null,
+    "start_date": null,
+    "full_time": null,
+    "funding_covers": null,
+    "career_stage": null,
+    "nationality_requirement": null,
+    "degree_requirement": null,
+    "language_requirement": null,
+    "eligibility_verdict": "check",
+    "eligibility_reason": "Automated analysis failed: API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CatPRBAdX738C1wm9Wpsq'}",
+    "eligibility_unclear": null,
+    "eligibility_timeline_note": null,
+    "research_theme": null,
+    "theme_flexibility": null,
+    "methods_relevance": null,
+    "policy_relevant": null,
+    "funding_portable": null,
+    "portability_note": null,
+    "tier": 0,
+    "tier_reason": null,
+    "relevance_score": 0,
+    "timeline_fit": "ideal",
+    "timeline_note": "Not assessed (analysis error)",
+    "pros": [],
+    "cons": [
+      "Automated analysis failed \u2014 manual review needed"
+    ],
+    "next_steps": [
+      "Review this listing manually"
+    ],
+    "competition_level": "unknown",
+    "one_line_summary": "[Analysis failed] 2026 Regional Studies Policy Debates Section Best Paper",
+    "analysis_error": true,
+    "id": "7c51fbf14b40",
+    "source_name": "RSA - Regional Studies Association",
+    "source_type": "web_scrape",
+    "raw_content": "Title: 2026 Regional Studies Policy Debates Section Best Paper\nDate: 2026-05-05\nURL: https://www.regionalstudies.org/news/2026-policy-debates-best-paper/\nContent: Watch as Phil Tomlinson, Editor of the Policy Debates section of Regional Studies, presents the 2026 Regional Studies Policy Debates Best Paper to Rama Krishna Reddy Kummitha (University of Essex, UK) for his paper: Smart city governance: assessing modes of active citizen engagement . Read the open access paper at https://doi.org/10.1080/00343404.2024.2399262 The post 2026 Regional Studies Policy Debates Section Best Paper appeared first on RSA Main .",
+    "analysed_at": "2026-05-10T06:07:23.377455+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
+  },
+  {
     "title": "Master of Science in Applied Economics",
     "institution": "University of Neuch\u00e2tel (Universit\u00e9 de Neuch\u00e2tel)",
     "country": "Switzerland",
@@ -2885,7 +3642,8 @@
     "raw_content": "Title: Postdoc Computational Cryo-EM Method Development\nType: JOB\nInstitution: Delft University of Technology via AcademicTransfer\nCountry: Netherlands\nPosted: 25 April 2026\nDeadline: 2026-05-08\nResearch fields: Computer science, Informatics, Computer science, Programming, Engineering, Computer engineering, Engineering, Simulation engineering\nURL: https://euraxess.ec.europa.eu/jobs/431496\nSnippet: Job description We seek a highly-motivated postdoctoral researcher to develop to develop advanced computational methods for cryogenic electron tomography (cryo-ET) that enable the visualization of molecular complexes directly within cells. A central focus of the project will be the development of...\nFull description: Organisation/Company: Delft University of Technology (TU Delft)\nResearch Field: Computer science \u00bb InformaticsComputer science \u00bb ProgrammingEngineering \u00bb Computer engineeringEngineering \u00bb Simulation engineering\nResearcher Profile: Recognised Researcher (R2)\nApplication Deadline: 8 May 2026 - 21:59 (UTC)\nCountry: Netherlands\nType of Contract: Temporary\nJob Status: Not Applicable\nHours Per Week: 38.0\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: Job descriptionWe seek a highly-motivated postdoctoral researcher to develop to develop advanced computational methods for cryogenic electron tomography (cryo-ET) that enable the visualization of molecular complexes directly within cells. A central focus of the project will be the development of improved image simulation frameworks. These simulations will not only serve as benchmarking tools for method development, but will play a key role in a tightly integrated experimental-computational workflow. In close collaboration with experimental researchers, the candidate will use simulation-driven insights to guide the design and optimisation of molecular probes that enable the specific identification of target complexes within densely packed cellular tomograms. In parallel, the candidate will develop and implement novel computational strategies that combine physics-based modeling, optimization techniques, and machine learning approaches to improve cryo-ET image processing workflows. This includes key challenges such as tilt series alignment and 3D template matching, as well as broader contributions to cryo-ET data analysis, including particle detection and the quantitative interpretation of tomograms. The position involves close interaction with experimentalists, and the candidate will actively support ongoing projects by developing and applying image processing pipelines, assisting in data interpretation, and ensuring that methodological advances translate into facilitating biological discovery.Your home base will be the Jakobi Lab (https://cryoem.tudelft.nl) at TU Delft | Kavli Institute of Nanoscience. We are a multidisciplinary and internationally diverse team of scientists with backgrounds ranging from (bio)chemistry and physics to bioinformatics and cell biology. Our drive is to push boundaries in our aim to visualise molecular processes in their native context and at the highest possible resolution. As part of the Department of Bionanoscience and the Kavli Institute of Nanoscience, we enjoy access to state-of-the-art infrastructure for biochemistry, molecular imaging, cryoEM/ET and high-performance computing. We are also committed to world-class education, and you will have the opportunity to contribute by mentoring undergraduate and graduate students. We foster a friendly, collaborative, and non-hierarchical environment where ideas and expertise are openly shared in pursuit of ambitious scientific goals. You will receive strong support and training to further your personal and professional development.Job requirementsWe seek an outstanding computational scientist, bioinformatician, physicist, or interdisciplinary researcher with a strong affinity for developing methods at the interface of computation, physics, and structural biology. The ideal candidate has a genuine interest in advancing fundamental methodology for cryogenic electron tomography and enjoys working closely with experimental researchers to translate computational advances into practical biological insights. We are looking for a candidate with intellectual creativity, strong problem-solving skills, and the ability to communicate and collaborate effectively across disciplines.Required qualifications:You hold a PhD in computational science, physics, applied mathematics, bioinformatics, structural biology, or a related field.You have strong computational and programming skills (e.g. Python, Julia, C++), including experience with scientific computing and machine learning libraries and high-performance computing.You have experience with image analysis or computational imaging, ideally in the context of electron microscopy, tomography, or related modalities.You have demonstrated experience in developing algorithms or computational methods, for example in image simulation, optimization, or data analysis workflows.You have an interest in, or experience with, machine learning approaches for scientific data analysis.You have a strong interest in interdisciplinary research and enjoy collaborating with experimental scientists.You communicate clearly and effectively in English, as you will work in an international research environment.Ideally, you also have:Experience with cryo-EM or cryo-ET data analysis, including areas such as tilt series alignment, 2D/3D template matching, or subtomogram averaging.Experience with physics-based modeling or simulation of imaging processes.Familiarity with scientific software developmentA track record of peer-reviewed publications demonstrating methodological or computational contributions.TU Delft (Delft University of Technology)Delft University of Technology is built on strong foundations. As creators of the world-famous Dutch waterworks and pioneers in biotech, TU Delft is a top international university combining science, engineering and design. It delivers world class results in education, research and innovation to address challenges in the areas of energy, climate, mobility, health and digital society. For generations, our engineers have proven to be entrepreneurial problem-solvers, both in business and in a social context.At TU Delft we embrace diversity as one of our corevaluesand we activelyengageto be a university where you feel at home and can flourish. We value different perspectives and qualities. We believe this makes our work more innovative, the TU Delft community more vibrant and the world more just. Together, we imagine, invent and create solutions using technology to have a positive impact on a global scale. That is why we invite you to apply. Your application will receive fair consideration.Challenge. Change. Impact!Faculty Applied SciencesWith more than 1,100 employees, including 150 pioneering principal investigators, as well as a population of about 3,600 passionate students, the Faculty of Applied Sciences is an inspiring scientific ecosystem. Focusing on key enabling technologies, such as quantum- and nanotechnology, photonics, biotechnology, synthetic biology and materials for energy storage and conversion, our faculty aims to provide solutions to important problems of the 21st century. To that end, we educate innovative students in broad Bachelor's and specialist Master's programmes with a strong research component. Our scientists conduct ground-breaking fundamental and applied research in the fields of Life and Health Science & Technology, Nanoscience, Chemical Engineering, Radiation Science & Technology, and Engineering Physics. We are also training the next generation of high school teachers.Clickhereto go to the website of the Faculty of Applied Sciences.Conditions of employmentDuration of contract is 2 years. Temporary.A job of 38 hours per week.Salary and benefits are in accordance with the Collective Labour Agreement for Dutch Universities.An excellent pension scheme via the ABP.The possibility to compile an individual employment package every year.Discount with health insurers on supplemental packages.Flexible working week.Every year, 232 leave hours (at 38 hours). You can also sell or buy additional leave hours via the individual choice budget.Plenty of opportunities for education, training and courses.Partially paid parental leaveAttention for working healthy and energetically with the vitality program.Will you need to relocate to the Netherlands for this job? TU Delft is committed to make your move as smooth as possible! The HR unit,Coming to Delft Service, offers information on their website to help you prepare your relocation. In addition, Coming to Delft Service organises events to help you settle in the Netherlands, and expand your (social) network in Delft. ADual Career Programmeis available, to support your accompanying partner with their job search in the Netherlands. .Additional informationIf you would like more information about this vacancy or the selection procedure, please contact Arjen Jakobi (a.jakobi@tudelft.nl) clearly stating the vacany number in the subject line.Application procedureAre you interested in this vacancy? Please apply no later than8May 2026via the application button and upload the following documents:CVMotivational letterYou can address your application to Arjen Jakobi.Please note:#EUfunded This is an EU funded project, named INFLAMMAZOOM, with project number 101230715, within program Horizon Europe | European Research Council (ERC).You can apply online. We will not process applications sent by email and/or post.As part of knowledge security, TU Delft conducts a risk assessment during the recruitment of personnel. We do this, among other things, to prevent the unwanted transfer of sensitive knowledge and technology. The assessment is based on information provided by the candidates themselves, such as their motivation letter and CV, and takes \u2026\nRequirements: \nAdditional info: ",
     "analysed_at": "2026-04-26T05:35:45.120657+00:00",
     "date_found": "2026-04-26",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "PhD in Global Talent Interdependence and Europe\u2019s Strategic Innovation Ambitions",
@@ -3093,7 +3851,8 @@
     "raw_content": "Title: Master in Economics / Masterprogramm\nDescription: <p><strong>Master programs in Economics at Leipzig University:</strong></p><p><strong>MSc Economics or MSc Quantitative Economics for Sustainability (QuESt)&nbsp;</strong></p><p>&nbsp;</p><p>Logo Leipzig University</p><p>&nbsp;</p><p>&nbsp;</p><p>Box Information</p><p>Type: Master's Programs</p><p>Attendance: On-Campus</p><p>Program Start Date: 01 October 2026&nbsp;</p><p>Program Duration: 24 months&nbsp;</p><p>Application Deadline: 31 May 2026&nbsp;</p><p>Certifications &amp; Titles: MSc Economics or MSc Quantitative Economics for Sustainability</p><p>Study Options: Full Time or Part Time</p><p>Fees:&nbsp;A bi-annual fee of around 300 Euros has to be paid, which includes a ticket for local public transport (\u201cDeutschlandticket\u201d).</p><p>Applications: Open</p>",
     "analysed_at": "2026-04-19T05:25:16.904289+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Instructor, Business/Accounting/Economics",
@@ -3145,7 +3904,8 @@
     "raw_content": "Title: Instructor, Business/Accounting/Economics\nDescription: <p>East Central College is seeking a full-time instructor for Business, Accounting, and/or Economics.</p>",
     "analysed_at": "2026-04-19T05:25:17.973957+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "ECONOMISTS - FINANCIAL STABILITY AND MACROPRUDENTIAL POLICY(m/f/d)",
@@ -3197,7 +3957,8 @@
     "raw_content": "Title: ECONOMISTS - FINANCIAL STABILITY AND MACROPRUDENTIAL POLICY(m/f/d)\nDescription: <p>The Banque centrale du Luxembourg (BCL), member of the Eurosystem, is currently seeking to recruit for its Financial Stability and Macroprudential Surveillance Department:&nbsp;<br /><strong>ECONOMISTS - FINANCIAL STABILITY AND MACROPRUDENTIAL POLICY (m/f/d) - Career A1&nbsp;</strong><br />Full time - (ref.: 05/SM/2026)</p>",
     "analysed_at": "2026-04-19T05:25:19.152394+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "BSE Summer School 2026: Economics, Finance, Data Science, and related fields",
@@ -3249,7 +4010,8 @@
     "raw_content": "Title: BSE Summer School 2026: Economics, Finance, Data Science, and related fields\nDescription: <p><strong>The 19th edition of the </strong><a href=\"https://bse.eu/summer-school?utm_source=inomics&amp;utm_medium=announcement&amp;utm_campaign=sal-summer-school-2026-summer\"><strong>BSE Summer School 2026</strong></a><strong> is open for registration</strong><br /><br />The 19th edition of the Barcelona School of Economics Summer School is approaching fast. Prepare yourself for what promises to be an exciting and valuable experience that goes beyond traditional learning.</p><p>Discover the power to delve deeper into your areas of interest, acquire a valuable skill set, and fast-track your research or career progress. Seize the chance to apply newfound knowledge directly to your ongoing and upcoming projects!</p><p><strong>Explore 48 exciting courses in this year\u2019s Summer School edition! \u2014 Limited seats available</strong></p><p>Renowned world-class professors, and experts in their respective fields, guide this educational journey, ensuring a high-quality and impactful learning environment.&nbsp;</p>",
     "analysed_at": "2026-04-19T05:25:20.229665+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Summer School - Seeing through the algorithms: a summer school on machine learning & AI for economists",
@@ -3301,7 +4063,8 @@
     "raw_content": "Title: Summer School - Seeing through the algorithms: a summer school on machine learning & AI for economists\nDescription: <p>A summer school on machine learning &amp; AI for economists, hosted by UB School of Economics.</p>",
     "analysed_at": "2026-04-19T05:25:21.299055+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "AI & Digital Innovation Engagement Manager",
@@ -3353,7 +4116,8 @@
     "raw_content": "Title: AI & Digital Innovation Engagement Manager\nEmployer: The Francis Crick Institute\nDepartment: \nLocation: London\nSalary: \u00a360,000\n                                    (Circa) with benefits subject to skills and experience\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG161/ai-and-digital-innovation-engagement-manager\nContext: AI & Digital Innovation Engagement Manager The Francis Crick Institute Location:\n            London Salary: \u00a360,000\n                                    (Circa) with benefits subject to skills and experience Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:40.233968+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Research Associate in Neutral Atom Quantum Computing and Simulation (810213)",
@@ -3405,7 +4169,8 @@
     "raw_content": "Title: Research Associate in Neutral Atom Quantum Computing and Simulation (810213)\nEmployer: University of Strathclyde\nDepartment: Department of Physics\nLocation: Glasgow\nSalary: \u00a337,694\n                                    (limited due to funding)\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG195/research-associate-in-neutral-atom-quantum-computing-and-simulation-810213\nContext: Research Associate in Neutral Atom Quantum Computing and Simulation (810213) Department of Physics University of Strathclyde Location:\n            Glasgow Salary: \u00a337,694\n                                    (limited due to funding) Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:41.355376+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Faculty Post Doctoral Fellowship (Accounting and Finance)",
@@ -3457,7 +4222,8 @@
     "raw_content": "Title: Faculty Post Doctoral Fellowship (Accounting and Finance)\nEmployer: University of Leeds\nDepartment: Faculty of Business - Accounting & Finance Department\nLocation: Leeds\nSalary: \u00a341,064 to \u00a348,822\n                                    per annum (Grade 7)\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG199/faculty-post-doctoral-fellowship-accounting-and-finance\nContext: Faculty Post Doctoral Fellowship (Accounting and Finance) Faculty of Business - Accounting & Finance Department University of Leeds Location:\n            Leeds Salary: \u00a341,064 to \u00a348,822\n                                    per annum (Grade 7) Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:42.427393+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Research Assistant/Associate",
@@ -3509,7 +4275,8 @@
     "raw_content": "Title: Research Assistant/Associate\nEmployer: University of Glasgow\nDepartment: College of Medical, Veterinary and Life Sciences - School of Cancer Sciences\nLocation: Glasgow\nSalary: Grade 6/7, \u00a333,951 - \u00a337,694 / \u00a341,064 - \u00a346,049 per annum\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG196/research-assistant-associate\nContext: Research Assistant/Associate College of Medical, Veterinary and Life Sciences - School of Cancer Sciences University of Glasgow Location:\n            Glasgow Salary: Grade 6/7, \u00a333,951 - \u00a337,694 / \u00a341,064 - \u00a346,049 per annum Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:43.511159+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Workforce Data and MI Analyst",
@@ -3561,7 +4328,8 @@
     "raw_content": "Title: Workforce Data and MI Analyst\nEmployer: University of Reading\nDepartment: Human Resources\nLocation: Reading\nSalary: \u00a331,236 to \u00a335,608\n                                    per annum. 1FTE Grade 5\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG193/workforce-data-and-mi-analyst\nContext: Workforce Data and MI Analyst Human Resources University of Reading Location:\n            Reading Salary: \u00a331,236 to \u00a335,608\n                                    per annum. 1FTE Grade 5 Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:44.729959+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer/Senior Lecturer Roles - Real Estate",
@@ -3613,7 +4381,8 @@
     "raw_content": "Title: Lecturer/Senior Lecturer Roles - Real Estate\nEmployer: AFG College with the University of Aberdeen\nDepartment: \nLocation: Doha\nSalary: Competitive\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRF764/lecturer-senior-lecturer-roles-real-estate\nContext: Lecturer/Senior Lecturer Roles - Real Estate AFG College with the University of Aberdeen Location:\n            Doha Salary: Competitive Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:45.813812+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Senior Lecturer/Lecturer in International Relations and Politics",
@@ -3665,7 +4434,8 @@
     "raw_content": "Title: Senior Lecturer/Lecturer in International Relations and Politics\nEmployer: AFG College with the University of Aberdeen\nDepartment: \nLocation: Doha\nSalary: Competitive\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRF778/senior-lecturer-lecturer-in-international-relations-and-politics\nContext: Senior Lecturer/Lecturer in International Relations and Politics AFG College with the University of Aberdeen Location:\n            Doha Salary: Competitive Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:46.892151+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Research Associate",
@@ -3717,7 +4487,8 @@
     "raw_content": "Title: Research Associate\nEmployer: University of Glasgow\nDepartment: College of Medical, Veterinary and Life Sciences - School of Psychology & Neuroscience\nLocation: Glasgow\nSalary: \u00a341,064 to \u00a346,049\n                                    per annum (Grade 7)\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG179/research-associate\nContext: Research Associate College of Medical, Veterinary and Life Sciences - School of Psychology & Neuroscience University of Glasgow Location:\n            Glasgow Salary: \u00a341,064 to \u00a346,049\n                                    per annum (Grade 7) Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:47.965644+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Collaborative Provision Records Administrator",
@@ -3769,7 +4540,8 @@
     "raw_content": "Title: Collaborative Provision Records Administrator\nEmployer: De Montfort University\nDepartment: Registry Services\nLocation: Leicester\nSalary: \u00a326,707 to \u00a331,236\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG057/collaborative-provision-records-administrator\nContext: Collaborative Provision Records Administrator Registry Services De Montfort University Location:\n            Leicester Salary: \u00a326,707 to \u00a331,236 Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:49.038339+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer/Senior Lecturer Roles - Law",
@@ -3821,7 +4593,8 @@
     "raw_content": "Title: Lecturer/Senior Lecturer Roles - Law\nEmployer: AFG College with the University of Aberdeen\nDepartment: \nLocation: Doha\nSalary: Competitive\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRF760/lecturer-senior-lecturer-roles-law\nContext: Lecturer/Senior Lecturer Roles - Law AFG College with the University of Aberdeen Location:\n            Doha Salary: Competitive Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:50.141064+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer/Senior Lecturer - Computing Science/Artificial Intelligence",
@@ -3873,7 +4646,8 @@
     "raw_content": "Title: Lecturer/Senior Lecturer - Computing Science/Artificial Intelligence\nEmployer: AFG College with the University of Aberdeen\nDepartment: \nLocation: Doha\nSalary: Competitive\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRF757/lecturer-senior-lecturer-computing-science-artificial-intelligence\nContext: Lecturer/Senior Lecturer - Computing Science/Artificial Intelligence AFG College with the University of Aberdeen Location:\n            Doha Salary: Competitive Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:51.211037+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer/Senior Lecturer Roles - Business",
@@ -3925,7 +4699,8 @@
     "raw_content": "Title: Lecturer/Senior Lecturer Roles - Business\nEmployer: AFG College with the University of Aberdeen\nDepartment: \nLocation: Doha\nSalary: Competitive\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRF746/lecturer-senior-lecturer-roles-business\nContext: Lecturer/Senior Lecturer Roles - Business AFG College with the University of Aberdeen Location:\n            Doha Salary: Competitive Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:52.282827+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer in Art",
@@ -3977,7 +4752,8 @@
     "raw_content": "Title: Lecturer in Art\nEmployer: University of Reading\nDepartment: Department of Art within the School of Arts and Communication Design\nLocation: Reading\nSalary: \u00a347,389\n                                    pro rated per annum: Grade 7\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG170/lecturer-in-art\nContext: Lecturer in Art Department of Art within the School of Arts and Communication Design University of Reading Location:\n            Reading Salary: \u00a347,389\n                                    pro rated per annum: Grade 7 Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:53.457760+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Pro Vice-Chancellor, Education and Learning Innovation",
@@ -4029,7 +4805,8 @@
     "raw_content": "Title: Pro Vice-Chancellor, Education and Learning Innovation\nEmployer: University of Leicester\nDepartment: \nLocation: Leicester\nSalary: Competitive\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG004/pro-vice-chancellor-education-and-learning-innovation\nContext: Pro Vice-Chancellor, Education and Learning Innovation University of Leicester Location:\n            Leicester Salary: Competitive Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:54.700224+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Research Assistant/Associate in Experimental Evolutionary Ecology",
@@ -4081,7 +4858,8 @@
     "raw_content": "Title: Research Assistant/Associate in Experimental Evolutionary Ecology\nEmployer: Newcastle University\nDepartment: School of Natural & Environmental Sciences\nLocation: Newcastle upon Tyne\nSalary: \u00a333,951 to \u00a346,049\n                                    per annum\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG138/research-assistant-associate-in-experimental-evolutionary-ecology\nContext: Research Assistant/Associate in Experimental Evolutionary Ecology School of Natural & Environmental Sciences Newcastle University Location:\n            Newcastle upon Tyne Salary: \u00a333,951 to \u00a346,049\n                                    per annum Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:55.808299+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Academic Registry Administrator",
@@ -4133,7 +4911,8 @@
     "raw_content": "Title: Academic Registry Administrator\nEmployer: Hartpury University and College\nDepartment: Registry\nLocation: Gloucestershire, Hartpury\nSalary: \u00a325,660 to \u00a327,069\n                                    per annum\nDate placed: 17 Apr\nURL: https://www.jobs.ac.uk/job/DRG164/academic-registry-administrator\nContext: Academic Registry Administrator Registry Hartpury University and College Location:\n            Gloucestershire, Hartpury Salary: \u00a325,660 to \u00a327,069\n                                    per annum Date Placed: 17 Apr",
     "analysed_at": "2026-04-19T05:25:56.881082+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Research contract - Circular and Digital Innovation for Resilient and Competitive Local agri-food EcosystemS \u2013 CIRCLES",
@@ -4185,7 +4964,8 @@
     "raw_content": "Title: Research contract - Circular and Digital Innovation for Resilient and Competitive Local agri-food EcosystemS \u2013 CIRCLES\nType: JOB\nInstitution: Italian Ministry of Education, University and Research\nCountry: Italy\nPosted: 18 April 2026\nDeadline: 2026-05-05\nResearch fields: Other\nURL: https://euraxess.ec.europa.eu/jobs/429697\nSnippet: The project aims to establish guidelines for a digital architecture designed to support strategic decision-making and enhance sustainability assessments at both the firm and supply chain levels. The intermediate objectives include: (a) defining the scope of investigation and selecting the target...\nFull description: Organisation/Company: Universit\u00e0 Ca' Foscari Venezia\nResearch Field: Other\nResearcher Profile: Recognised Researcher (R2)Leading Researcher (R4)First Stage Researcher (R1)Established Researcher (R3)\nApplication Deadline: 5 May 2026 - 13:00 (UTC)\nCountry: Italy\nType of Contract: To be defined\nJob Status: Not Applicable\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: The project aims to establish guidelines for a digital architecture designed to support strategic decision-making and enhance sustainability assessments at both the firm and supply chain levels. The intermediate objectives include: (a) defining the scope of investigation and selecting the target supply chains; (b) evaluating WP1 results to develop alternative business models and supply chain scenarios; and (c) establishing a research protocol to identify digital transition leverage points that support sustainability. Intermediate outputs will consist of protocols for analysis, research, and information flow mapping. The project\u2019s final objectives are to develop architectural specifications and validate a platform concept capable of leveraging supply chain data for sustainability-oriented strategic decisions.\nRequirements: \nAdditional info: ",
     "analysed_at": "2026-04-19T05:26:03.410405+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Public competition for the admission to the PhD program in STATISTICS AND COMPUTER SCIENCE 42th cycle 2nd part",
@@ -4237,7 +5017,8 @@
     "raw_content": "Title: Public competition for the admission to the PhD program in STATISTICS AND COMPUTER SCIENCE 42th cycle 2nd part\nType: JOB\nInstitution: Italian Ministry of Education, University and Research\nCountry: Italy\nPosted: 18 April 2026\nDeadline: 2026-05-18\nResearch fields: Computer science\nURL: https://euraxess.ec.europa.eu/jobs/429701\nSnippet: The PhD School coordinates the PhD programs offered by Bocconi University and acts as a point of reference for the University's PhD candidates. PhD candidates have the opportunity to advance their knowledge and conduct research, with the support of Bocconi Faculty and through exchanges with leading...\nFull description: Organisation/Company: Fondo Italiano per la Scienza - Universit\u00e0 Bocconi\nResearch Field: Computer science\nResearcher Profile: Recognised Researcher (R2)Leading Researcher (R4)First Stage Researcher (R1)Established Researcher (R3)\nApplication Deadline: 18 May 2026 - 23:59 (UTC)\nCountry: Italy\nType of Contract: To be defined\nJob Status: Not Applicable\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: The PhD School coordinates the PhD programs offered by Bocconi University and acts as a point of reference for the University's PhD candidates.PhD candidates have the opportunity to advance their knowledge and conduct research, with the support of Bocconi Faculty and through exchanges with leading American and European universities.\nRequirements: \nAdditional info: ",
     "analysed_at": "2026-04-19T05:26:04.479599+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Public Selection for 1 Research Assignments, lasting 12 months, at the Dipartimento di Scienze Farmaceutiche in accordance with art. 22-ter of Law 240/2010, open to graduates of no more than six years",
@@ -4289,7 +5070,8 @@
     "raw_content": "Title: Public Selection for 1 Research Assignments, lasting 12 months, at the Dipartimento di Scienze Farmaceutiche in accordance with art. 22-ter of Law 240/2010, open to graduates of no more than six years\nType: JOB\nInstitution: Italian Ministry of Education, University and Research\nCountry: Italy\nPosted: 18 April 2026\nDeadline: 2026-05-07\nResearch fields: Chemistry\nURL: https://euraxess.ec.europa.eu/jobs/429702\nSnippet: Public Selection for 1 Research Assignments, lasting 12 months, at the Dipartimento di Scienze Farmaceutiche in accordance with art. 22-ter of Law 240/2010, open to graduates of no more than six years\nFull description: Organisation/Company: Universit\u00e0 degli Studi di Milano\nResearch Field: Chemistry\nResearcher Profile: Recognised Researcher (R2)Leading Researcher (R4)First Stage Researcher (R1)Established Researcher (R3)\nApplication Deadline: 7 May 2026 - 12:00 (UTC)\nCountry: Italy\nType of Contract: To be defined\nJob Status: Not Applicable\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: Public Selection for 1 Research Assignments, lasting 12 months, at the Dipartimento di Scienze Farmaceutiche in accordance with art. 22-ter of Law 240/2010, open to graduates of no more than six years\nRequirements: \nAdditional info: ",
     "analysed_at": "2026-04-19T05:26:05.546602+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Drivers and consequences of rising economic inequality",
@@ -4341,7 +5123,8 @@
     "raw_content": "Title: Drivers and consequences of rising economic inequality\nType: JOB\nInstitution: Italian Ministry of Education, University and Research\nCountry: Italy\nPosted: 18 April 2026\nDeadline: 2026-05-17\nResearch fields: Economics\nURL: https://euraxess.ec.europa.eu/jobs/429704\nSnippet: The topics of this call for proposals include the analysis of the distribution of wealth, income, and inequality of opportunity; the positive and normative analysis of income, wealth, and property taxation, as well as inheritance and gift taxes; and the positive and normative analysis of public debt...\nFull description: Organisation/Company: Universit\u00e0 degli Studi Roma Tre\nResearch Field: Economics\nResearcher Profile: Recognised Researcher (R2)Leading Researcher (R4)First Stage Researcher (R1)Established Researcher (R3)\nApplication Deadline: 17 May 2026 - 23:59 (UTC)\nCountry: Italy\nType of Contract: To be defined\nJob Status: Not Applicable\nIs the job funded through the EU Research Framework Programme?: Not funded by a EU programme\nIs the Job related to staff position within a Research Infrastructure?: No\nDescription: The topics of this call for proposals include the analysis of the distribution of wealth, income, and inequality of opportunity; the positive and normative analysis of income, wealth, and property taxation, as well as inheritance and gift taxes; and the positive and normative analysis of public debt policies. Preferred qualifications include: excellent knowledge of English; proven experience in analyzing microdata (sample surveys and administrative data); knowledge of software and programming languages for statistical and econometric analysis, and strong proficiency in writing programming code; research experience in scientific-disciplinary field 13/ECON-03, appropriately documented by working papers and publications; a cover letter and any letters of recommendation.\nRequirements: \nAdditional info: ",
     "analysed_at": "2026-04-19T05:26:06.667871+00:00",
     "date_found": "2026-04-19",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Development and applications of machine learning methods for the integrative analysis of immunological data induced by vaccination",
@@ -12775,7 +13558,8 @@
     "raw_content": "Title: Research Assistant (12 Months) for Strategic Research Program on Transformation of the Danish Healthcare System\nEmployer: University of Southern Denmark\nDepartment: Department of Political Science and Public Management\nLocation: Odense\nSalary: Not Specified\nDate placed: 09 Mar\nURL: https://www.jobs.ac.uk/job/DQU266/research-assistant-12-months-for-strategic-research-program-on-transformation-of-the-danish-healthcare-system\nContext: Research Assistant (12 Months) for Strategic Research Program on Transformation of the Danish Healthcare System Department of Political Science and Public Management University of Southern Denmark Location:\n            Odense Salary: Not Specified Date Placed: 09 Mar",
     "analysed_at": "2026-03-10T04:19:28.746716+00:00",
     "date_found": "2026-03-10",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Postdoc: Global Mapping of Natural and Anthropogenic Erosion",
@@ -12910,7 +13694,8 @@
     "raw_content": "Title: 5th RUCAM Political Economy Workshop 2026\nDescription: <p><em>Wednesday, 19 August (early morning), to Friday, 21 August 2026 (after award dinner).</em></p><p><em>The goal of the workshop/conference is (i) to learn from experts about analytical modelling approaches to understanding \u201cDemocracy, Autocracy, and Geoeconomics\u201d; (ii) to promote the exchange of research ideas from participants who present papers in a wide range of political economy topics, be they &nbsp;empirical, experimental or analytical; and (iii) to extend the already existing network of researchers (from previous editions of the workshop).</em></p><p><em>The workshop/conference consists of</em></p><ul><li><em>Model theory teaching by Stephane Wolton (professor, London School of Economics, U.K.) and Toke Aidt (professor, Cambridge University, UK) in the mornings;</em></li><li><em>Research presentations (50 min.) by participants in the afternoons, with Prof Wolton and Prof Aidt being present;</em></li><li><em>Evening activities (1. panel on \u201cDemocratic Backsliding\u201d; 2. cooking workshop with gala dinner; 3. award dinner).</em></li></ul>",
     "analysed_at": "2026-03-08T04:13:26.095707+00:00",
     "date_found": "2026-03-08",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Postdoctoral Fellow, HSBC Business School",
@@ -13166,7 +13951,8 @@
     "analysed_at": "2026-03-08T08:52:19.937567+00:00",
     "date_found": "2026-03-08",
     "id": "3029996d14db",
-    "collection_method": "opus_discovery"
+    "collection_method": "opus_discovery",
+    "expired": true
   },
   {
     "title": "Research Associate (Fixed Term)",
@@ -13228,7 +14014,8 @@
     "raw_content": "Title: Research Associate (Fixed Term)\nEmployer: University of Cambridge\nDepartment: Department of Politics and International Studies\nLocation: Cambridge\nSalary: \u00a337,694 to \u00a346,049\n                                    per annum\nDate placed: 06 Mar\nURL: https://www.jobs.ac.uk/job/DQT730/research-associate-fixed-term\nContext: Research Associate (Fixed Term) Department of Politics and International Studies University of Cambridge Location:\n            Cambridge Salary: \u00a337,694 to \u00a346,049\n                                    per annum Date Placed: 06 Mar",
     "analysed_at": "2026-03-07T07:00:12.445718+00:00",
     "date_found": "2026-03-07",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer / Assistant Professor in Management",
@@ -13290,7 +14077,8 @@
     "raw_content": "Title: Lecturer/Assistant Professor in Management\nEmployer: University College Dublin\nDepartment: Business and Management Studies\nLocation: Dublin\nSalary: \u00a356,885.53 to \u00a390,079.55\nDate placed: 05 Mar\nURL: https://www.jobs.ac.uk/job/DQT355/lecturer-assistant-professor-in-management\nContext: Lecturer/Assistant Professor in Management Business and Management Studies University College Dublin Location:\n            Dublin Salary: \u00a356,885.53 to \u00a390,079.55 Date Placed: 05 Mar",
     "analysed_at": "2026-03-06T07:12:40.192788+00:00",
     "date_found": "2026-03-06",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer/Senior Lecturer in Public Health",
@@ -13352,7 +14140,8 @@
     "raw_content": "Title: Lecturer/Senior Lecturer in Public Health\nEmployer: University of Winchester\nDepartment: Public Health\nLocation: Winchester\nSalary: \u00a341,064 to \u00a356,535\n                                    per annum\nDate placed: 05 Mar\nURL: https://www.jobs.ac.uk/job/DQT345/lecturer-senior-lecturer-in-public-health\nContext: Lecturer/Senior Lecturer in Public Health Public Health University of Winchester Location:\n            Winchester Salary: \u00a341,064 to \u00a356,535\n                                    per annum Date Placed: 05 Mar",
     "analysed_at": "2026-03-06T07:14:02.364481+00:00",
     "date_found": "2026-03-06",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Associate Professor on Tenure Terms or Tenure-Track Assistant Professor",
@@ -13412,7 +14201,8 @@
     "raw_content": "Title: Associate Professor on Tenure Terms or Tenure-Track Assistant Professor\nEmployer: The University of Hong Kong\nDepartment: Faculty of Arts and School of Computing and Data Science\nLocation: Hong Kong\nSalary: highly competitive\nDate placed: 05 Mar\nURL: https://www.jobs.ac.uk/job/DQT334/associate-professor-on-tenure-terms-or-tenure-track-assistant-professor\nContext: Associate Professor on Tenure Terms or Tenure-Track Assistant Professor Faculty of Arts and School of Computing and Data Science The University of Hong Kong Location:\n            Hong Kong Salary: highly competitive Date Placed: 05 Mar",
     "analysed_at": "2026-03-06T07:14:54.371788+00:00",
     "date_found": "2026-03-06",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Lecturer in Economics (Teaching and Scholarship Track)",
@@ -13608,7 +14398,8 @@
     "raw_content": "Title: Research Assistant (108927-0326)\nEmployer: University of Warwick\nDepartment: Department of Economics\nLocation: Coventry, University of Warwick\nSalary: \u00a331,236 to \u00a334,610\n                                    per annum\nDate placed: 04 Mar\nURL: https://www.jobs.ac.uk/job/DQS973/research-assistant-108927-0326\nContext: Research Assistant (108927-0326) Department of Economics University of Warwick Location:\n            Coventry, University of Warwick Salary: \u00a331,236 to \u00a334,610\n                                    per annum Date Placed: 04 Mar",
     "analysed_at": "2026-03-04T15:18:57.641790+00:00",
     "date_found": "2026-03-04",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Research Associate in Digital Health",
@@ -14174,7 +14965,8 @@
     "analysed_at": "2026-03-08T08:52:19.937567+00:00",
     "date_found": "2026-03-08",
     "id": "d984d1b1f695",
-    "collection_method": "opus_discovery"
+    "collection_method": "opus_discovery",
+    "expired": true
   },
   {
     "title": "ESRC Postdoctoral Fellowship (UK \u2014 hosted at Cardiff)",
@@ -14235,7 +15027,8 @@
     "analysed_at": "2026-03-08T08:52:19.937567+00:00",
     "date_found": "2026-03-08",
     "id": "19d5ce110797",
-    "collection_method": "opus_discovery"
+    "collection_method": "opus_discovery",
+    "expired": true
   },
   {
     "title": "Groningen Faculty of Spatial Sciences \u2014 Economic Geography PhD positions (for monitoring)",
@@ -14932,6 +15725,75 @@
     "date_found": "2026-03-04",
     "collection_method": "daily_fetch",
     "expired": true
+  },
+  {
+    "title": "Postdoctoral Research Fellow in Education",
+    "institution": "Economic and Social Research Institute (ESRI)",
+    "country": "Ireland",
+    "city": "Dublin",
+    "url": "https://inomics.com/job/postdoctoral-research-fellow-in-education-1553670",
+    "date_posted": null,
+    "deadline": null,
+    "deadline_display": "Not stated",
+    "salary": null,
+    "salary_eur": null,
+    "duration": "3 years",
+    "start_date": null,
+    "full_time": true,
+    "funding_covers": null,
+    "career_stage": "Postdoctoral (no specific years post-PhD stated)",
+    "nationality_requirement": "none stated",
+    "degree_requirement": "PhD (implied by 'Postdoctoral')",
+    "language_requirement": "none stated (English implied)",
+    "eligibility_verdict": "check",
+    "eligibility_reason": "No explicit nationality or degree-country restrictions are stated, so the researcher's Indonesian nationality and Italian/Dutch degrees are unlikely to be barriers. The main concern is PhD completion: the position is postdoctoral and the researcher's PhD submission is October 2026 with defence expected Q1 2027. If the start date falls before defence, this would need clarification. Otherwise the researcher is broadly eligible once the PhD is complete.",
+    "eligibility_unclear": [
+      "PhD completion timing: does the ESRI require the PhD to be fully awarded at time of application or start, given defence is expected Q1 2027?",
+      "No deadline or start date stated \u2014 timing of application window is unknown."
+    ],
+    "eligibility_timeline_note": "PhD submission planned October 2026, defence Q1 2027. If ESRI requires a completed PhD at application, this may be tight depending on when the call closes.",
+    "research_theme": "Education research: school policy and practice, educational programmes, digital engagement, socio-economic inequality in education, students with additional educational needs",
+    "theme_flexibility": "flexible",
+    "methods_relevance": "Mixed methods including quantitative approaches \u2014 the listing explicitly mentions quantitative, qualitative, and mixed-method research. The researcher's quantitative and spatial econometrics toolkit is relevant to the quantitative strand, particularly for socio-economic inequality analysis. However, the core thematic focus is education rather than regional economics or economic geography, which is a substantive mismatch.",
+    "policy_relevant": true,
+    "funding_portable": false,
+    "portability_note": null,
+    "tier": 3,
+    "tier_reason": "ESRI Dublin is a reputable European social research institute. The position is in Europe and involves quantitative social policy research, placing it in Tier 3 (good European opportunity) by geography and policy relevance, though it is not in economic geography or regional economics specifically.",
+    "relevance_score": 38,
+    "timeline_fit": "ideal",
+    "timeline_note": "No start date stated. Assuming a rolling or late-2026/early-2027 start, this would fall in the ideal window. Timeline_fit set to 'ideal' pending confirmation of actual start date.",
+    "pros": [
+      "Three-year fixed-term contract provides stable postdoctoral experience",
+      "Explicitly quantitative-inclusive methodology \u2014 researcher's skills are applicable",
+      "Policy-focused research environment directly relevant to applied social science interests",
+      "Socio-economic inequality strand aligns partially with researcher's interest in welfare and labour policy",
+      "Ireland is an English-language working environment \u2014 no language barrier",
+      "No nationality or degree-country restrictions apparent",
+      "Multi-disciplinary team includes economists \u2014 researcher's economics background fits"
+    ],
+    "cons": [
+      "Core thematic focus is education research, not regional economics or economic geography \u2014 significant field mismatch",
+      "Spatial analysis, spatial econometrics, and regional development theory are unlikely to be central to projects",
+      "No connection to Cardiff, Netherlands, Politecnico di Milano, Indonesia, or other priority nodes",
+      "No salary or deadline information available from the listing",
+      "Researcher's PhD is in regional economics \u2014 education specialists may be preferred"
+    ],
+    "next_steps": [
+      "Visit the ESRI website directly to find the full job advertisement, deadline, and salary details",
+      "Check whether the role requires a PhD at application or merely at start \u2014 critical given October 2026 submission timeline",
+      "Assess whether any advertised projects involve spatial or regional dimensions of educational inequality that would better leverage the researcher's skills",
+      "If applying, emphasise experience with socio-economic vulnerability analysis (Jakarta COVID paper) and policy evaluation methodology as bridges to education inequality research"
+    ],
+    "competition_level": "high",
+    "one_line_summary": "Three-year postdoc at ESRI Dublin in education research \u2014 policy-relevant and quantitative-inclusive but thematically distant from economic geography, making it a weak-fit fallback option.",
+    "id": "8df27a8d8ab1",
+    "source_name": "INOMICS",
+    "source_type": "rss",
+    "raw_content": "Title: Postdoctoral Research Fellow in Education\nDescription: <p>The Economic and Social Research Institute (ESRI) wishes to appoint a Postdoctoral Research Fellow, on a three-year fixed-term contract basis to work in the area of education research.</p><p>The Postdoctoral Research Fellow will work on a diversity of projects, using quantitative, qualitative and mixed-method research approaches. It is envisaged that projects will include research on school policy and practice, educational programmes, digital and on-line engagement and the experiences of different groups of students (such as students experiencing socio-economic inequality, students with additional educational needs) across the education system.</p><p>The successful candidate will join the Social Research Division of the ESRI, which consists of a multi-disciplinary team of sociologists, psychologists, economists, neuroscientists, health service researchers, epidemiologists and statisticians, working in the areas of education; health and quality of life; behavioural economics; taxation, welfare and pensions; and social inclusion and equality.&nbsp;</p>",
+    "analysed_at": "2026-05-10T06:01:15.043504+00:00",
+    "date_found": "2026-05-10",
+    "collection_method": "daily_fetch"
   },
   {
     "title": "Lecturer",
@@ -16110,7 +16972,8 @@
     "raw_content": "Title: 2 Postdoc Positions in Development Economics, Economic History, and/or Political Economy\nDescription: <p>The&nbsp;<strong>Development Economics Group at FAU Erlangen-N\u00fcrnberg</strong>, Germany, is offering two full-time <strong>postdoctoral positions</strong>&nbsp;(m/f/d; pay grade E 13 TV-L Bavaria), each for a duration of <strong>2 years</strong>.&nbsp;</p>",
     "analysed_at": "2026-03-08T04:11:28.690027+00:00",
     "date_found": "2026-03-08",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Wissenschaftliche/r Mitarbeiter/in (Research Associate) \u2013 Political Economy and Empirical Economic Research (in cooperation with HWWI)",
@@ -16176,7 +17039,8 @@
     "raw_content": "Title: WMA (m/w/d) in der Professur f\u00fcr Politische \u00d6konomik und Empirische Wirtschaftsforschung (in Kooperation mit dem HWWI)\nDescription: <p>Im Rahmen der Kooperation zwischen der Helmut-Schmidt-Universit\u00e4t / Universit\u00e4t der Bundeswehr Hamburg (HSU/UniBw H) und dem Hamburgischen WeltWirtschaftsInstitut (HWWI) ist an der Fakult\u00e4t f\u00fcr Wirtschafts- und Sozialwissenschaften, Professur f\u00fcr Politische \u00d6konomik und Empirische Wirtschaftsforschung (Herr Univ.-Prof. Dr. Berlemann), <strong>ab dem</strong> <strong>n\u00e4chstm\u00f6glichen Zeitpunkt&nbsp;</strong>eine Stelle einer/eines</p><p><strong>Wissenschaftlichen Mitarbeiterin / Wissenschaftlichen Mitarbeiters (m/w/d)</strong></p><p><strong>(Entgeltgruppe 13 Tarifvertrag f\u00fcr den \u00f6ffentlichen Dienst (TV\u00f6D); 29,25 Stunden w\u00f6chentlich)</strong></p><p>befristet f\u00fcr die Dauer von 3 Jahren zu besetzen.</p>",
     "analysed_at": "2026-03-08T04:11:59.876237+00:00",
     "date_found": "2026-03-08",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Research Associate (WMA) \u2013 Political Economy and Empirical Economic Research (in cooperation with HWWI)",
@@ -16243,7 +17107,8 @@
     "raw_content": "Title: WMA (m/w/d) in der Professur f\u00fcr Politische \u00d6konomik und Empirische Wirtschaftsforschung (in Kooperation mit dem HWWI)\nDescription: <p>Im Rahmen der Kooperation zwischen der Helmut-Schmidt-Universit\u00e4t / Universit\u00e4t der Bundeswehr Hamburg (HSU/UniBw H) und dem Hamburgischen WeltWirtschaftsInstitut (HWWI) ist an der Fakult\u00e4t f\u00fcr Wirtschafts- und Sozialwissenschaften, Professur f\u00fcr Politische \u00d6konomik und Empirische Wirtschaftsforschung (Herr Univ.-Prof. Dr. Berlemann), <strong>ab dem</strong> <strong>n\u00e4chstm\u00f6glichen Zeitpunkt&nbsp;</strong>eine Stelle einer/eines</p><p><strong>Wissenschaftlichen Mitarbeiterin / Wissenschaftlichen Mitarbeiters (m/w/d)</strong></p><p><strong>(Entgeltgruppe 13 Tarifvertrag f\u00fcr den \u00f6ffentlichen Dienst (TV\u00f6D); &nbsp;29,25 Stunden w\u00f6chentlich)</strong></p><p>befristet f\u00fcr die Dauer von 3 Jahren zu besetzen.</p>",
     "analysed_at": "2026-03-08T04:12:31.584168+00:00",
     "date_found": "2026-03-08",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "Post-Doctoral Researcher in Microeconomics",
@@ -16568,7 +17433,8 @@
     "analysed_at": "2026-03-08T08:52:19.937567+00:00",
     "date_found": "2026-03-08",
     "id": "2eb7f473993e",
-    "collection_method": "opus_discovery"
+    "collection_method": "opus_discovery",
+    "expired": true
   },
   {
     "title": "IHS Vienna \u2014 Postdoctoral Researchers in Applied Economics",
@@ -16633,7 +17499,8 @@
     "concerns": "WARNING: URL points to generic EconJobMarket search page, not the specific IHS Vienna posting. Search https://www.ihs.ac.at/career/ for the actual listing.",
     "eligibility_unclear": [
       "Link points to generic EJM page \u2014 verify actual posting at ihs.ac.at/career/"
-    ]
+    ],
+    "expired": true
   },
   {
     "title": "ROSETTA MSCA COFUND Postdoctoral Fellowship (Ireland)",
@@ -16694,7 +17561,8 @@
     "analysed_at": "2026-03-08T08:52:19.937567+00:00",
     "date_found": "2026-03-08",
     "id": "1b50f4ef7ef6",
-    "collection_method": "opus_discovery"
+    "collection_method": "opus_discovery",
+    "expired": true
   },
   {
     "title": "Max Planck Institute for Demographic Research \u2014 Postdoc (Working Life Length)",
@@ -16817,7 +17685,8 @@
     "raw_content": "Title: Senior Policy Fellow (Economic and Fiscal Policy)\nEmployer: London School of Economics and Political Science\nDepartment: Centre for Economic Transition Expertise (CETEx)\nLocation: London\nSalary: \u00a363,370 to \u00a373,163\n                                    per annum inclusive with potential to progress to \u00a380,927 pa inclusive of London allowance\nDate placed: 06 Mar\nURL: https://www.jobs.ac.uk/job/DQT744/senior-policy-fellow-economic-and-fiscal-policy\nContext: Senior Policy Fellow (Economic and Fiscal Policy) Centre for Economic Transition Expertise (CETEx) London School of Economics and Political Science Location:\n            London Salary: \u00a363,370 to \u00a373,163\n                                    per annum inclusive with potential to progress to \u00a380,927 pa inclusive of London allowance Date Placed: 06 Mar",
     "analysed_at": "2026-03-07T06:51:37.145236+00:00",
     "date_found": "2026-03-07",
-    "collection_method": "daily_fetch"
+    "collection_method": "daily_fetch",
+    "expired": true
   },
   {
     "title": "ATER \u2013 Am\u00e9nagement de l'espace, urbanisme (Temporary Teaching and Research Associate)",

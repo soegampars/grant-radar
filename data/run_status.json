@@ -9,78 +9,78 @@
   {
     "source_name": "INOMICS",
     "status": "success",
-    "last_checked": "2026-06-21T07:28:14.251203+00:00",
+    "last_checked": "2026-06-28T06:57:21.862174+00:00",
     "error": null,
     "grants_found": 10
   },
   {
     "source_name": "EconJobMarket",
     "status": "success",
-    "last_checked": "2026-06-21T07:28:18.255286+00:00",
+    "last_checked": "2026-06-28T06:57:25.892659+00:00",
     "error": null,
-    "grants_found": 63
+    "grants_found": 64
   },
   {
     "source_name": "Jobs.ac.uk - Geography",
     "status": "success",
-    "last_checked": "2026-06-21T07:28:20.075949+00:00",
+    "last_checked": "2026-06-28T06:57:27.829370+00:00",
     "error": null,
     "grants_found": 25
   },
   {
     "source_name": "Jobs.ac.uk - Economics",
     "status": "success",
-    "last_checked": "2026-06-21T07:28:24.241125+00:00",
+    "last_checked": "2026-06-28T06:57:32.340109+00:00",
     "error": null,
     "grants_found": 25
   },
   {
     "source_name": "Academic Transfer (Netherlands)",
     "status": "success",
-    "last_checked": "2026-06-21T07:29:26.221460+00:00",
+    "last_checked": "2026-06-28T06:58:38.304963+00:00",
     "error": null,
     "grants_found": 0
   },
   {
     "source_name": "EURAXESS",
     "status": "success",
-    "last_checked": "2026-06-21T07:30:00.513181+00:00",
+    "last_checked": "2026-06-28T06:59:13.318666+00:00",
     "error": null,
     "grants_found": 20
   },
   {
     "source_name": "RSA - Regional Studies Association",
     "status": "success",
-    "last_checked": "2026-06-21T07:30:13.596841+00:00",
+    "last_checked": "2026-06-28T06:59:22.509096+00:00",
     "error": null,
     "grants_found": 28
   },
   {
     "source_name": "ERSA",
     "status": "success",
-    "last_checked": "2026-06-21T07:30:22.075508+00:00",
+    "last_checked": "2026-06-28T06:59:31.830103+00:00",
     "error": null,
     "grants_found": 17
   },
   {
     "source_name": "BRIN Talent Management",
     "status": "success",
-    "last_checked": "2026-06-21T07:30:24.928079+00:00",
+    "last_checked": "2026-06-28T06:59:37.303988+00:00",
     "error": null,
-    "grants_found": 0
+    "grants_found": 1
   },
   {
     "source_name": "daily_pipeline",
     "status": "success",
-    "last_checked": "2026-06-21T07:31:43.331979+00:00",
+    "last_checked": "2026-06-28T07:00:31.623357+00:00",
     "error": null,
-    "grants_found": 64
+    "grants_found": 42
   },
   {
     "source_name": "weekly_pipeline",
     "status": "success",
-    "last_checked": "2026-06-21T07:31:45.373454+00:00",
+    "last_checked": "2026-06-28T07:00:33.810329+00:00",
     "error": null,
-    "grants_found": 109
+    "grants_found": 96
   }
 ]
